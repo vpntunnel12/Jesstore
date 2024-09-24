@@ -228,7 +228,7 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet " GemilangSC")" | lolcat
+echo -e "$(figlet " KeyRisVpn")" | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │                  ${BIWhite}${UWhite}RISWAN-VPN${NC}"
 echo -e "${BICyan} │"
