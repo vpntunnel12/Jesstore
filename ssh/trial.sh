@@ -88,7 +88,7 @@ echo -e ""
 echo -e "Payload WS" 
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "\E[40;1;37mPREMIUM AUTOSCRIPT BY GEMILANGVIP  \E[0m" 
+echo -e "\E[40;1;37mPREMIUM AUTOSCRIPT BY @Riswanvpnstore  \E[0m" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
 
 else
@@ -121,7 +121,7 @@ echo -e ""
 echo -e "Payload WS" 
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "\E[40;1;37mPREMIUM AUTOSCRIPT BY GEMILANGVIP  \E[0m" 
+echo -e "\E[40;1;37mPREMIUM AUTOSCRIPT BY @Riswanvpnstore  \E[0m" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
 fi
 echo "" 
