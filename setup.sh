@@ -205,7 +205,7 @@ TEXT="Instalasi Autoscript-vvip V2.4
 By Admin Riswanvpn
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <i>Notifications Automatic From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/gemilangkinasih"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/Riswanvpnstore"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
