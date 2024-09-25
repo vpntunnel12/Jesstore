@@ -23,7 +23,7 @@ echo -e "$green╚═╝     ╚═╝╚══════╝╚═╝  ╚═�
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
-echo -e "         T.me/Riswanvpn"
+echo -e "         t.me/Riswanvpnstore"
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
