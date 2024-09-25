@@ -78,7 +78,7 @@ clear
 
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37mCREATE TRIAL ACCOUNT VMESS SUCCESS \E[0m"
+echo -e "\E[40;1;37m 🔥CREATE TRIAL ACCOUNT VMESS SUCCESS🔥 \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
