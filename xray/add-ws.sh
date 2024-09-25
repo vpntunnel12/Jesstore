@@ -110,7 +110,7 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m   🔥CREATE ACCOUNT VMESS SUCCESS🔥       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m      🔥CREATE ACCOUNT VMESS SUCCESS🔥       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "EXPIRED AKUN    : $exp"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
