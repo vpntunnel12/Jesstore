@@ -202,10 +202,10 @@ TEXT="Instalasi Autoscript-vvip V2.4
 <code>Location   :</code> <code>$CITY</code>
 <code>Exp Sc.    :</code> <code>$Exp</code>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-By Admin Riswanvpn
+By Admin @Riswanvpnstore
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <i>Notifications Automatic From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/Riswanvpnstore"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/Riswanvpnstore"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
