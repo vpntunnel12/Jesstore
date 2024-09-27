@@ -263,7 +263,7 @@ echo -e "${BICyan}    │${GREEN} Username       :\033[1;36m $Name \e[0m"
 echo -e "${BICyan}    │$NC Expired script :$NC $exp ${NC}/${GREEN} $(( (d1 - d2) / 86400 )) ${NC}Days${NC}"
 echo -e "${BICyan}    └───────────────────────────────────────────────┘${NC}"
 echo -e ""
-read -p " Select menu : " opt
+read -p " Select angka >>> : " opt
 echo -e ""
 case $opt in
 1) clear ; menu-ssh ;;
