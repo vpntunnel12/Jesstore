@@ -243,7 +243,7 @@ echo -e "${BICyan} │  ${BICyan}REBOOT    :  ${BIYellow}02:00 ( Jam 2 malam )${
 echo -e "${BICyan} │  ${BICyan}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │  ${BIYellow}SSH         VMESS           VLESS          TROJAN $NC"
+echo -e "${BICyan} │  ${BIYellow}SSH = $ssh1 VMESS = $vma  VLESS = $vla TROJAN=$vla $NC"
 echo -e "${BICyan} │  ${Blue} $ssh1            $vma               $vla               $tra $NC"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
