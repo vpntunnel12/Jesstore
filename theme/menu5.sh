@@ -228,9 +228,9 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet " KayRisVpn")" | lolcat
+echo -e "$(figlet " PREMIUM SC ")" | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │        ${BIWhite}${UWhite}SCRIPT PREMIUM KEYRIS VPN${NC}"
+echo -e "${BICyan} │        ${BIWhite}${UWhite}SCRIPT PREMIUM KEYRIS VPN WA : 085888801241${NC}"
 echo -e "${BICyan} │"
 echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIYellow}$cpu_usage${NC}"
@@ -240,7 +240,7 @@ echo -e "${BICyan} │  ${BICyan}RAM       :  ${BIYellow}$totalram MB${NC}"
 echo -e "${BICyan} │  ${BICyan}SWAP RAM  :  ${BIYellow}$uram / $tram MB${NC}"
 echo -e "${BICyan} │  ${BICyan}IP VPS    :  ${BIYellow}$IPVPS${NC}"
 echo -e "${BICyan} │  ${BICyan}REBOOT    :  ${BIYellow}02:00 ( Jam 2 malam )${NC}"
-echo -e "${BICyan} │  ${BICyan}DEVELOPER :  ${BIYellow}Riswanvpn${NC}"
+echo -e "${BICyan} │  ${BICyan}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │  ${BIYellow}SSH         VMESS           VLESS          TROJAN $NC"
