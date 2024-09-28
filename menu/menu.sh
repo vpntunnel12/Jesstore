@@ -260,7 +260,7 @@ echo -e "${BICyan} └───────────────────�
 echo -e "${BICyan}    ┌───────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}    │$NC Version Script : $(cat /opt/.ver) Last Update ${NC}"
 echo -e "${BICyan}    │${GREEN} Username       :\033[1;36m $Name \e[0m"
-echo -e "${BICyan}    │$NC Expired script :$NC $exp ${NC}/${GREEN} $(( (d1 - d2) / 86400 )) ${NC}Days${NC}"
+echo -e "${BICyan}    │${NC} Expired script :${NC} $exp ${NC}/${GREEN} $exp2${NC} Days${NC}"
 echo -e "${BICyan}    └───────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
