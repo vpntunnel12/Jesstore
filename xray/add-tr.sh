@@ -64,11 +64,11 @@ echo -e "EXPIRED AKUN    : $exp"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37mPREMIUM AUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Domain       : ${domain}"
 echo -e "Remarks      : ${user}" | tee -a /etc/log-create-user.log
-echo -e "Limit ip     : ${limit}" | tee -a /etc/log-create-user.log
-echo -e "Limit kuota  : ${quota}" | tee -a /etc/log-create-user.log
-echo -e "Limit bw     : ${bw}" | tee -a /etc/log-create-user.log
-echo -e "Host/IP      : ${domain}" | tee -a /etc/log-create-user.log
+echo -e "Limit Ip     : ${limit} IP" | tee -a /etc/log-create-user.log
+echo -e "Limit Quota  : ${quota} GB" | tee -a /etc/log-create-user.log
+echo -e "Limit BW     : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "Port         : 443/80" | tee -a /etc/log-create-user.log
 echo -e "Key          : ${uuid}" | tee -a /etc/log-create-user.log
 echo -e "Path         : /trojan-ws" | tee -a /etc/log-create-user.log
