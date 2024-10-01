@@ -264,7 +264,7 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "${BICyan} │           ${BIWhite}${UWhite}𝗦𝗖𝗥𝗜𝗣𝗧 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗞𝗘𝗬𝗥𝗜𝗦 𝗩𝗣𝗡𝗦𝗧𝗢𝗥𝗘${NC}"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} │"
-echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIYellow}$cpu_usage${NC}"
 echo -e "${BICyan} │  ${BICyan}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
 echo -e "${BICyan} │  ${BICyan}DOMAIN    :  ${BIYellow}$(cat /etc/xray/domain)${NC}"
