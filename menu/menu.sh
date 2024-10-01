@@ -259,7 +259,7 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet   "SC-KEYRISVPN")" | lolcat
+echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │         ${BIWhite}${UWhite}𝗦𝗖𝗥𝗜𝗣𝗧 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗞𝗘𝗬𝗥𝗜𝗦 𝗩𝗣𝗡𝗦𝗧𝗢𝗥𝗘${NC}"
 echo -e "${BICyan} │"
