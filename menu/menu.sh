@@ -261,7 +261,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
-echo -e "${BICyan} │       ${BIWhite}${UWhite}🔹SELAMAT MENGUNAKAN SC KEYRIS VPNSTORE🔹${NC}"
+echo -e "${BICyan} │       ${BIWhite}${UWhite}🔹𝙎𝙀𝙇𝘼𝙈𝘼𝙏 𝙈𝙀𝙉𝙂𝙐𝙉𝘼𝙆𝘼𝙉 𝙎𝘾 𝙆𝙀𝙔𝙍𝙄𝙎 𝙑𝙋𝙉𝙎𝙏𝙊𝙍𝙀🔹${NC}"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BICyan} │  ${BICyan}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
