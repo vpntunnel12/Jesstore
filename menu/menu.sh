@@ -261,7 +261,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
-             echo -e "$(figlet   "KVPNSTORE")" | lolcat
+             echo -e "$(figlet   "KEYRIS STOR")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BICyan} │  ${BICyan}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
@@ -272,7 +272,7 @@ echo -e "${BICyan} │  ${BICyan}IP VPS    :  ${BIYellow}$IPVPS${NC}"
 echo -e "${BICyan} │  ${BICyan}REBOOT    :  ${BIYellow}jam 02:00 malam${NC}"
 echo -e "${BICyan} │  ${BICyan}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
-echo -e "${BICyan} │  ${Blue}[SSH]${BIYellow}[$ssh1]  ${BICyan}[VMESS]${BIYellow}[$vma]  ${BICyan}[VLESS]${BIYellow}[$vla]  ${BICyan}[TROJAN]${BIYellow}[$tra]$NC"
+echo -e "${BICyan} │   ${Blue}[SSH]${BIYellow}[$ssh1]  ${BICyan}[VMESS]${BIYellow}[$vma]  ${BICyan}[VLESS]${BIYellow}[$vla]  ${BICyan}[TROJAN]${BIYellow}[$tra]$NC"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e " ${BICyan}│  [SSH]${NC}[$ressh]"" ${BICyan} [NGINX]${NC}[$resngx]"" ${BICyan}  [XRAY]${NC}[$resv2r]"" ${BICyan} [TROJAN]${NC}[$resv2r]"
 echo -e " ${BICyan}│    [STUNNEL]${NC}[$resst]" "${BICyan} [DROPBEAR]${NC}[$resdbr]" "${BICyan} [SSH-WS]${NC}[$ressshws]"
