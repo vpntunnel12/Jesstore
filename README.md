@@ -16,4 +16,5 @@ wget https://raw.githubusercontent.com/gemilangvip/autoscript/main/files/udp-cus
 ```
 ## UPDATE SC MANUAL
 ```
-chmod +x update.sh && ./update.sh```
+chmod +x update.sh && ./update.sh
+```
