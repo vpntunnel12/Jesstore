@@ -320,16 +320,16 @@ echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━
 read -p "  Select From Options [ 1 - 5 or x] : " menu
 case $menu in
 1) clear ;
-    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/bot2.sh && chmod +x bot2.sh && ./bot2.sh
+    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/bot2.sh && chmod +x bot2.sh && ./bot2.sh
     ;;
 2) clear ;
-    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/restart-bot.sh && chmod +x restart-bot.sh && ./restart-bot.sh
+    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/restart-bot.sh && chmod +x restart-bot.sh && ./restart-bot.sh
     ;;
 3) clear ;
-    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/stop-bot.sh && chmod +x stop-bot.sh && ./stop-bot.sh
+    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/stop-bot.sh && chmod +x stop-bot.sh && ./stop-bot.sh
     ;;
 4) clear ;
-    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/del-bot.sh && chmod +x del-bot.sh && ./del-bot.sh
+    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/del-bot.sh && chmod +x del-bot.sh && ./del-bot.sh
     ;;
 x)
     menu
