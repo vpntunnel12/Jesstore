@@ -304,7 +304,7 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; xolpanel ;;
+11) clear ; bot ;;
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
