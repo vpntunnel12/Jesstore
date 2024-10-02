@@ -36,7 +36,7 @@ apt install python3 python3-pip -y
 apt install sqlite3 -y
 cd /media/
 rm -rf cybervpn
-wget https://raw.githubusercontent.com/Lite-VPN/v3/main/ping/cybervpn.zip
+wget https://raw.githubusercontent.com/premiumsc/main/bot/cybervpn.zip
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
@@ -50,7 +50,7 @@ clear
 rm -rf bot
 rm bot.*
 cd /usr/bin
-wget https://raw.githubusercontent.com/Lite-VPN/v3/main/ping/bot.zip
+wget https://raw.githubusercontent.com/premiumsc/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
