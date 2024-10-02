@@ -111,6 +111,8 @@ IBlue='\033[0;94m'        # Blue
 IPurple='\033[0;95m'      # Purple
 ICyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
+w="\033[97m"
+ORANGE="\033[0;34m"
 NC='\e[0m'
 dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
 utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
@@ -294,21 +296,100 @@ echo -e ""
 read -p "                   Select angka >>> : " opt
 echo -e ""
 case $opt in
-1) clear ; menu-ssh ;;
-2) clear ; menu-vmess ;;
-3) clear ; menu-vless ;;
-4) clear ; menu-trojan ;;
-5) clear ; menu-set ;;
-6) clear ; menu-trial ;;
-7) clear ; menu-backup ;;
-8) clear ; add-host ;;
-9) clear ; running ;;
-10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; bot ;;
-12) clear ; bw ;;
-13) clear ; menu-theme ;;
-14) clear ; update ;;
-0) clear ; menu ;;
-x) exit ;;
-*) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
+1 | 01)
+clear
+menu-ssh
+;;
+2 | 02)
+clear
+menu-vmess
+;;
+3 | 03)
+clear
+menu-vless
+;;
+4 | 04)
+clear
+menu-trojan
+;;
+5 | 05)
+clear
+menu-set
+;;
+6 | 06)
+clear
+menu-trial
+;;
+7 | 07)
+clear
+menu-backup
+;;
+8 | 08)
+clear
+add-host
+;;
+9 | 09)
+clear
+running
+;;
+10)
+clear
+wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp
+;;
+11)
+clear
+echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
+echo -e " ${w} $NC${f}                   BOT MANAGER                $NC${z} $NC"
+echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
+echo -e "  ${ORANGE}[1].${NC}\033[0;36m Install BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[2].${NC}\033[0;36m Restart BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[3].${NC}\033[0;36m Stop BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[4].${NC}\033[0;36m Uninstall BOT CYBERVPN${NC}"
+echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
+echo -e "  ${ORANGE}[x].${NC}\033[0;36m Exit${NC}"
+echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
+read -p "  Select From Options [ 1 - 5 or x] : " menu
+case $menu in
+1) clear ;
+    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/bot2.sh && chmod +x bot2.sh && ./bot2.sh
+    ;;
+2) clear ;
+    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/restart-bot.sh && chmod +x restart-bot.sh && ./restart-bot.sh
+    ;;
+3) clear ;
+    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/stop-bot.sh && chmod +x stop-bot.sh && ./stop-bot.sh
+    ;;
+4) clear ;
+    wget -q https://raw.githubusercontent.com/premiumsc/main/bot/del-bot.sh && chmod +x del-bot.sh && ./del-bot.sh
+    ;;
+x)
+    menu
+    ;;
+esac
+;;
+12)
+clear
+bw
+;;
+13)
+clear
+menu-theme
+;;
+14)
+clear
+update
+;;
+0)
+clear
+menu
+;;
+x)
+exit
+;;
+*)
+echo -e ""
+echo "Press any key to back exit"
+sleep 1
+exit
+;;
 esac
