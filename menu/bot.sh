@@ -151,8 +151,8 @@ case $menu in
     ;;
 9) clear ;
     add-bot-bersama
-   ;;
+    ;;
 x)
     menu
-   ;;
+    ;;
 esac
