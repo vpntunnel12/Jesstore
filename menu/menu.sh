@@ -296,49 +296,17 @@ echo -e ""
 read -p "                   Select angka >>> : " opt
 echo -e ""
 case $opt in
-1 | 01)
-clear
-menu-ssh
-;;
-2 | 02)
-clear
-menu-vmess
-;;
-3 | 03)
-clear
-menu-vless
-;;
-4 | 04)
-clear
-menu-trojan
-;;
-5 | 05)
-clear
-menu-set
-;;
-6 | 06)
-clear
-menu-trial
-;;
-7 | 07)
-clear
-menu-backup
-;;
-8 | 08)
-clear
-add-host
-;;
-9 | 09)
-clear
-running
-;;
-10)
-clear
-wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp
-;;
-11)
-clear
-echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
+1) clear ; menu-ssh ;;
+2) clear ; menu-vmess ;;
+3) clear ; menu-vless ;;
+4) clear ; menu-trojan ;;
+5) clear ; menu-set ;;
+6) clear ; menu-trial ;;
+7) clear ; menu-backup ;;
+8) clear ; add-host ;;
+9) clear ; running ;;
+10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
+11) clear ; echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
 echo -e " ${w} $NC${f}                   BOT MANAGER                $NC${z} $NC"
 echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
 echo -e "  ${ORANGE}[1].${NC}\033[0;36m Install BOT CYBERVPN${NC}"
@@ -367,29 +335,10 @@ x)
     ;;
 esac
 ;;
-12)
-clear
-bw
-;;
-13)
-clear
-menu-theme
-;;
-14)
-clear
-update
-;;
-0)
-clear
-menu
-;;
-x)
-exit
-;;
-*)
-echo -e ""
-echo "Press any key to back exit"
-sleep 1
-exit
-;;
+12) clear ; bw ;;
+13) clear ; menu-theme ;;
+14) clear ; update ;;
+0) clear ; menu ;;
+x) exit ;;
+*) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
 esac
