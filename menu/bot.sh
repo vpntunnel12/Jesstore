@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 NC="\e[0m"
 RED="\033[0;31m" 
 w="\033[97m"
+ORANGE="\033[0;34m"
 
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register > /root/tmp
