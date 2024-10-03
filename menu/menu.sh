@@ -261,7 +261,7 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet   "")" | lolcat
+echo -e "$(figlet   "KEYRIS VPNSTORE")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan} │     ${BIWhite}${UWhite}🔹TERIMAKASIH SUDAH MENGUNAKAN SC KEYRIS🔹${NC}"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
@@ -290,7 +290,7 @@ echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo -e "${BICyan}    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan}    │$NC Version Script : $(cat /opt/.ver) Last Update ${NC}"
 echo -e "${BICyan}    │${BIWhite} Username       :\033[1;36m $Name \e[0m"
-echo -e "${BICyan}    │${NC} Expired script :${NC} $exp ${NC}/${BIWhite} $exp2${NC} Days${NC}"
+echo -e "${BICyan}    │${BIWhite} Expired script :${NC} $exp ${NC}:${BIWhite} $exp2${NC} Days${NC}"
 echo -e "${BICyan}    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
