@@ -289,8 +289,8 @@ echo -e "${BICyan} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIY
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan}    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan}    │$NC Version Script : $(cat /opt/.ver) Last Update ${NC}"
-echo -e "${BICyan}    │${GREEN} Username       :\033[1;36m $Name \e[0m"
-echo -e "${BICyan}    │${NC} Expired script :${NC} $exp ${NC}/${GREEN} $exp2${NC} Days${NC}"
+echo -e "${BICyan}    │${BIWhite} Username       :\033[1;36m $Name \e[0m"
+echo -e "${BICyan}    │${NC} Expired script :${NC} $exp ${NC}/${BIWhite} $exp2${NC} Days${NC}"
 echo -e "${BICyan}    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
