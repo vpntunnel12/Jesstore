@@ -265,7 +265,7 @@ echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan} │     ${BIWhite}${UWhite}🔹TERIMAKASIH SUDAH MENGUNAKAN SC KEYRIS🔹${NC}"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
-echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
+echo -e "${BICyan} │  ${BICyan}OS        :  ${BIWhite}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BICyan} │  ${BICyan}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
 echo -e "${BICyan} │  ${BICyan}DOMAIN    :  ${BIYellow}$(cat /etc/xray/domain)${NC}"
 echo -e "${BICyan} │  ${BICyan}RAM & CPU :  ${BIYellow}$totalram MB / $cpu_usage${NC}"
