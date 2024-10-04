@@ -262,7 +262,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "${Lime} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
+echo -e "${Lime} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${Lime} │     ${BIWhite}${UWhite}🔹TERIMAKASIH SUDAH MENGUNAKAN SC KEYRIS🔹${NC}"
 echo -e "${Lime} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${Lime} │  ${BICyan}OS        :  ${BIWhite}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
