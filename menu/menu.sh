@@ -279,7 +279,7 @@ echo -e "${Lime} ┌────────────────────
 echo -e "${Lime} │   ${BICyan}[SSH] [$ssh1]  ${BICyan}[VMESS] [$vma] ${BICyan}[VLESS][$vla]  ${BICyan}[TROJAN] [$tra]$NC"
 echo -e "${Lime} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${Lime} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${Lime}│ ${BICyan}[SSH]${NC} [$ressh]"" ${BICyan} [NGINX]${NC}[$resngx]"" ${BICyan}  [XRAY]${NC}[$resv2r]"" ${BICyan} [TROJAN]${NC}[$resv2r]"
+echo -e " ${Lime}│ ${BICyan}[SSH]${NC}[$ressh]"" ${BICyan} [NGINX]${NC}[$resngx]"" ${BICyan}  [XRAY]${NC}[$resv2r]"" ${BICyan} [TROJAN]${NC}[$resv2r]"
 echo -e " ${Lime}│   ${BICyan}[STUNNEL]${NC}[$resst]" "${BICyan} [DROPBEAR]${NC}[$resdbr]" "${BICyan} [SSH-WS]${NC}[$ressshws]"
 echo -e "${Lime} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${Lime} ┌─────────────────────────────────────────────────────┐${NC}"
