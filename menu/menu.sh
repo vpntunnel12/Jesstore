@@ -261,7 +261,7 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet   "SCPREMIUM")" | lolcat
+echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
 echo -e "${BICyan} │     ${BIWhite}${UWhite}🔹TERIMAKASIH SUDAH MENGUNAKAN SC KEYRIS🔹${NC}"
 echo -e "${BICyan} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
