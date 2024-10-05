@@ -280,7 +280,7 @@ echo -e "${BIYellow} │      ${BIYellow}SSH Account   : $ssh1 ${BIYellow} VMESS
 echo -e "${BIYellow} │      ${BIYellow}VLESS Account : $vla  ${BIYellow} TROJAN Account : $tra$NC"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIYellow}│ ${BIYellow}SSH${NC} : $ressh"" ${BIYellow} [NGINX]${NC} : $resngx"" ${BIYellow}  XRAY${NC} : $resv2r"" ${BIYellow} TROJAN${NC} : $resv2r"
+echo -e " ${BIYellow}│ ${BIYellow}SSH${NC} : $ressh"" ${BIYellow} NGINX${NC} : $resngx"" ${BIYellow}  XRAY${NC} : $resv2r"" ${BIYellow} TROJAN${NC} : $resv2r"
 echo -e " ${BIYellow}│   ${BIYellow}STUNNEL${NC} : $resst" "${BIYellow} DROPBEAR${NC} : $resdbr" "${BIYellow} SSH-WS${NC} : $ressshws"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${Lime} ┌─────────────────────────────────────────────────────┐${NC}"
