@@ -273,7 +273,7 @@ echo -e "${BIYellow} │  ${BIYellow}REBOOT    :  ${BIYellow}jam 02:00 malam${NC
 echo -e "${BIYellow} │  ${BIYellow}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIYellow} │      ${BIYellow}SSH Account   : $ssh1 ${BIYellow}VMESS Account  : $vma$NC"
+echo -e "${BIYellow} │      ${BIYellow}SSH Account   : $ssh1  ${BIYellow}VMESS Account  : $vma$NC"
 echo -e "${BIYellow} │      ${BIYellow}VLESS Account : $vla  ${BIYellow}TROJAN Account : $tra$NC"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
