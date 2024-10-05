@@ -262,7 +262,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "${BIYellow} ┌─────────────────────Keyris Vpnstore───────────────────┐${NC}"
+echo -e "${BIYellow} ┌─────────────────────Keyris Vpnstore──────────────────┐${NC}"
 echo -e "${BIYellow} │${NC}"  
 echo -e "${BIYellow} │  ${BIYellow}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BIYellow} │  ${BIYellow}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
@@ -274,12 +274,12 @@ echo -e "${BIYellow} │  ${BIYellow}REBOOT    :  ${BIYellow}jam 02:00 malam${NC
 echo -e "${BIYellow} │  ${BIYellow}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIYellow} │      ${BIYellow}SSH Account   :[ $ssh1 ]${BIYellow}VMESS Account  :[ $vma ]$NC"
+echo -e "${BIYellow} │      ${BIYellow}SSH Account   :[ $ssh1 ] ${BIYellow}VMESS Account  :[ $vma ]$NC"
 echo -e "${BIYellow} │      ${BIYellow}VLESS Account :[ $vla ] ${BIYellow}TROJAN Account :[ $tra ]$NC"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIYellow}│   ${BIYellow}SSH${NC} :$ressh"" ${BIYellow} NGINX${NC} :$resngx"" ${BIYellow}  XRAY${NC} :$resv2r"" ${BIYellow} TROJAN${NC} :$resv2r"
-echo -e " ${BIYellow}│     ${BIYellow}STUNNEL${NC} :$resst" "${BIYellow} DROPBEAR${NC} :$resdbr" "${BIYellow} SSH-WS${NC} :$ressshws"
+echo -e " ${BIYellow}│     ${BIYellow}SSH${NC} :$ressh"" ${BIYellow} NGINX${NC} :$resngx"" ${BIYellow}  XRAY${NC} :$resv2r"" ${BIYellow} TROJAN${NC} :$resv2r"
+echo -e " ${BIYellow}│       ${BIYellow}STUNNEL${NC} :$resst" "${BIYellow} DROPBEAR${NC} :$resdbr" "${BIYellow} SSH-WS${NC} :$ressshws"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIYellow} │  ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}08${BICyan}] ADD-HOST        ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${Lime} │${NC}"
