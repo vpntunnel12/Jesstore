@@ -261,8 +261,9 @@ export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet   "KVPNSTORE")" | lolcat
-echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "$(figlet   "")" | lolcat
+echo -e "${BIYellow} ┌─────────────────────Keyris Vpnstore───────────────────┐${NC}"
+echo -e "${BIYellow} │${NC}"  
 echo -e "${BIYellow} │  ${BIYellow}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BIYellow} │  ${BIYellow}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
 echo -e "${BIYellow} │  ${BIYellow}DOMAIN    :  ${BIYellow}$(cat /etc/xray/domain)${NC}"
