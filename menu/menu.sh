@@ -262,9 +262,9 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIYellow} │           ${BIYellow}${BIYellow}   WELCOME TO SC KEYRIS VPNSTORE${NC}"
-echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
+echo -e "\033[0;34m  ┌─────────────────────────────────────────────────────┐\033[0m"
+echo -e "\E[44;1;39m │            WELCOME TO SCRIPT KEYRIS VPNSTORE              \E[0m"
+echo -e "\033[0;34m  └─────────────────────────────────────────────────────┘\033[0m"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIYellow} │  ${BIYellow}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BIYellow} │  ${BIYellow}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
