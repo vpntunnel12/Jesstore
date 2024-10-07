@@ -63,74 +63,40 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m          🔥CREATE ACCOUNT SSH🔥       \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED : $exp"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
-echo -e "limit ip    : $limit (DEVICE)" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
-echo -e "NS DOMAIN   : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "SERVER PUB  : $slkey" | tee -a /etc/log-create-user.log
-echo -e "PORT SLWDNS : 443,80,53" | tee -a /etc/log-create-user.log
-echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
-echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "SSH UDP     : $domen:1-65535@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "SSH WS      : $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "SSH WSS     : $domen:443@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload WSS" | tee -a /etc/log-create-user.log
-echo -e "GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
-echo -e ""
-echo -e "Payload WS" | tee -a /etc/log-create-user.log
-echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
+echo -e "Username : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
+echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS   : 80" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL  : 443" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP  : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "expired : $exp"
+echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 else
 
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m          🔥CREATE ACCOUNT SSH🔥        \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED : $exp"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
-echo -e "limit ip    : $limit (DEVICE)" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
-echo -e "NS DOMAIN   : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "SERVER PUB  : $slkey" | tee -a /etc/log-create-user.log
-echo -e "PORT SLWDNS : 443,80,53" | tee -a /etc/log-create-user.log
-echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
-echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "SSH UDP     : $domen:1-65535@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "SSH WS      : $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "SSH WSS     : $domen:443@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload WSS" | tee -a /etc/log-create-user.log
-echo -e "GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
-echo -e ""
-echo -e "Payload WS" | tee -a /etc/log-create-user.log
-echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
+echo -e "Username : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
+echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS   : 80" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL  : 443" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP  : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "expired : $exp"
+echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
