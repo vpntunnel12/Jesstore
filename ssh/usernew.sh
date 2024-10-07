@@ -64,9 +64,9 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m  🔥CREATE ACCOUNT SSH🔥       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m          🔥CREATE ACCOUNT SSH🔥       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED AKUN    : $exp"
+echo -e "EXPIRED : $exp"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
@@ -99,9 +99,9 @@ echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━�
 else
 
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m  🔥CREATE ACCOUNT SSH🔥        \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m          🔥CREATE ACCOUNT SSH🔥        \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED AKUN    : $exp"
+echo -e "EXPIRED : $exp"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
