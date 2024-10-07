@@ -110,13 +110,13 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       🔥CREATE ACCOUNT VMESS🔥       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       🔹CREATE ACCOUNT VMESS🔹       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Domain         : ${domain}"
-echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
-echo -e "Limit Ip       : ${limit} IP" | tee -a /etc/log-create-user.log
-echo -e "Limit Quota    : ${quota} GB" | tee -a /etc/log-create-user.log
-echo -e "Limit BW       : ${bw} GB" | tee -a /etc/log-create-user.log
+echo -e "Domain      : ${domain}"
+echo -e "Remarks     : ${user}" | tee -a /etc/log-create-user.log
+echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
+echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
+echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TLS       : ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
