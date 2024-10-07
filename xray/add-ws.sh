@@ -110,9 +110,9 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m🔥CREATE ACCOUNT VMESS🔥       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       🔥CREATE ACCOUNT VMESS🔥       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED AKUN    : $exp"
+echo -e "EXPIRED : $exp"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
