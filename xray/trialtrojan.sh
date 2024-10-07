@@ -24,9 +24,9 @@ trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&se
 trojanlink="trojan://${uuid}@isi_bug_disini:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "\E[40;1;37m🔥ACCOUNT TRIAL TROJAN🔥\E[0m"
+echo -e "\E[40;1;37m       🔥ACCOUNT TRIAL TROJAN🔥\E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "EXPIRED AKUN    : $exp"
+echo -e "EXPIRED : $exp"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
