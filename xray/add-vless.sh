@@ -60,28 +60,20 @@ clear
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m        🔥CREATE ACCOUNT VLESS🔥      \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
-echo -e "EXPIRED : $exp"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
-echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "Domain         : ${domain}"
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Limit Ip       : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota    : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW       : ${bw} GB" | tee -a /etc/log-create-user.log
-echo -e "Port TLS       : $tls" | tee -a /etc/log-create-user.log
-echo -e "Port None TLS  : $none" | tee -a /etc/log-create-user.log
-echo -e "ID             : ${uuid}" | tee -a /etc/log-create-user.log
-echo -e "Encryption     : none" | tee -a /etc/log-create-user.log
-echo -e "Network        : ws" | tee -a /etc/log-create-user.log
-echo -e "Path           : /vless" | tee -a /etc/log-create-user.log
-echo -e "Path           : vless-grpc" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TLS       : ${vlesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link none TLS  : ${vlesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC      : ${vlesslink3}" | tee -a /etc/log-create-user.log
+echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
+echo -e "expired : $exp"
+echo -e "\E[40;1;37mautosc by @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
