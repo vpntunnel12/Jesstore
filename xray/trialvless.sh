@@ -27,9 +27,9 @@ vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none
 systemctl restart xray
 clear
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "\E[40;1;37m🔥ACCOUNT TRIAL VLESS🔥 \E[0m"
+echo -e "\E[40;1;37m        🔥ACCOUNT TRIAL VLESS🔥 \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
-echo -e "EXPIRED AKUN    : $exp"
+echo -e "EXPIRED : $exp"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
 echo -e "\E[40;1;37mAUTOSCRIPT BY @Riswanvpnstore  \E[0m"
 echo -e "\e[33m🔹━━━━━━━━━━━━━━━━━━━━━━━━🔹\033[0m"
