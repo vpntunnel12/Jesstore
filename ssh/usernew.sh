@@ -72,9 +72,8 @@ echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
 echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "SSH-WS   : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL  : 443" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP  : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
+echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "expired : $exp"
 echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
@@ -90,9 +89,8 @@ echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
 echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "SSH-WS   : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL  : 443" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP  : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
+echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "expired : $exp"
 echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
