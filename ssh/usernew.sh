@@ -63,42 +63,46 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m"
 echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
 echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
 echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Aktif Selama: $masaaktif Hari"
-echo -e "Dibuat Pada: $Day"
-echo -e "Berakhir Pada: $exp" 
-echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Aktif: $masaaktif Hari"
+echo -e "Exp Pada: $exp" 
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
+echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
+echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 else
 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m"
 echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
 echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
 echo -e "limit ip : $limit IP" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Aktif Selama: $masaaktif Hari"
-echo -e "Dibuat Pada: $Day"
-echo -e "Berakhir Pada: $exp" 
-echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Aktif: $masaaktif Hari"
+echo -e "Exp Pada: $exp" 
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
+echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
+echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
+echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
