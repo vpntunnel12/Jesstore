@@ -59,7 +59,7 @@ acs=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${bug}",
+      "add": "${quiz.vidio.com}",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
@@ -74,14 +74,14 @@ ask=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${quiz.vidio.com}",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF`
@@ -96,7 +96,7 @@ grpc=`cat<<EOF
       "net": "grpc",
       "path": "vmess-grpc",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "tls"
 }
 EOF`
