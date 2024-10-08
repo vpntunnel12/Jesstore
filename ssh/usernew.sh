@@ -81,6 +81,7 @@ echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | 
 echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
 echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
 echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
+echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 else
 
@@ -102,6 +103,7 @@ echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | 
 echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
 echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
 echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
+echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
