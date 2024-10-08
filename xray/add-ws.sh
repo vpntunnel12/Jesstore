@@ -118,9 +118,9 @@ echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link TLS       : ${vmesslink1}" | tee -a /etc/log-create-user.log
+echo -e "XL VIDIO: ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link none TLS  : ${vmesslink2}" | tee -a /etc/log-create-user.log
+echo -e "XL VIDIO: ${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC      : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
