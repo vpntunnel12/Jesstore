@@ -57,27 +57,27 @@ systemctl restart xray
 trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
 trojanlink="trojan://${uuid}@isi_bug_disini:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m        🔹CREATE ACCOUNT TROJAN🔹     \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Domain       : ${domain}"
 echo -e "Remarks      : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Limit Ip     : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota  : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW     : ${bw} GB" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link WS      : ${trojanlink}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC    : ${trojanlink1}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif: $masaaktif Hari"
 echo -e "Exp Pada: $exp" 
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
 echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
 echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
 echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
