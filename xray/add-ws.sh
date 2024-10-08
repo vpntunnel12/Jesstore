@@ -59,15 +59,15 @@ acs=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
-      "port": "443",
+      "add": "${bug}",
+      "port": "80",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
-      "tls": "tls"
+      "host": "${domain}",
+      "tls": "none"
 }
 EOF`
 ask=`cat<<EOF
