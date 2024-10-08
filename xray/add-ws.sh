@@ -89,15 +89,15 @@ grpc=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
-      "port": "443",
+      "add": "104.26.7.171",
+      "port": "80",
       "id": "${uuid}",
       "aid": "0",
-      "net": "grpc",
-      "path": "vmess-grpc",
+      "net": "ws",
+      "path": "/vmess",
       "type": "none",
-      "host": "${bug}",
-      "tls": "tls"
+      "host": "${domain}",
+      "tls": "none"
 }
 EOF`
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
@@ -122,7 +122,7 @@ echo -e "XL VIDIO PORT 443: ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "XL VIDIO PORT 80: ${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link GRPC      : ${vmesslink3}" | tee -a /etc/log-create-user.log
+echo -e "TESL IPED PORT 80: ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif: $masaaktif Hari"
 echo -e "Exp Pada: $exp" 
