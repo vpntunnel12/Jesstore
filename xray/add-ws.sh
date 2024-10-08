@@ -59,15 +59,15 @@ acs=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "104.26.7.171",
-      "port": "80",
+      "add": "quiz.vidio.com",
+      "port": "443",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
-      "type": "none",
+      "type": "${domain}",
       "host": "${domain}",
-      "tls": "none"
+      "tls": "tls"
 }
 EOF`
 ask=`cat<<EOF
@@ -118,7 +118,7 @@ echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "TESL IPED PORT 80: ${vmesslink1}" | tee -a /etc/log-create-user.log
+echo -e "XL VIDIO PORT 443: ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "XL VIDIO PORT 80: ${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
