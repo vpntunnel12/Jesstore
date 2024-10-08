@@ -109,32 +109,32 @@ vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
 systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m       🔹CREATE ACCOUNT VMESS🔹       \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Domain      : ${domain}"
 echo -e "Remarks     : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "𝗫𝗟 𝗩𝗜𝗗𝗜𝗢 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗣𝗢𝗥𝗧 𝟰𝟰𝟯 👇"
 echo -e "${vmesslink1}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "𝗫𝗟 𝗩𝗜𝗗𝗜𝗢 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗣𝗢𝗥𝗧 𝟴𝟬 👇"
 echo -e "${vmesslink2}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "𝗧𝗘𝗟𝗞𝗢𝗠𝗦𝗘𝗟 𝗜𝗟𝗠𝗨𝗣𝗘𝗗𝗜𝗔 𝗣𝗢𝗥𝗧 𝟴𝟬 👇"
 echo -e "${vmesslink3}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif: $masaaktif Hari"
 echo -e "Exp Pada: $exp" 
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
 echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
 echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
 echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
-echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
