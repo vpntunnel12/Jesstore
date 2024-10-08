@@ -76,7 +76,7 @@ echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif Selama: $masaaktif Hari"
-echo -e "Dibuat Pada: $tanggal"
+echo -e "Dibuat Pada: $Day"
 echo -e "Berakhir Pada: $exp" 
 echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -95,7 +95,7 @@ echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif Selama: $masaaktif Hari"
-echo -e "Dibuat Pada: $tanggal"
+echo -e "Dibuat Pada: $Day"
 echo -e "Berakhir Pada: $exp" 
 echo -e "\E[40;1;37mautosc @Riswanvpnstore  \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
