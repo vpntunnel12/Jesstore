@@ -118,11 +118,14 @@ echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "XL VIDIO PORT 443: ${vmesslink1}" | tee -a /etc/log-create-user.log
+echo -e "𝗫𝗟 𝗩𝗜𝗗𝗜𝗢 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗣𝗢𝗥𝗧 𝟰𝟰𝟯 👇"
+echo -e "LINK : ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "XL VIDIO PORT 80: ${vmesslink2}" | tee -a /etc/log-create-user.log
+echo -e "𝗫𝗟 𝗩𝗜𝗗𝗜𝗢 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗣𝗢𝗥𝗧 𝟴𝟬 👇"
+echo -e "LINK : ${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
-echo -e "TESL IPED PORT 80: ${vmesslink3}" | tee -a /etc/log-create-user.log
+echo -e "𝗧𝗘𝗟𝗞𝗢𝗠𝗦𝗘𝗟 𝗜𝗟𝗠𝗨𝗣𝗘𝗗𝗜𝗔 𝗣𝗢𝗥𝗧 𝟴𝟬 👇"
+echo -e "LINK : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif: $masaaktif Hari"
 echo -e "Exp Pada: $exp" 
