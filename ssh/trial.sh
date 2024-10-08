@@ -71,8 +71,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "UDP: $domen:1-65535@$Login:$Pass" 
 echo -e "SSH: $domen:80@$Login:$Pass" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "Aktif Selama   : $pup menit"
-echo -e "expired : $exp"
+echo -e "Aktif Selama   : $pup 60 menit"
 echo -e "\E[40;1;37mScript by @Riswanvpnstore  \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
 else
@@ -88,8 +87,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "UDP: $domen:1-65535@$Login:$Pass" 
 echo -e "SSH: $domen:80@$Login:$Pass" 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-echo -e "Aktif Selama   : $pup menit"
-echo -e "expired : $exp"
+echo -e "Aktif Selama   : $pup 60 menit"
 echo -e "\E[40;1;37mScript by @Riswanvpnstore  \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
 fi
