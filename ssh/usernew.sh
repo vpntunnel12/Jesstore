@@ -66,7 +66,6 @@ if [[ ! -z "${PID}" ]]; then
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m"
-echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
 echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
@@ -75,20 +74,20 @@ echo -e "\e[33m─────────────────────�
 echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Aktif: $masaaktif Hari"
-echo -e "Exp Pada: $exp" 
+echo -e "Aktif Selama : $masaaktif Hari"  
+echo -e "Exp Jatuh pada : $exp"  
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
-echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
-echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
-echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
+echo -e "\E[40;1;37mTerimakasih Kak Sudah Order 😘  \E[0m"
+echo -e "\E[40;1;37mGaransi Jika Akun Masih Ada  \E[0m"
+echo -e "\E[40;1;37mJagan lupa Perpanjang Ya  \E[0m"
+echo -e "\E[40;1;37mTelegram @Riswanvpnstore  \E[0m"
+echo -e "\E[40;1;37mGrup tele @grupvpnriswan  \E[0m"
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 else
 
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          🔹CREATE ACCOUNT SSH🔹       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m"
-echo -e "Nmserver : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "domain   : $domen" | tee -a /etc/log-create-user.log
 echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
@@ -97,13 +96,14 @@ echo -e "\e[33m─────────────────────�
 echo -e "UDP: $domen:1-65535@$Login:$Pass"  | tee -a /etc/log-create-user.log
 echo -e "SSH: $domen:80@$Login:$Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Aktif: $masaaktif Hari"
-echo -e "Exp Pada: $exp" 
+echo -e "Aktif Selama : $masaaktif Hari"  
+echo -e "Exp Jatuh pada : $exp"  
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mTerimakasih Sudah Order😘  \E[0m"
-echo -e "\E[40;1;37mGaransi Kami Pull sampe exp  \E[0m"
-echo -e "\E[40;1;37mBy t.me/Riswanvpnstore  \E[0m"
-echo -e "\E[40;1;37mGrup tele t.me/grupvpnriswan  \E[0m"
+echo -e "\E[40;1;37mTerimakasih Kak Sudah Order 😘  \E[0m"
+echo -e "\E[40;1;37mGaransi Jika Akun Masih Ada  \E[0m"
+echo -e "\E[40;1;37mJagan lupa Perpanjang Ya  \E[0m"
+echo -e "\E[40;1;37mTelegram @Riswanvpnstore  \E[0m"
+echo -e "\E[40;1;37mGrup tele @grupvpnriswan  \E[0m"
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
