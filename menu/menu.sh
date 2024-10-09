@@ -274,7 +274,7 @@ echo -e "${BIYellow} │  ${BIYellow}REBOOT    :  ${BIYellow}jam 02:00 malam${NC
 echo -e "${BIYellow} │  ${BIYellow}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIYellow}│      ${BIYellow}SSH${NC}    :$ressh"" ${BIYellow}NGINX${NC}    :$resngx"" ${BIYellow}XRAY${NC}   :$resv2r"" 
+echo -e " ${BIYellow}│      ${BIYellow}SSH${NC}    :$ressh"" ${BIYellow}NGINX${NC}    :$resngx"" ${BIYellow}XRAY${NC}   :$resv2r" 
 echo -e " ${BIYellow}│      ${BIYellow}STUNNEL${NC}:$resst" "${BIYellow}DROPBEAR${NC} :$resdbr" "${BIYellow}SSH-WS${NC} :$ressshws"
 echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIYellow}                ┌───────────────────────┐${NC}"
