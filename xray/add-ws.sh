@@ -45,9 +45,9 @@ v2ray-menu
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "limit Ip ( DEVIC ) : " limit
-read -p "limit Quota ( GB ) : " quota
-read -p "limit Bandwith ( GB ) :  " bw
+read -p "limit Ip login : " limit
+read -p "limit Quota GB : " quota
+read -p "limit Bandwith GB :  " bw
 read -p "Expired (days)	: " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmess$/a\### '"$user $exp"'\
@@ -110,7 +110,7 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m    🔹CREATE XRAY/VMESS ACCOUNT🔹       \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m    💰CREATE XRAY/VMESS ACCOUNT💰       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Domain      : ${domain}"
 echo -e "Remarks     : ${user}" | tee -a /etc/log-create-user.log
@@ -127,8 +127,8 @@ echo -e "\e[33m─────────────────────�
 echo -e "📂𝗜𝗠𝗣𝗢𝗥𝗧 𝗟𝗜𝗡𝗞 𝗧𝗘𝗦𝗟 𝗜𝗣𝗘𝗗 𝟴𝟬"  | tee -a /etc/log-create-user.log
 echo -e "${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Aktif: $masaaktif Hari"
-echo -e "Exp Pada: $exp" 
+echo -e "Aktif: $masaaktif Hari"  | tee -a /etc/log-create-user.log
+echo -e "Exp Pada: $exp"  | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37mTerimakasih kak Sudah Order😘  \E[0m"
 echo -e "\E[40;1;37mGaransi Jika akun masih ada  \E[0m"
