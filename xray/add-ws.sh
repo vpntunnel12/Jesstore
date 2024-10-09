@@ -125,7 +125,7 @@ echo -e "📂𝗜𝗠𝗣𝗢𝗥𝗧 𝗟𝗜𝗡𝗞 𝗫𝗟 𝗩𝗜𝗗𝗜
 echo -e "${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "📂𝗜𝗠𝗣𝗢𝗥𝗧 𝗟𝗜𝗡𝗞 𝗧𝗘𝗦𝗟 𝗜𝗣𝗘𝗗 𝟴𝟬" | tee -a /etc/log-create-user.log
-echo -e "${vmesslink3}" | tee -a /etc/log-create-user.log
+echo -e "${vmesslink3}" 
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif: $masaaktif Hari"  
 echo -e "Exp Pada: $exp"  
