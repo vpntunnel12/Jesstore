@@ -262,10 +262,10 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "${BIYellow} ┌═════════════════════════════════════════════════════┐${NC}"
 echo -e "\e[38;5;162m   \e[44;97;1m               KEYRIS VPNSTORE LITE                \033[0m \e[38;5;162m\e[0m"
-echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
-echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "${BIYellow} └═════════════════════════════════════════════════════┘${NC}"
+echo -e "${BIYellow} ┌═════════════════════════════════════════════════════┐${NC}"
 echo -e "${BIYellow} │  ${BIYellow}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
 echo -e "${BIYellow} │  ${BIYellow}NS        :  ${BIYellow}$(cat /root/nsdomain)${NC}"
 echo -e "${BIYellow} │  ${BIYellow}DOMAIN    :  ${BIYellow}$(cat /etc/xray/domain)${NC}"
@@ -274,7 +274,7 @@ echo -e "${BIYellow} │  ${BIYellow}SWAP RAM  :  ${BIYellow}$uram / $tram MB${N
 echo -e "${BIYellow} │  ${BIYellow}IP VPS    :  ${BIYellow}$IPVPS${NC}"
 echo -e "${BIYellow} │  ${BIYellow}REBOOT    :  ${BIYellow}jam 02:00 malam${NC}"
 echo -e "${BIYellow} │  ${BIYellow}TELEGRAM  :  ${BIYellow}@Riswanvpnstore${NC}"
-echo -e "${BIYellow} └─────────────────────────────────────────────────────┘${NC}"
+echo -e "${BIYellow} └═════════════════════════════════════════════════════┘${NC}"
 echo -e "${BIYellow} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e " ${BIYellow}│   ${BIYellow}SSH${NC}    :$ressh"" ${BIYellow}NGINX${NC}    :$resngx"" ${BIYellow}XRAY${NC}   :$resv2r"" ${BIYellow}TROJAN${NC}: $resv2r"
 echo -e " ${BIYellow}│   ${BIYellow}STUNNEL${NC}:$resst" "${BIYellow}DROPBEAR${NC} :$resdbr" "${BIYellow}SSH-WS${NC} :$ressshws"
