@@ -295,7 +295,7 @@ echo -e "${BIYellow} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${B
 echo -e "${BIYellow} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}14${BICyan}] UPDATE SCRIPT   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BIYellow} │${NC}"
 echo -e "${BIYellow} └═════════════════════════════════════════════════════┘${NC}"
 echo -e "${BIYellow} ┌═════════════════════════════════════════════════════┐${NC}"
-echo -e "${ForestGreen} │${ForestGreen} Version Script : $(cat /opt/.ver) Last Update ${ForestGreen}"
+echo -e "${BIYellow} │${BIYellow} Version Script : $(cat /opt/.ver) Last Update ${BIYellow}"
 echo -e "${BIYellow} │${BIYellow} Username       :\033[1;36m $Name \e[0m"
 echo -e "${BIYellow} │${BIYellow} Expired script :${BIYellow} $exp ${BIYellow}:${BIYellow} $exp2${BIYellow} Days${NC}"
 echo -e "${BIYellow} └═════════════════════════════════════════════════════┘${NC}"
