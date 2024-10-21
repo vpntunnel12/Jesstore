@@ -36,7 +36,7 @@ apt install python3 python3-pip -y
 apt install sqlite3 -y
 cd /media/
 rm -rf cybervpn
-wget https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/cybervpn.zip
+wget https://github.com/scriswan/premiumsc
 unzip cybervpn.zip
 cd cybervpn
 rm var.txt
@@ -50,7 +50,7 @@ clear
 rm -rf bot
 rm bot.*
 cd /usr/bin
-wget https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/bot.zip
+wget https://github.com/scriswan/premiumsc
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
@@ -75,7 +75,7 @@ ADMIN="$admin"
 BOT_TOKEN="$token"
 DOMAIN="$domain"
 DNS="$nsdom"
-PUB="7fbd1f8aa0abfe15a7903e837f78aba39cf61d36f183bd604daa2fe4ef3b7b59"
+PUB="4f1ff99416063a5f6a80babfbd13ce0050be959c"
 OWN="$user"
 SALDO="100000"
 END
