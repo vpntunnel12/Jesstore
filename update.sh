@@ -1,14 +1,4 @@
 #!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » Riswanvpn
-# Email      » Riswanvpn@gmail.com
-# telegram   » https://t.me/Riswanvpn
-
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Riswanvpn
-
-GitUser="Riswanvpn"
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
 exit 1
@@ -19,7 +9,7 @@ exit 1
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version )
+ver=$( curl https://raw.githubusercontent.com/vermiliion/api/main/version )
 clear
 line=$(cat /etc/line)
 below=$(cat /etc/below)
@@ -31,216 +21,159 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(OLD VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/vermiliion/api/main/version | grep $version )
 if [ $version = $new_version ]; then
 sts="${Info2}"
 else
 sts="${Error}"
 fi
 clear
-echo ""
-figlet 'UPDATE' | lolcat
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$back_text                 \e[30m[\e[$box CCHECK NEW UPDATE\e[30m ]                   \e[m"
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$below VVERSION NOW >> $Info1"
-echo -e "   \e[$below SSTATUS UPDATE >> $sts"
-echo -e ""
-echo -e "       \e[1;31mWould you like to proceed?\e[0m"
-echo ""
-echo -e "       \e[0;32m[ Select Option ]\033[0m"
-echo -e "      \e[$number [ 1 ]\e[m \e[$below CCheck Script Update Now\e[m"
-echo -e "      \e[$number [ x ]\e[m \e[$below BBack To Menu\e[m"
-echo -e ""
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "\e[$line"
-read -p "Please Choose 1 or x : " option2
-case $option2 in
-1)
-version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version | grep $version )
-if [ $version = $new_version ]; then
-clear
-echo ""
-echo -e "\e[1;31mChecking New Version, Please Wait...!\e[m"
-sleep 3
-clear
-echo -e "\e[1;31mUpdate Not Available\e[m"
-echo ""
-clear
-sleep 1
-echo -e "\e[1;36mYou Have The Latest Version\e[m"
-echo -e "\e[1;31mThankyou.\e[0m"
-sleep 2
-update
-fi
-clear
-echo -e "\e[1;31mUpdate Available Now..\e[m"
-echo -e ""
-sleep 2
-echo -e "\e[1;36mStart Update For New Version, Please Wait..\e[m"
-sleep 2
-clear
-echo -e "\e[0;32mGetting New Version Script..\e[0m"
-sleep 1
-echo ""
+loading() {
+  local pid=$1
+  local delay=0.1
+  local spin='-\|/'
+
+  while ps -p "$pid" > /dev/null; do
+    printf "[%c] " "$spin"
+    spin=${spin#?}${spin%"${spin#?}"}
+    sleep $delay
+    printf "\b\b\b\b\b\b"
+  done
+
+  printf "    \b\b\b\b"
+}
+
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
-chmod +x run-update
-echo ""
+sleep 2 & loading $! & wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/usernew.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/auto-reboot.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/restart.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/tendang.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/clearcache.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/running "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/running.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/speedtest_cli.py"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-vless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-vmess.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-trojan.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-ssh.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-backup.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu1.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu2.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu3 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu3.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu4 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu4.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu5 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu5.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-webmin.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/xp.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/add-host.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/certv2ray.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-set.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/about "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/about.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-backup.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/trial.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/usernew.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-tr.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-tr.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-tr.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialtrojan.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-tr.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-ws.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-ws.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-ws.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-ws.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialvmess.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-vless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-vless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-vless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-vless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialvless.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-trial.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu-theme.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot2.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/add-bot-bersama "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot-bersama.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/bot-bansos "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot-bansos.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/stop-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/stop-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot2.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/restart-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/restart-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot2.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/hapus-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/hapus-bot.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/del-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/del-bot2.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
+sleep 2 & loading $! & wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-bot.sh"
+sleep 2 & loading $! & chmod +x /usr/bin/usernew
+sleep 2 & loading $! & chmod +x /usr/bin/auto-reboot
+sleep 2 & loading $! & chmod +x /usr/bin/restart
+sleep 2 & loading $! & chmod +x /usr/bin/tendang
+sleep 2 & loading $! & chmod +x /usr/bin/clearcache
+sleep 2 & loading $! & chmod +x /usr/bin/running
+sleep 2 & loading $! & chmod +x /usr/bin/speedtest
+sleep 2 & loading $! & chmod +x /usr/bin/menu-vless
+sleep 2 & loading $! & chmod +x /usr/bin/menu-vmess
+sleep 2 & loading $! & chmod +x /usr/bin/menu-theme
+sleep 2 & loading $! & chmod +x /usr/bin/menu1
+sleep 2 & loading $! & chmod +x /usr/bin/menu2
+sleep 2 & loading $! & chmod +x /usr/bin/menu3
+sleep 2 & loading $! & chmod +x /usr/bin/menu4
+sleep 2 & loading $! & chmod +x /usr/bin/menu5
+sleep 2 & loading $! & chmod +x /usr/bin/menu-trojan
+sleep 2 & loading $! & chmod +x /usr/bin/menu-ssh
+sleep 2 & loading $! & chmod +x /usr/bin/menu-backup
+sleep 2 & loading $! & chmod +x /usr/bin/menu
+sleep 2 & loading $! & chmod +x /usr/bin/menu-webmin
+sleep 2 & loading $! & chmod +x /usr/bin/xp
+sleep 2 & loading $! & chmod +x /usr/bin/update
+sleep 2 & loading $! & chmod +x /usr/bin/add-host
+sleep 2 & loading $! & chmod +x /usr/bin/certv2ray
+sleep 2 & loading $! & chmod +x /usr/bin/menu-set
+sleep 2 & loading $! & chmod +x /usr/bin/about
+sleep 2 & loading $! & chmod +x /usr/bin/add4
+sleep 2 & loading $! & chmod +x /usr/bin/menu-backup
+sleep 2 & loading $! & chmod +x /usr/bin/trial
+sleep 2 & loading $! & chmod +x /usr/bin/usernew
+sleep 2 & loading $! & chmod +x /usr/bin/add-tr
+sleep 2 & loading $! & chmod +x /usr/bin/del-tr
+sleep 2 & loading $! & chmod +x /usr/bin/cek-tr
+sleep 2 & loading $! & chmod +x /usr/bin/trialtrojan
+sleep 2 & loading $! & chmod +x /usr/bin/renew-tr
+sleep 2 & loading $! & chmod +x /usr/bin/add-ws
+sleep 2 & loading $! & chmod +x /usr/bin/del-ws
+sleep 2 & loading $! & chmod +x /usr/bin/cek-ws
+sleep 2 & loading $! & chmod +x /usr/bin/renew-ws
+sleep 2 & loading $! & chmod +x /usr/bin/trialvmess
+sleep 2 & loading $! & chmod +x /usr/bin/add-vless
+sleep 2 & loading $! & chmod +x /usr/bin/del-vless
+sleep 2 & loading $! & chmod +x /usr/bin/cek-vless
+sleep 2 & loading $! & chmod +x /usr/bin/renew-vless
+sleep 2 & loading $! & chmod +x /usr/bin/trialvless
+sleep 2 & loading $! & chmod +x /usr/bin/menu-trial
+sleep 2 & loading $! & chmod +x /usr/bin/bot2
+sleep 2 & loading $! & chmod +x /usr/bin/add-bot
+sleep 2 & loading $! & chmod +x /usr/bin/add-bot-bersama
+sleep 2 & loading $! & chmod +x /usr/bin/bot-bansos
+sleep 2 & loading $! & chmod +x /usr/bin/stop-bot
+sleep 2 & loading $! & chmod +x /usr/bin/stop-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/restart-bot
+sleep 2 & loading $! & chmod +x /usr/bin/restart-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/hapus-bot
+sleep 2 & loading $! & chmod +x /usr/bin/del-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/update
+sleep 2 & loading $! & sed -i 's/\r$//' /usr/bin/menu-bot
+sleep 2 & loading $! & chmod +x /usr/bin/menu-bot
+
+echo
+
+# Loading saat sleep
+sleep 2 & loading $!
+
 clear
-echo -e "\e[0;32mPlease Wait...!\e[0m"
-sleep 6
+
+
+sleep 0.6 & loading $!
 clear
-echo ""
-echo -e "\e[0;32mNew Version Downloading started!\e[0m"
-sleep 2
-cd /usr/bin
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/usernew.sh"
-wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/auto-reboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/restart.sh"
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/tendang.sh"
-wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/clearcache.sh"
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/running.sh"
-wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/speedtest_cli.py"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-trojan.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-ssh.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu.sh"
-wget -q -O /usr/bin/menu1 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu1.sh"
-wget -q -O /usr/bin/menu2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu2.sh"
-wget -q -O /usr/bin/menu3 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu3.sh"
-wget -q -O /usr/bin/menu4 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu4.sh"
-wget -q -O /usr/bin/menu5 "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu5.sh"
-wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-webmin.sh"
-wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/xp.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
-wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/add-host.sh"
-wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/certv2ray.sh"
-wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-set.sh"
-wget -q -O /usr/bin/about "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/about.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/trial.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh/usernew.sh"
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-tr.sh"
-wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-tr.sh"
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-tr.sh"
-wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialtrojan.sh"
-wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-tr.sh"
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-ws.sh"
-wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-ws.sh"
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-ws.sh"
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-ws.sh"
-wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialvmess.sh"
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/add-vless.sh"
-wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/del-vless.sh"
-wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/cek-vless.sh"
-wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/renew-vless.sh"
-wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialvless.sh"
-wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-trial.sh"
-wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu-theme.sh"
-wget -q -O /usr/bin/bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot2.sh"
-wget -q -O /usr/bin/add-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot.sh"
-wget -q -O /usr/bin/add-bot-bersama "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot-bersama.sh"
-wget -q -O /usr/bin/bot-bansos "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot-bansos.sh"
-wget -q -O /usr/bin/stop-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot.sh"
-wget -q -O /usr/bin/stop-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot2.sh"
-wget -q -O /usr/bin/restart-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot.sh"
-wget -q -O /usr/bin/restart-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot2.sh"
-wget -q -O /usr/bin/hapus-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/hapus-bot.sh"
-wget -q -O /usr/bin/del-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/del-bot2.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
-wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-bot.sh"
-chmod +x /usr/bin/usernew
-chmod +x /usr/bin/auto-reboot
-chmod +x /usr/bin/restart
-chmod +x /usr/bin/tendang
-chmod +x /usr/bin/clearcache
-chmod +x /usr/bin/running
-chmod +x /usr/bin/speedtest
-chmod +x /usr/bin/menu-vless
-chmod +x /usr/bin/menu-vmess
-chmod +x /usr/bin/menu-theme
-chmod +x /usr/bin/menu1
-chmod +x /usr/bin/menu2
-chmod +x /usr/bin/menu3
-chmod +x /usr/bin/menu4
-chmod +x /usr/bin/menu5
-chmod +x /usr/bin/menu-trojan
-chmod +x /usr/bin/menu-ssh
-chmod +x /usr/bin/menu-backup
-chmod +x /usr/bin/menu
-chmod +x /usr/bin/menu-webmin
-chmod +x /usr/bin/xp
-chmod +x /usr/bin/update
-chmod +x /usr/bin/add-host
-chmod +x /usr/bin/certv2ray
-chmod +x /usr/bin/menu-set
-chmod +x /usr/bin/about
-chmod +x /usr/bin/add4
-chmod +x /usr/bin/menu-backup
-chmod +x /usr/bin/trial
-chmod +x /usr/bin/usernew
-chmod +x /usr/bin/add-tr
-chmod +x /usr/bin/del-tr
-chmod +x /usr/bin/cek-tr
-chmod +x /usr/bin/trialtrojan
-chmod +x /usr/bin/renew-tr
-chmod +x /usr/bin/add-ws
-chmod +x /usr/bin/del-ws
-chmod +x /usr/bin/cek-ws
-chmod +x /usr/bin/renew-ws
-chmod +x /usr/bin/trialvmess
-chmod +x /usr/bin/add-vless
-chmod +x /usr/bin/del-vless
-chmod +x /usr/bin/cek-vless
-chmod +x /usr/bin/renew-vless
-chmod +x /usr/bin/trialvless
-chmod +x /usr/bin/menu-trial
-chmod +x /usr/bin/bot2
-chmod +x /usr/bin/add-bot
-chmod +x /usr/bin/add-bot-bersama
-chmod +x /usr/bin/bot-bansos
-chmod +x /usr/bin/stop-bot
-chmod +x /usr/bin/stop-bot2
-chmod +x /usr/bin/restart-bot
-chmod +x /usr/bin/restart-bot2
-chmod +x /usr/bin/hapus-bot
-chmod +x /usr/bin/del-bot2
-chmod +x /usr/bin/update
-sed -i 's/\r$//' /usr/bin/menu-bot
-chmod +x /usr/bin/menu-bot
-clear
-echo -e ""
-echo -e "\e[0;32mDownloaded successfully!\e[0m"
-echo ""
-ver=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version )
-sleep 1
-echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
-echo ""
-sleep 2
-echo -e "\e[0;32mPatching... OK!\e[0m"
-sleep 1
-echo ""
-echo -e "\e[0;32mSucces Update Script For New Version\e[0m"
 cd
-echo "$ver" > /home/ver
 rm -f update.sh
 clear
-echo ""
-echo -e "\033[0;34m----------------------------------------\033[0m"
-echo -e "\E[44;1;39m            SCRIPT UPDATED              \E[0m"
-echo -e "\033[0;34m----------------------------------------\033[0m"
-echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+echo -e "Downloaded successfully!!!"
+read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu
-;;
-x)
-clear
-echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
-menu
-;;
-esac
