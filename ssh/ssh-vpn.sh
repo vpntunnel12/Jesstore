@@ -247,6 +247,18 @@ wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/scriswan/premium
 wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/scriswan/premiumsc/main/user-lock.sh"
 wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/scriswan/premiumsc/main/user-unlock.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
+wget -q -O /usr/bin/bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot2.sh"
+wget -q -O /usr/bin/add-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot.sh"
+wget -q -O /usr/bin/add-bot-bersama "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot-bersama.sh"
+wget -q -O /usr/bin/bot-bansos "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot-bansos.sh"
+wget -q -O /usr/bin/stop-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot.sh"
+wget -q -O /usr/bin/stop-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot2.sh"
+wget -q -O /usr/bin/restart-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot.sh"
+wget -q -O /usr/bin/restart-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot2.sh"
+wget -q -O /usr/bin/hapus-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/hapus-bot.sh"
+wget -q -O /usr/bin/del-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/del-bot2.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
+wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-bot.sh"
 chmod +x xolpanel
 chmod +x menu
 chmod +x menu-trial
@@ -298,6 +310,19 @@ chmod +x /usr/bin/xolpanel
 chmod +x /usr/bin/lock
 chmod +x /usr/bin/unlock
 chmod +x /usr/bin/update
+chmod +x /usr/bin/bot2
+chmod +x /usr/bin/add-bot
+chmod +x /usr/bin/add-bot-bersama
+chmod +x /usr/bin/bot-bansos
+chmod +x /usr/bin/stop-bot
+chmod +x /usr/bin/stop-bot2
+chmod +x /usr/bin/restart-bot
+chmod +x /usr/bin/restart-bot2
+chmod +x /usr/bin/hapus-bot
+chmod +x /usr/bin/del-bot2
+chmod +x /usr/bin/update
+sed -i 's/\r$//' /usr/bin/menu-bot
+chmod +x /usr/bin/menu-bot
 cd
 cat > /etc/cron.d/re_otm <<-END
 SHELL=/bin/sh
