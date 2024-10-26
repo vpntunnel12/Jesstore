@@ -141,6 +141,18 @@ wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/scriswan/prem
 wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/scriswan/premiumsc/main/xray/trialvless.sh"
 wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-trial.sh"
 wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/scriswan/premiumsc/main/theme/menu-theme.sh"
+wget -q -O /usr/bin/bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot2.sh"
+wget -q -O /usr/bin/add-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot.sh"
+wget -q -O /usr/bin/add-bot-bersama "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/add-bot-bersama.sh"
+wget -q -O /usr/bin/bot-bansos "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/bot-bansos.sh"
+wget -q -O /usr/bin/stop-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot.sh"
+wget -q -O /usr/bin/stop-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/stop-bot2.sh"
+wget -q -O /usr/bin/restart-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot.sh"
+wget -q -O /usr/bin/restart-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/restart-bot2.sh"
+wget -q -O /usr/bin/hapus-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/hapus-bot.sh"
+wget -q -O /usr/bin/del-bot2 "https://raw.githubusercontent.com/scriswan/premiumsc/main/bot/del-bot2.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh"
+wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/scriswan/premiumsc/main/menu/menu-bot.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
@@ -187,6 +199,19 @@ chmod +x /usr/bin/cek-vless
 chmod +x /usr/bin/renew-vless
 chmod +x /usr/bin/trialvless
 chmod +x /usr/bin/menu-trial
+chmod +x /usr/bin/bot2
+chmod +x /usr/bin/add-bot
+chmod +x /usr/bin/add-bot-bersama
+chmod +x /usr/bin/bot-bansos
+chmod +x /usr/bin/stop-bot
+chmod +x /usr/bin/stop-bot2
+chmod +x /usr/bin/restart-bot
+chmod +x /usr/bin/restart-bot2
+chmod +x /usr/bin/hapus-bot
+chmod +x /usr/bin/del-bot2
+chmod +x /usr/bin/update
+sed -i 's/\r$//' /usr/bin/menu-bot
+chmod +x /usr/bin/menu-bot
 clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
