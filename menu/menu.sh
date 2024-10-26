@@ -312,37 +312,8 @@ case $opt in
 7) clear ; menu-backup ;;
 8) clear ; add-host ;;
 9) clear ; running ;;
-10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; 
-echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
-echo -e " ${w} $NC${f}                   BOT MANAGER                $NC${z} $NC"
-echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
-echo -e "  ${ORANGE}[1].${NC}\033[0;36m Install BOT CYBERVPN${NC}"
-echo -e "  ${ORANGE}[2].${NC}\033[0;36m Restart BOT CYBERVPN${NC}"
-echo -e "  ${ORANGE}[3].${NC}\033[0;36m Stop BOT CYBERVPN${NC}"
-echo -e "  ${ORANGE}[4].${NC}\033[0;36m Uninstall BOT CYBERVPN${NC}"
-echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
-echo -e "  ${ORANGE}[x].${NC}\033[0;36m Exit${NC}"
-echo -e " ${w}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
-read -p "  Select From Options [ 1 - 5 or x] : " menu
-case $menu in
-1) clear ;
-    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/bot2.sh && chmod +x bot2.sh && ./bot2.sh
-    ;;
-2) clear ;
-    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/restart-bot.sh && chmod +x restart-bot.sh && ./restart-bot.sh
-    ;;
-3) clear ;
-    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/stop-bot.sh && chmod +x stop-bot.sh && ./stop-bot.sh
-    ;;
-4) clear ;
-    wget -q https://raw.githubusercontent.com/Lite-VPN/v3/main/botku/del-bot.sh && chmod +x del-bot.sh && ./del-bot.sh
-    ;;
-x)
-    menu
-    ;;
-esac
-;;
+10) clear ; wget https://raw.githubusercontent.com/Rerechan02/UDP/main/udp.sh && chmod +x udp.sh && ./udp.sh ;;
+11) clear ; menu-bot ;;
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
