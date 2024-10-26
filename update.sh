@@ -9,7 +9,7 @@ exit 1
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/vermiliion/api/main/version )
+ver=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version )
 clear
 line=$(cat /etc/line)
 below=$(cat /etc/below)
@@ -21,7 +21,7 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(OLD VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/vermiliion/api/main/version | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version | grep $version )
 if [ $version = $new_version ]; then
 sts="${Info2}"
 else
