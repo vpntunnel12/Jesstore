@@ -14,11 +14,8 @@ masukan perintah ctrl + c enter
 ```
 wget https://raw.githubusercontent.com/gemilangvip/autoscript/main/files/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
 ```
-## UPDATE SC MANUAL 1
+## UPDATE Script
 ```
-wget https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh
+wget https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh && chmod +x update.sh && ./update.sh
 ```
-## UPDATE SC MANUAL 2
-```
-chmod +x update.sh && ./update.sh
-```
+Mod BY LITE X RISWAN
