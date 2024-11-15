@@ -263,7 +263,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐\033[0m"
-echo -e "${BICyan}   \e[44;97;1m               ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄♣️        \033[0m \e[38;5;162m\e[0m"
+echo -e "${BICyan}\e[44;97;1m               ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄♣️           \033[0m \e[38;5;162m\e[0m"
 echo -e "${BICyan}└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘\033[0m"
 echo -e "\e[33m┌━━━━━━━━━━━━━━━━━━🌀INFO VPS ANDA🌀━━━━━━━━━━━━━━━━━━┐\033[0m"
 echo -e "\e[33m│  ${BICyan}☠️OS        :  ${BICyan}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
@@ -284,7 +284,7 @@ echo -e "${BICyan}                ${BICyan}SSH    TOTAL ACCOUNT : $ssh1$NC"
 echo -e "${BICyan}                ${BICyan}VLESS  TOTAL ACCOUNT : $vla$NC"  
 echo -e "${BICyan}                ${BICyan}VMESS  TOTAL ACCOUNT : $vma$NC"
 echo -e "${BICyan}                ${BICyan}TROJAN TOTAL ACCOUNT : $tra$NC"  
-echo -e "${BICyan}   \e[44;97;1m               ♣️LIST MENU♣️                    \033[0m \e[38;5;162m\e[0m"
+echo -e "${BICyan}\e[44;97;1m               ♣️LIST MENU SCRIPTS RZ♣️               \033[0m \e[38;5;162m\e[0m"
 echo -e "\e[33m┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐\033[0m"
 echo -e "\e[33m│  ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}08${BICyan}] ADD-HOST        ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BIYellow} │${NC}"
 echo -e "\e[33m│  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}09${BICyan}] RUNNING         ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BIYellow} │${NC}"
