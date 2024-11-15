@@ -279,7 +279,7 @@ echo -e "\e[33m┌━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[33m│   ${BICyan}SSH${NC}    :$ressh"" ${BICyan}NGINX${NC}    :$resngx"" ${BICyan}XRAY${NC}   :$resv2r"" ${BICyan}TROJAN${NC}: $resv2r"
 echo -e "\e[33m│   ${BICyan}STUNNEL${NC}:$resst" "${BICyan}DROPBEAR${NC} :$resdbr" "${BICyan}SSH-WS${NC} :$ressshws"
 echo -e "\e[33m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘\033[0m"
-echo -e "${BICyan}   \e[44;97;1m               ♣️INFO ACCOUNT PREMIUM♣️                  \033[0m \e[38;5;162m\e[0m"
+echo -e "${BICyan}\e[44;97;1m               ♣️INFO ACCOUNT PREMIUM♣️               \033[0m \e[38;5;162m\e[0m"
 echo -e "${BICyan}                ${BICyan}SSH    TOTAL ACCOUNT : $ssh1$NC" 
 echo -e "${BICyan}                ${BICyan}VLESS  TOTAL ACCOUNT : $vla$NC"  
 echo -e "${BICyan}                ${BICyan}VMESS  TOTAL ACCOUNT : $vma$NC"
