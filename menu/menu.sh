@@ -294,7 +294,7 @@ echo -e "\e[33m│  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYello
 echo -e "\e[33m│  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}13${BICyan}] MENU THEME      ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BIYellow} │${NC}"
 echo -e "\e[33m│  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BICyan}  [${BIWhite}14${BICyan}] UPDATE SCRIPT   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "${BIYellow} │${NC}"
 echo -e "\e[33m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘\033[0m"
-echo -e "${BICyan}   \e[44;97;1m               ♣️LIST MENU♣️        \033[0m \e[38;5;162m\e[0m"
+echo -e "${BICyan}   \e[44;97;1m               ♣️INFO EXP SCRIPTS♣️        \033[0m \e[38;5;162m\e[0m"
 echo -e "\e[33m┌━━━━━━━━━━━━━━━━━━🌀INFO SCRIPT EXP🌀━━━━━━━━━━━━━━━━┐\033[0m"
 echo -e "\e[33m│${BICyan} Version Script : $(cat /opt/.ver) Last Update ${BICyan}"
 echo -e "\e[33m│${BICyan} Username       :\033[1;36m $Name \e[0m"
