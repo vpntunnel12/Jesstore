@@ -192,7 +192,7 @@ CHATID="5521096873"
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Instalasi Autoscript-vvip V2.5
+TEXT="INSTAL SCRIPTS R2 V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Username   :</code> <code>$Name</code>
 <code>Domain     :</code> <code>$domain</code>
@@ -202,7 +202,7 @@ TEXT="Instalasi Autoscript-vvip V2.5
 <code>Location   :</code> <code>$CITY</code>
 <code>Exp Sc.    :</code> <code>$Exp</code>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-By Admin @Riswanvpnstore
+By Admin @R23_VPNSTORE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <i>Notifications Automatic From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/R23_VPNSTORE"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
