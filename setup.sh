@@ -128,40 +128,74 @@ echo ""
 wget -q https://raw.githubusercontent.com/scriswan/premiumsc/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-echo " "
 clear
-echo -e "$green━━━━━━━━━━┏┓━━━━━━━━━━━━━━━━━━━━━━━━┏┓━━━━━━━━━━━$NC"
-echo -e "$green━━━━━━━━━┏┛┗┓━━━━━━━━━━━━━━━━━━━━━━┏┛┗┓━━━━━━━━━━$NC"
-echo -e "$green┏━━┓━┏┓┏┓┗┓┏┛┏━━┓━━━━┏━━┓┏━━┓┏┓┏━┓━┗┓┏┛┏┓┏━┓━┏━━┓$NC"
-echo -e "$green┗━┓┃━┃┃┃┃━┃┃━┃┏┓┃━━━━┃┏┓┃┃┏┓┃┣┫┃┏┓┓━┃┃━┣┫┃┏┓┓┃┏┓┃$NC"
-echo -e "$green┃┗┛┗┓┃┗┛┃━┃┗┓┃┗┛┃━━━━┃┗┛┃┃┗┛┃┃┃┃┃┃┃━┃┗┓┃┃┃┃┃┃┃┗┛┃$NC"
-echo -e "$green┗━━━┛┗━━┛━┗━┛┗━━┛━━━━┃┏━┛┗━━┛┗┛┗┛┗┛━┗━┛┗┛┗┛┗┛┗━┓┃$NC"
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━┃┃━━━━━━━━━━━━━━━━━━━━━━┏━┛┃$NC"
-echo -e "$green━━━━━━━━━━━━━━━━━━━━━┗┛━━━━━━━━━━━━━━━━━━━━━━┗━━┛$NC"
-    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
-    echo -e "$BGreen 2. Use Domain Random / Gunakan Domain Random $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
-	if test $dns -eq 1; then
-    read -rp " Enter Your Domain / masukan domain : " dom
-    read -rp " Input ur ns-domain : " -e nsdomen
+echo -e ""
+echo -e "------------------------------------------------------------"
+echo -e "SETUP DOMAIN VPS"                                                
+echo -e "------------------------------------------------------------"
+echo -e " 1. Choose Your Own Domain / Gunakan Domain Sendiri"
+echo -e " 2. Use Domain Random / Gunakan Domain Random"
+echo -e "------------------------------------------------------------"
+
+# Loop untuk memastikan input 1 atau 2 yang valid
+while true; do
+    read -rp "Input 1 or 2 / pilih 1 atau 2: " dns
+    if [[ "$dns" == "1" || "$dns" == "2" ]]; then
+        break
+    else
+        echo -e "${red}Invalid input, please choose 1 or 2.${NC}"
+    fi
+done
+
+# Opsi 1: Gunakan domain sendiri
+if [[ "$dns" -eq 1 ]]; then
+    read -rp "Enter Your Domain / Masukan Domain: " dom
+    read -rp "Input your NS-Domain / Masukan NS-Domain: " -e nsdomen
+
+    # Simpan domain ke berbagai file konfigurasi
     echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
     echo "$dom" > /root/scdomain
-	echo "$dom" > /etc/xray/scdomain
-	echo "$dom" > /etc/xray/domain
-	echo "$dom" > /etc/v2ray/domain
-	echo "$dom" > /root/domain
-        echo "$nsdomen" > /etc/xray/nsdomain
-        echo "$nsdomen" > /root/nsdomain
-	elif test $dns -eq 2; then
+    echo "$dom" > /etc/xray/scdomain
+    echo "$dom" > /etc/xray/domain
+    echo "$dom" > /etc/v2ray/domain
+    echo "$dom" > /root/domain
+    echo "$nsdomen" > /etc/xray/nsdomain
+    echo "$nsdomen" > /root/nsdomain
+
+    echo -e "${green}Domain setup successfully.${NC}"
+
+# Opsi 2: Gunakan domain acak
+elif [[ "$dns" -eq 2 ]]; then
     clear
-    apt install jq curl -y
-    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
+    echo -e "${green}Installing required packages...${NC}"
+    
+    # Instal paket yang diperlukan, jika belum ada
+    apt update && apt install -y jq curl
+    
+    # Cek apakah variabel CDN diatur dengan benar
+    if [[ -z "$CDN" ]]; then
+        echo -e "${red}CDN URL is not set. Please set the CDN variable before proceeding.${NC}"
+        exit 1
+    fi
+
+    # Unduh skrip untuk domain acak
+    wget -q -O /root/cf "${CDN}/cf"
+    if [[ $? -ne 0 ]]; then
+        echo -e "${red}Failed to download cf script. Please check your CDN URL.${NC}"
+        exit 1
+    fi
+
+    # Beri izin eksekusi pada skrip
     chmod +x /root/cf
+
+    # Jalankan skrip domain acak
     bash /root/cf | tee /root/install.log
-    print_success " Domain Random Done"
+    if [[ $? -eq 0 ]]; then
+        echo -e "${green}Domain random setup completed successfully.${NC}"
+    else
+        echo -e "${red}Failed to set up random domain. Check /root/install.log for details.${NC}"
+        exit 1
+    fi
 fi
 # Inisialisasi
 MYIP=$(curl -sS ipv4.icanhazip.com)
