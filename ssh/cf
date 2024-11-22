@@ -81,7 +81,7 @@ display_info() {
 
 # Simpan ke file konfigurasi dan direktori yang tepat
 save_configuration() {
-  sudo echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
+  sudo echo "IP=$SUB_DOMAIN" > /var/lib/SIJA/ipvps.conf
   sudo echo "$SUB_DOMAIN" > /root/domain
   sudo echo "$NS_DOMAIN" > /root/nsdomain
   sudo echo "$SUB_DOMAIN" > /etc/xray/domain
