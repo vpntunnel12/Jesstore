@@ -25,13 +25,12 @@ mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/scriswan/premiumsc/main/botol/kyt3.zip
-unzip kyt3.zip
+wget https://raw.githubusercontent.com/scriswan/premiumsc/main/botol/kyt.zip
+unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
 
 
-echo ""
 echo ""
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[44;97;1m        ADD BOT CREATE PRIVATE          $NC"
@@ -150,6 +149,7 @@ echo "Done"
 echo "Your Data Bot"
 echo -e "==============================="
 echo "Token Bot         : $bottoken"
+echo "Admin          : $admin"
 echo "Domain        : $domain"
 echo -e "==============================="
 echo "Setting done"
