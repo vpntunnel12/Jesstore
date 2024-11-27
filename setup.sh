@@ -140,21 +140,18 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$green━━━━━━━━━━━━━━━━━━━━━┗┛━━━━━━━━━━━━━━━━━━━━━━┗━━┛$NC"
     echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
-    echo -e "$BGreen 2. Use Domain Random / Gunakan Domain Random $NC"
+    echo -e "$BGreen 1. Gunakan Domain peribadi $NC"
+    echo -e "$BGreen 2. Gunakan Domain Random $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
 	if test $dns -eq 1; then
     read -rp " Enter Your Domain / masukan domain : " dom
-    read -rp " Input ur ns-domain : " -e nsdomen
     echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
     echo "$dom" > /root/scdomain
 	echo "$dom" > /etc/xray/scdomain
 	echo "$dom" > /etc/xray/domain
 	echo "$dom" > /etc/v2ray/domain
 	echo "$dom" > /root/domain
-        echo "$nsdomen" > /etc/xray/nsdomain
-        echo "$nsdomen" > /root/nsdomain
 	elif test $dns -eq 2; then
     clear
     apt install jq curl -y
