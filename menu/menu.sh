@@ -267,7 +267,6 @@ echo -e "${BICyan}  \e[44;97;1m                 ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒
 echo -e "${BICyan}└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘\033[0m"
 echo -e "\e[33m┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐\033[0m"
 echo -e "\e[33m│  ${BICyan}☠️OS        :  ${BICyan}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )${NC}"
-echo -e "\e[33m│  ${BICyan}☠️NS        :  ${BICyan}$(cat /root/nsdomain)${NC}"
 echo -e "\e[33m│  ${BICyan}☠️DOMAIN    :  ${BICyan}$(cat /etc/xray/domain)${NC}"
 echo -e "\e[33m│  ${BICyan}☠️RAM & CPU :  ${BICyan}$totalram MB / $cpu_usage${NC}"
 echo -e "\e[33m│  ${BICyan}☠️SWAP RAM  :  ${BICyan}$uram / $tram MB${NC}"
