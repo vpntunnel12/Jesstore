@@ -19,9 +19,5 @@ wget https://raw.githubusercontent.com/gemilangvip/autoscript/main/files/udp-cus
 ```
 wget https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh && chmod +x update.sh && ./update.sh
 ```
-# Unique-Filtration-System
-Its my first website and I make this for my locality Client. In website I used HTML, CSS and Javascript
-
-https://github.com/scriswan/premiumsc/blob/c7e231478bc908c84e8312e31f6047bc6e8ac499/Pic.jpg
 
 Mod BY RISWAN VPNSTORE
