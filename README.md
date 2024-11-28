@@ -19,4 +19,6 @@ wget https://raw.githubusercontent.com/gemilangvip/autoscript/main/files/udp-cus
 ```
 wget https://raw.githubusercontent.com/scriswan/premiumsc/main/update.sh && chmod +x update.sh && ./update.sh
 ```
+## pic.jpg
+
 Mod BY RISWAN VPNSTORE
