@@ -35,8 +35,9 @@ echo ""
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[44;97;1m        ADD BOT CREATE PRIVATE          $NC"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-read -e -p "ID Telegram Admin :" admin
-echo -e BOT_TOKEN='"'$7492113299:AAHywOxMwpR6EwlSy_HNoNiotPuXWeN_YCI'"' >> /usr/bin/kyt/var.txt
+read -e -p "Bot Token : " bottoken
+read -e -p "ID Telegram :" admin
+echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
 echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
 echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
 echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
