@@ -276,7 +276,7 @@ echo -e "${BICyan}│ SWAP RAM  : ${BIWhite}$(free -h | grep Swap | awk '{print 
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BIYellow}🔧 Service Status:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "${BICyan}│ SSH       : ${BIGreen}Active${NC}" echo -e "${BICyan}    ➤ ${BIGreen}SSH ACCOUNTS     ${NC}: ${BIBlue}$ssh1${NC}"
+echo -e "${BICyan}│ SSH       : ${BIGreen}Active${NC}"  "${BICyan} ➤ ${BIGreen}SSH ACCOUNTS ${NC}: ${BIBlue}$ssh1${NC}"
 echo -e "${BICyan}│ NGINX     : ${BIGreen}Running${NC}"
 echo -e "${BICyan}│ XRAY      : ${BIGreen}Active${NC}"
 echo -e "${BICyan}│ TROJAN    : ${BIGreen}Running${NC}"
