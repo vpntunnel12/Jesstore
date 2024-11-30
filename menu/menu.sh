@@ -281,7 +281,7 @@ echo -e "║${BICyan} SSH-WS    : ${BIGreen}$ressshws""${NC}"     "${BICyan}    
 echo -e "║${BICyan} NGINX     : ${BIGreen}$resngx""${NC}"    "${BICyan}     ➤ ${BIGreen}VLESS ACCOUNTS  ${NC}: ${BIBlue}$vla${NC}"
 echo -e "║${BICyan} XRAY      : ${BIGreen}$resv2r"" ${NC}"     "${BICyan}    ➤ ${BIGreen}VMESS ACCOUNTS  ${NC}: ${BIBlue}$vma${NC}"
 echo -e "║${BICyan} TROJAN    : ${BIGreen}$resv2r""${NC}"    "${BICyan}     ➤ ${BIGreen}TROJAN ACCOUNTS ${NC}: ${BIBlue}$tra${NC}"
-echo -e "║${BICyan} STUNNEL   : ${BIGreen}$resst""${NC}"
+echo -e "║${BICyan} STUNNEL   : ${BIGreen}$resst""${NC}"      "${BICyan}     ➤ ${BIGreen}Kontak Owner: wa.me/6285888801241 ${NC}"
 echo -e "║${BICyan} DROPBEAR  : ${BIGreen}$resdbr""${NC}"
 echo -e "║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
