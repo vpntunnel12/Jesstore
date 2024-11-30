@@ -263,7 +263,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}┃        ${BIGreen}  ♣️ 𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓  ♣️${BICyan}┃${NC}"
+echo -e "${BICyan}┃        ${BIGreen}    ♣️ 𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓 ♣️${BICyan}┃${NC}"
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "${BIYellow}💻 System Information:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
