@@ -263,7 +263,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}┃        ${BIGreen}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓♣️${BICyan}┃${NC}"
+echo -e "${BICyan}┃        ${BIWhite}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓♣️${BICyan}┃${NC}"
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "║${BIYellow}💻 System Information:${NC}"
 echo -e "║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -279,7 +279,7 @@ echo -e "║${BIYellow}🔧 Service Status    &    Total akun premium ${NC}"
 echo -e "║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "║${BICyan} SSH-WS    : ${BIYellow}$ressshws""${NC}"     "${BICyan}     ➤ ${BIWhite}SSH ACCOUNTS    ${NC}: ${BIBlue}$ssh1${NC}"
 echo -e "║${BICyan} NGINX     : ${BIYellow}$resngx""${NC}"    "${BICyan}     ➤ ${BIWhite}VLESS ACCOUNTS  ${NC}: ${BIBlue}$vla${NC}"
-echo -e "║${BICyan} XRAY      : ${BIYellow}$resv2r"" ${NC}"     "${BICyan}    ➤ ${BIGreen}VMESS ACCOUNTS  ${NC}: ${BIBlue}$vma${NC}"
+echo -e "║${BICyan} XRAY      : ${BIYellow}$resv2r"" ${NC}"     "${BICyan}    ➤ ${BIWhite}VMESS ACCOUNTS  ${NC}: ${BIBlue}$vma${NC}"
 echo -e "║${BICyan} TROJAN    : ${BIYellow}$resv2r""${NC}"    "${BICyan}     ➤ ${BIWhite}TROJAN ACCOUNTS ${NC}: ${BIBlue}$tra${NC}"
 echo -e "║${BICyan} STUNNEL   : ${BIYellow}$resst""${NC}"  
 echo -e "║${BICyan} DROPBEAR  : ${BIYellow}$resdbr""${NC}" 
