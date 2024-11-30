@@ -263,9 +263,8 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}┃        ${BIGreen}♣️ 𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓  ♣️         ${BICyan}┃${NC}"
+echo -e "${BICyan}┃        ${BIGreen}  ♣️ 𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓  ♣️${BICyan}┃${NC}"
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
-echo -e "${BIBlue}────────────────────────────────────────────────────────${NC}"
 echo -e "${BIYellow}💻 System Information:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BICyan}│ OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g')${NC}"
@@ -276,7 +275,7 @@ echo -e "${BICyan}│ SWAP RAM  : ${BIWhite}$(free -h | grep Swap | awk '{print 
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BIYellow}🔧 Service Status:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "${BICyan}│ SSH       : ${BIGreen}Active${NC}"          "${BICyan} ➤ ${BIGreen}SSH ACCOUNTS ${NC}: ${BIBlue}$ssh1${NC}"
+echo -e "${BICyan}│ SSH       : ${BIGreen}Active${NC}"     "${BICyan}      ➤ ${BIGreen}SSH ACCOUNTS ${NC}: ${BIBlue}$ssh1${NC}"
 echo -e "${BICyan}│ NGINX     : ${BIGreen}Running${NC}"    "${BICyan} ➤ ${BIGreen}VLESS ACCOUNTS ${NC}: ${BIBlue}$vla${NC}"
 echo -e "${BICyan}│ XRAY      : ${BIGreen}Active${NC}"     "${BICyan} ➤ ${BIGreen}VMESS ACCOUNTS ${NC}: ${BIBlue}$vma${NC}"
 echo -e "${BICyan}│ TROJAN    : ${BIGreen}Running${NC}"    "${BICyan} ➤ ${BIGreen}TROJAN ACCOUNTS ${NC}: ${BIBlue}$tra${NC}"
@@ -293,7 +292,6 @@ echo -e "${BICyan}┃  [05] ${BIWhite}SETTINGS${BICyan}[Menu]      [12] ${BIWhit
 echo -e "${BICyan}┃  [06] ${BIWhite}TRIAL   ${BICyan}[Menu]      [13] ${BIWhite}MENU THEME  ${BICyan}[Menu]   ${BICyan}┃${NC}"
 echo -e "${BICyan}┃  [07] ${BIWhite}BACKUP  ${BICyan}[Menu]      [14] ${BIWhite}UPDATE      ${BICyan}[Menu]   ${BICyan}┃${NC}"       
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
-echo -e "${BIYellow}──────────────────────────────────────────────────────${NC}"
 echo -e "${BIYellow}💡 Expiry Information:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BICyan}│ Script Version : ${BIWhite}$(cat /opt/.ver)${NC}"
