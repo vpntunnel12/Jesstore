@@ -302,7 +302,7 @@ echo -e "${BICyan}│ Username       : ${BIWhite}$Name${NC}"
 echo -e "${BICyan}│ Expiry Date    : ${BIWhite}$exp Days${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BIRed}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BIRed}┃           ${BIGreen}THANK YOU FOR USING RZ VPN STORE${NC}       ${BIRed}┃${NC}"
+echo -e "${BIRed}┃           ${BIGreen}THANK YOU FOR USING RZ VPN STORE${NC}           ${BIRed}┃${NC}"
 echo -e "${BIRed}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
