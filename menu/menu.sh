@@ -263,7 +263,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}┃        ${BIGreen}    ♣️ 𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓 ♣️${BICyan}┃${NC}"
+echo -e "${BICyan}┃        ${BIGreen}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓♣️${BICyan}┃${NC}"
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "${BIYellow}💻 System Information:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -276,9 +276,9 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo -e "${BIYellow}🔧 Service Status:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BICyan}│ SSH       : ${BIGreen}Active${NC}"     "${BICyan}      ➤ ${BIGreen}SSH ACCOUNTS    ${NC}: ${BIBlue}$ssh1${NC}"
-echo -e "${BICyan}│ NGINX     : ${BIGreen}Running${NC}"    "${BICyan}      ➤ ${BIGreen}VLESS ACCOUNTS  ${NC}: ${BIBlue}$vla${NC}"
+echo -e "${BICyan}│ NGINX     : ${BIGreen}Running${NC}"    "${BICyan}     ➤ ${BIGreen}VLESS ACCOUNTS  ${NC}: ${BIBlue}$vla${NC}"
 echo -e "${BICyan}│ XRAY      : ${BIGreen}Active${NC}"     "${BICyan}      ➤ ${BIGreen}VMESS ACCOUNTS  ${NC}: ${BIBlue}$vma${NC}"
-echo -e "${BICyan}│ TROJAN    : ${BIGreen}Running${NC}"    "${BICyan}      ➤ ${BIGreen}TROJAN ACCOUNTS ${NC}: ${BIBlue}$tra${NC}"
+echo -e "${BICyan}│ TROJAN    : ${BIGreen}Running${NC}"    "${BICyan}     ➤ ${BIGreen}TROJAN ACCOUNTS ${NC}: ${BIBlue}$tra${NC}"
 echo -e "${BICyan}│ STUNNEL   : ${BIGreen}Active${NC}"
 echo -e "${BICyan}│ DROPBEAR  : ${BIGreen}Running${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
