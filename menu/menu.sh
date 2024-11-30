@@ -267,13 +267,13 @@ echo -e "${BICyan}┃        ${BIGreen}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒�
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "${BIYellow}💻 System Information:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "║ ${BICyan}OS        : ${BIGreen}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}
-echo -e "║ ${BICyan}DOMAIN    : ${BIGreen}$(cat /etc/xray/domain)${NC}                              
-echo -e "║ ${BICyan}RAM & CPU : ${BIGreen}$totalram MB / $cpu_usage${NC}                           
-echo -e "║ ${BICyan}SWAP RAM  : ${BIGreen}$uram / $tram MB${NC}                                      
-echo -e "║ ${BICyan}IP VPS    : ${BIGreen}$IPVPS${NC}                                                 
-echo -e "║ ${BICyan}REBOOT    : ${BIGreen}jam 02:00 malam${NC}                                       
-echo -e "║ ${BICyan}TELEGRAM  : ${BIGreen}@R23_VPNSTORE${NC}                                          
+echo -e "║ ${BICyan}OS        : ${BIGreen}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
+echo -e "║ ${BICyan}DOMAIN    : ${BIGreen}$(cat /etc/xray/domain)${NC}"                              
+echo -e "║ ${BICyan}RAM & CPU : ${BIGreen}$totalram MB / $cpu_usage${NC}"                           
+echo -e "║ ${BICyan}SWAP RAM  : ${BIGreen}$uram / $tram MB${NC}"                                      
+echo -e "║ ${BICyan}IP VPS    : ${BIGreen}$IPVPS${NC}"                                                 
+echo -e "║ ${BICyan}REBOOT    : ${BIGreen}jam 02:00 malam${NC}"                                       
+echo -e "║ ${BICyan}TELEGRAM  : ${BIGreen}@R23_VPNSTORE${NC}"                                          
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "${BIYellow}🔧 Service Status:${NC}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
