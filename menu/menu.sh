@@ -265,7 +265,7 @@ echo -e "$(figlet   "")" | lolcat
 echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
 echo -e "${BICyan}┃        ${BIGreen}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓♣️${BICyan}┃${NC}"
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
-echo -e "$║{BIYellow}💻 System Information:${NC}"
+echo -e "║${BIYellow}💻 System Information:${NC}"
 echo -e "║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "║ ${BICyan}OS        : ${BIGreen}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
 echo -e "║ ${BICyan}DOMAIN    : ${BIGreen}$(cat /etc/xray/domain)${NC}"                              
