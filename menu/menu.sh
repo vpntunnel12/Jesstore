@@ -295,7 +295,7 @@ echo -e "${BIRed}┃  [05] ${BIWhite}SETTINGS${BIRed}[Menu]      [12] ${BIWhite}
 echo -e "${BIRed}┃  [06] ${BIWhite}TRIAL   ${BIRed}[Menu]      [13] ${BIWhite}MENU THEME  ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [07] ${BIWhite}BACKUP  ${BIRed}[Menu]      [14] ${BIWhite}UPDATE      ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
-echo -e "║${BIRed}💡 Expiry Information:${NC}"
+echo -e "║${Yellow}💡 Expiry Information:${NC}"
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "║${BIRed} Script Version : ${BIRed}$(cat /opt/.ver)${NC}"
 echo -e "║${BIRed} Username       : ${BIRed}$Name${NC}"
