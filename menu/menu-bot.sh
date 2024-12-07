@@ -98,11 +98,11 @@ function main {
                 echo "Uninstalling BOT CYBERVPN..."
                 del-bot2
                 ;;
-            5)
+            15)
                 echo "Installing Bot KYT..."
                 add-bot
                 ;;
-            6)
+            16)
                 echo "Hapus Bot KYT..."
                 hapus-bot
                 ;;
