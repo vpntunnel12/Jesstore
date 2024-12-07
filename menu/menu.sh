@@ -257,7 +257,7 @@ d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
 }
 # Retrieving ISP information using ipinfo.io
-ISP=$(curl -s https://ipinfo.io | jq -r .org)  # This extracts the ISP or organization name
+ISP=$(curl -s https://ipinfo.io | jq -r .org) 
 }
 mai="datediff "$Exp" "$DATE""
 export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/version)
