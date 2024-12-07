@@ -325,8 +325,8 @@ case $opt in
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
-15) caler ; Installing Bot KYT..." add-bot ;;
-16) caler ; Hapus Bot KYT..." hapus-bot ;;
+15) caler ; Installing Bot KYT ;;
+16) caler ; Hapus Bot KYT ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
