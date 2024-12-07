@@ -78,7 +78,7 @@ function display_menu {
 function main {
     while true; do
         display_menu
-        read -p "Select From Options [ 1 - 10 or x ] : " menu
+        read -p "Select From Options [ 1 - 20 or x ] : " menu
         echo -e ""
 
         case $menu in
