@@ -320,11 +320,13 @@ case $opt in
 7) clear ; menu-backup ;;
 8) clear ; add-host ;;
 9) clear ; running ;;
-10) clear ; wget https://raw.githubusercontent.com/Rerechan02/UDP/main/udp.sh && chmod +x udp.sh && ./udp.sh ;;
+10) clear ; wget https://raw.githubusercontent.com/gemilangvip/autoscript/main/files/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh ;;
 11) clear ; menu-bot ;;
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
+15) caler ; Installing Bot KYT..." add-bot ;;
+16) caler ; Hapus Bot KYT..." hapus-bot ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
