@@ -256,6 +256,9 @@ datediff() {
 d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
 }
+# Retrieving ISP information using ipinfo.io
+ISP=$(curl -s https://ipinfo.io | jq -r .org)  # This extracts the ISP or organization name
+}
 mai="datediff "$Exp" "$DATE""
 export sem=$( curl -s https://raw.githubusercontent.com/scriswan/premiumsc/main/version)
 export pak=$( cat /home/.ver)
@@ -267,13 +270,14 @@ echo -e "${BICyan}┃        ${BIWhite}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒�
 echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "║\033[1m${BIRed}💻 System Information:${NC}\033[0m"
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "║ ${BIRed}OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
+echo -e "║ ${BIRed}OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/'"'"'//g')${NC}"
 echo -e "║ ${BIRed}DOMAIN    : ${BIWhite}$(cat /etc/xray/domain)${NC}"                              
 echo -e "║ ${BIRed}RAM & CPU : ${BIWhite}$totalram MB / $cpu_usage${NC}"                           
 echo -e "║ ${BIRed}SWAP RAM  : ${BIWhite}$uram / $tram MB${NC}"                                      
 echo -e "║ ${BIRed}IP VPS    : ${BIWhite}$IPVPS${NC}"                                                 
 echo -e "║ ${BIRed}REBOOT    : ${BIWhite}jam 02:00 malam${NC}"      
 echo -e "║ ${BIRed}Owner Sc  : ${BIWhite}wa.me/6285888801241${NC}"
+echo -e "║ ${BIRed}ISP       : ${BIWhite}$ISP${NC}" 
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "║${BIRed}🔧 Service Status    &    Total akun premium: ${NC}"
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
