@@ -262,9 +262,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}┃        ${BIWhite}      ♣️𝐑𝐙 𝐕𝐏𝐍 𝐒𝐓𝐎𝐑𝐄 𝐒𝐂𝐑𝐈𝐏𝐓♣️${BICyan}┃${NC}"
-echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
+echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║\033[1m${BIYellow}💻 System Information:${NC}\033[0m"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║ ${BIRed}OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
@@ -300,9 +298,9 @@ echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━�
 echo -e "║${BIRed} Script Version : ${BIRed}$(cat /opt/.ver)${NC}"
 echo -e "║${BIRed} Username       : ${BIRed}$Name${NC}"
 echo -e "║${BIRed} Expiry Date    : ${BIRed}$exp ${BIRed}:${BIRed} $exp2${BIRed} Days${NC}"
-echo -e "${BIRed}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BIRed}┃           ${BIGBIYellow}THANK YOU FOR USING RZ VPN STORE${NC}          ${BIRed}┃${NC}"
-echo -e "${BIRed}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
+echo -e "${BICyan}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
+echo -e "${BICyan}┃           ${BIGBIYellow}THANK YOU FOR USING RZ VPN STORE${NC}          ${BICyan}┃${NC}"
+echo -e "${BICyan}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
 echo -e ""
