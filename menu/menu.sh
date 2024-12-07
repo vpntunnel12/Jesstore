@@ -295,8 +295,6 @@ echo -e "${BIRed}┃  [05] ${BIWhite}SETTINGS${BIRed}[Menu]      [12] ${BIWhite}
 echo -e "${BIRed}┃  [06] ${BIWhite}TRIAL   ${BIRed}[Menu]      [13] ${BIWhite}MENU THEME  ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [07] ${BIWhite}BACKUP  ${BIRed}[Menu]      [14] ${BIWhite}UPDATE      ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
-echo -e "${BIRed}┃  [15] ${BIWhite}INSTAL BOT${NC}"
-echo -e "${BIRed}┃  [16] ${BIWhite}HPUS BOT${NC}"
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "║${BIYellow}💡 Expiry Information:${NC}"
 echo -e "║${BIRed}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -325,8 +323,6 @@ case $opt in
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
-15) caler ; Installing Bot KYT ;;
-16) caler ; Hapus Bot KYT ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
