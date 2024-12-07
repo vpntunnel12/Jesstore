@@ -64,8 +64,8 @@ function display_menu {
     echo -e "  ${ORANGE}[2].${NC}\033[0;36m Restart BOT CYBERVPN${NC}"
     echo -e "  ${ORANGE}[3].${NC}\033[0;36m Stop BOT CYBERVPN${NC}"
     echo -e "  ${ORANGE}[4].${NC}\033[0;36m Uninstall BOT CYBERVPN${NC}"
-    echo -e "  ${ORANGE}[15].${NC}\033[0;36m Install Bot KYT${NC}"
-    echo -e "  ${ORANGE}[16].${NC}\033[0;36m Hapus Bot KYT${NC}"
+    echo -e "  ${ORANGE}[5].${NC}\033[0;36m Install Bot KYT${NC}"
+    echo -e "  ${ORANGE}[6].${NC}\033[0;36m Hapus Bot KYT${NC}"
     echo -e "  ${ORANGE}[7].${NC}\033[0;36m Stop Bot KYT${NC}"
     echo -e "  ${ORANGE}[8].${NC}\033[0;36m Restart Bot KYT${NC}"
     echo -e "  ${ORANGE}[9].${NC}\033[0;36m Install Bot KYT For Public${NC}"
@@ -98,11 +98,11 @@ function main {
                 echo "Uninstalling BOT CYBERVPN..."
                 del-bot2
                 ;;
-            15)
+            5)
                 echo "Installing Bot KYT..."
                 add-bot
                 ;;
-            16)
+            6)
                 echo "Hapus Bot KYT..."
                 hapus-bot
                 ;;
