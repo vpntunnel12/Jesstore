@@ -298,9 +298,9 @@ echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━�
 echo -e "║${BIRed} Script Version : ${BIRed}$(cat /opt/.ver)${NC}"
 echo -e "║${BIRed} Username       : ${BIRed}$Name${NC}"
 echo -e "║${BIRed} Expiry Date    : ${BIRed}$exp ${BIRed}:${BIRed} $exp2${BIRed} Days${NC}"
-echo -e "║${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BICyan}           ${BIGBIYellow}THANK YOU FOR USING RZ VPN STORE${NC}          ${BICyan}┃${NC}"
-echo -e "${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
+echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${BICyan}           ${BIYellow}THANK YOU FOR USING RZ VPN STORE${NC"}          
+echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
 echo -e ""
