@@ -250,6 +250,9 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
+# Mendapatkan informasi uptime
+uptime_info=$(uptime -p)
+}
 # Date
 DATE=$(date +'%d %B %Y')
 datediff() {
