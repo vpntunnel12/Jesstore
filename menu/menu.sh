@@ -280,8 +280,6 @@ echo -e "║${BIRed} SSH-WS    : ${BIYellow}$ressshws""${NC}"     "${BICyan}    
 echo -e "║${BIRed} NGINX     : ${BIYellow}$resngx""${NC}"    "${BICyan}     ➤ ${BIRed}VLESS ACCOUNTS  ${NC}: ${BIYellow}$vla${NC}"
 echo -e "║${BIRed} XRAY      : ${BIYellow}$resv2r"" ${NC}"     "${BICyan}    ➤ ${BIRed}VMESS ACCOUNTS  ${NC}: ${BIYellow}$vma${NC}"
 echo -e "║${BIRed} TROJAN    : ${BIYellow}$resv2r""${NC}"    "${BICyan}     ➤ ${BIRed}TROJAN ACCOUNTS ${NC}: ${BIYellow}$tra${NC}"
-echo -e "║${BIRed} STUNNEL   : ${BIYellow}$resst""${NC}"  
-echo -e "║${BIRed} DROPBEAR  : ${BIYellow}$resdbr""${NC}" 
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BIRed}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
 echo -e "${BIRed}┃                 ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                  ${BIRed}┃${NC}"
