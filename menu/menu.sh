@@ -282,7 +282,7 @@ echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━�
 echo -e "║\033[1m${BIYellow}💻 System Information:${NC}\033[0m"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║ ${BIRed}OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
-echo -e "║ ${BIRed}UPTIME    : ${BIWhite}$uptime_info=$(uptime -p | sed 's/up //')${NC}"  
+echo -e "\e[38;5;196mUPTIME  : ${BIWhite}$uptime_info$(uptime -p | sed 's/up //')\033[0m "
 echo -e "║ ${BIRed}DOMAIN    : ${BIWhite}$(cat /etc/xray/domain)${NC}"                              
 echo -e "║ ${BIRed}RAM & CPU : ${BIWhite}$totalram MB / $cpu_usage${NC}"                           
 echo -e "║ ${BIRed}SWAP RAM  : ${BIWhite}$uram / $tram MB${NC}"                                      
