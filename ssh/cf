@@ -92,8 +92,8 @@ save_configuration() {
 
 # Fungsi utama
 main() {
-  CF_ID="bukanhanyaklik@gmail.com"
-  CF_KEY="99a7300e16ffd81ecd1331e8f92d92ceb309c"
+  CF_ID="af61a3de583eb826065bbda22f5e9a97"
+  CF_KEY="1781894fb664d5af0011b8fb79234a9a151ed"
 
   prepare_directories
   generate_random_subdomains
