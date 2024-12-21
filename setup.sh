@@ -189,19 +189,19 @@ CHATID="5521096873"
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="INSTAL SCRIPTS R2 V2.5
+TEXT="Pemasangan Skrip R2 V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<code>Username   :</code> <code>$Name</code>
-<code>Domain     :</code> <code>$domain</code>
-<code>IP Vps     :</code> <code>$MYIP</code>
-<code>IP Vps     :</code> <code>$ISP</code>
-<code>Timezone   :</code> <code>$TIMEZONE</code>
-<code>Location   :</code> <code>$CITY</code>
-<code>Exp Sc.    :</code> <code>$Exp</code>
+<code>Pengguna :</code> <code>$Name</code>
+<code>Domain   :</code> <code>$domain</code>
+<code>IP VPS   :</code> <code>$MYIP</code>
+<code>ISP      :</code> <code>$ISP</code>
+<code>Waktu    :</code> <code>$TIMEZONE</code>
+<code>Lokasi   :</code> <code>$CITY</code>
+<code>Expired  :</code> <code>$Exp</code>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-By Admin @R23_VPNSTORE
+Dikelola oleh Admin @R23_VPNSTORE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<i>Notifications Automatic From Github</i>
+<i>Notifikasi Otomatis Dari Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/R23_VPNSTORE"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
