@@ -298,7 +298,7 @@ echo -e "\033[1;32m║🌍 XRAY      : ${BIYellow}$resv2r"" ${NC}"     "${BICyan
 echo -e "\033[1;32m║🌍 TROJAN    : ${BIYellow}$resv2r""${NC}"    "${BICyan}     ➤ ${BIRed}TROJAN ACCOUNTS ${NC}: ${BIYellow}$tra${NC}"
 echo -e "\033[1;32m╚══════════════════════════════════════════════════════╝\033[0m"
 echo -e "\033[1;32m╔══════════════════════════════════════════════════════╗\033[0m"
-echo -e "\033[1;32m║                   ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                   \033[1;32m║\033[0m"
+echo -e "\033[1;32m║                   ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                 \033[1;32m║\033[0m"
 echo -e "\033[1;32m║  [01] ${BIWhite}SSH     ${BIRed}[Menu]      [08] ${BIWhite}ADD-HOST    ${BIRed}[Menu]    \033[1;32m║\033[0m"
 echo -e "\033[1;32m║  [02] ${BIWhite}VMESS   ${BIRed}[Menu]      [09] ${BIWhite}RUNNING     ${BIRed}[Menu]    \033[1;32m║\033[0m"
 echo -e "\033[1;32m║  [03] ${BIWhite}VLESS   ${BIRed}[Menu]      [10] ${BIWhite}INSTALL UDP ${BIRed}[Menu]    \033[1;32m║\033[0m"
