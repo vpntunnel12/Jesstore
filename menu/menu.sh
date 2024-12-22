@@ -281,7 +281,7 @@ echo -e "$(figlet   "")" | lolcat
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║\033[1m${BIYellow}                  𝗔𝘂𝘁𝗼 𝗦𝗰𝗿𝗶𝗽𝘁 𝗥𝗶𝘀𝘄𝗮𝗻 𝗦𝘁𝗼𝗿𝗲${NC}\033[0m"
 echo -e "\033[1;32m╔══════════════════════════════════════════════════════╗\033[0m"
-echo -e "║ ${BIRed}🌐 OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
+echo -e "\033[1;32m║🌐 OS       : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')\033[0m"
 echo -e "║ ${BIRed}⏰ UPTIME    : ${BIWhite}$uptime_info$(uptime -p | sed 's/up //')${NC}"  
 echo -e "║ ${BIRed}📡 DOMAIN    : ${BIWhite}$(cat /etc/xray/domain)${NC}"                              
 echo -e "║ ${BIRed}⚡ RAM & CPU : ${BIWhite}$totalram MB / $cpu_usage${NC}"                           
