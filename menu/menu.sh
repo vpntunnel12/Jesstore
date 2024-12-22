@@ -310,7 +310,7 @@ echo -e "\033[1;32m╚═══════════════════�
 echo -e "\033[1;32m╔══════════════════════════════════════════════════════╗\033[0m"
 echo -e "\033[1;32m║ Script Version : ${BIRed}$(cat /opt/.ver)${NC}"
 echo -e "\033[1;32m║ Username       : ${BIRed}$Name${NC}"
-echo -e "\033[1;32m║ Expiry Date    : ${BIRed}$exp ${BIRed}: ${BIRed} $exp2${BIRed}hari lagi${NC}"          
+echo -e "\033[1;32m║ Expiry Date    : ${BIRed}$exp ${BIRed}:${BIRed} $exp2${BIRed} hari lagi${NC}"          
 echo -e "\033[1;32m╚══════════════════════════════════════════════════════╝\033[0m"
 echo -e ""
 read -p "                   Select angka >>> : " opt
