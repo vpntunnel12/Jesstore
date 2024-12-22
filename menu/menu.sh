@@ -308,10 +308,9 @@ echo -e "\033[1;32m║  [06] ${BIWhite}TRIAL   ${BIRed}[Menu]      [13] ${BIWhit
 echo -e "\033[1;32m║  [07] ${BIWhite}BACKUP  ${BIRed}[Menu]      [14] ${BIWhite}UPDATE      ${BIRed}[Menu]   \033[1;32m║\033[0m"
 echo -e "\033[1;32m╚══════════════════════════════════════════════════════╝\033[0m"
 echo -e "\033[1;32m╔══════════════════════════════════════════════════════╗\033[0m"
-echo -e "\033[1;32m║ Script Version : \033[1;32m(cat /opt/.ver)\033[0m"
-echo -e "\033[1;32m║ Username       : \033[1;32mName\033[0m"
-echo -e "\033[1;32m║ Expiry Date    : \033[1;32m$exp : $exp2 Days\033[0m"
-echo -e "\033[1;32m║ THANK YOU FOR USING RISWANVPN STORE\033[0m"          
+echo -e "\033[1;32m║ Script Version : ${BIRed}$(cat /opt/.ver)${NC}"
+echo -e "\033[1;32m║ Username       : ${BIRed}$Name${NC}"
+echo -e "\033[1;32m║ Expiry Date    : ${BIRed}$exp ${BIRed}:${BIRed} $exp2${BIRed} Days${NC}"          
 echo -e "\033[1;32m╚══════════════════════════════════════════════════════╝\033[0m"
 echo -e ""
 read -p "                   Select angka >>> : " opt
