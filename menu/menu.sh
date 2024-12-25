@@ -299,7 +299,7 @@ echo -e "║${BIRed} ⭐XRAY      : ${BIYellow}$resv2r"" ${NC}"     "${BICyan}  
 echo -e "║${BIRed} ⭐TROJAN    : ${BIYellow}$resv2r""${NC}"    "${BICyan}     ➤ ${BIRed}TROJAN ACCOUNTS ${NC}: ${BIYellow}$tra${NC}"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BIRed}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
-echo -e "${BIRed}┃                    ${BIWhite}🔹 MENU OPTIONS 🔹${NC}               ${BIRed}┃${NC}"
+echo -e "${BIRed}┃                   ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [01] ${BIWhite}SSH     ${BIRed}[Menu]      [08] ${BIWhite}ADD-HOST    ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [02] ${BIWhite}VMESS   ${BIRed}[Menu]      [09] ${BIWhite}RUNNING     ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [03] ${BIWhite}VLESS   ${BIRed}[Menu]      [10] ${BIWhite}INSTALL UDP ${BIRed}[Menu]   ${BIRed}┃${NC}"
