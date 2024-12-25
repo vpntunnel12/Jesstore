@@ -300,7 +300,7 @@ echo -e "║${BOLD_PURPLE} ⭐TROJAN    : ${PURPLE}$resv2r""${NC}"    "${PURPLE}
 echo -e "║${BOLD_PURPLE} ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BOLD_PURPLE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
 echo -e "${BOLD_PURPLE}┃                   ${PURPLE}🔹 MENU OPTIONS 🔹${NC}                ${BOLD_PURPLE}┃${NC}"
-echo -e "${BOLD_PURPLE}┃  [01] ${PURPLE}SSH     ${BOLD_PURPLE}[Menu]      [08] ${PURPLE}ADD-HOST    ${BOLD_PURPLE}[Menu]   ${BOLD_PURPLE}┃${NC}"
+echo -e "${BOLD_PURPLE}┃  [01] ${PURPLE}SSH     ${BOLD_PURPLE}[Menu]      [08] ${PURPLE}ADD-HOST    ${BOLD_PURPLE}[Menu]${NC}   ${BOLD_PURPLE}┃${NC}"
 echo -e "${BOLD_PURPLE}┃  [02] ${PURPLE}VMESS   ${BOLD_PURPLE}[Menu]      [09] ${PURPLE}RUNNING     ${BOLD_PURPLE}[Menu]   ${BOLD_PURPLE}┃${NC}"
 echo -e "${BOLD_PURPLE}┃  [03] ${PURPLE}VLESS   ${BOLD_PURPLE}[Menu]      [10] ${PURPLE}INSTALL UDP ${BOLD_PURPLE}[Menu]   ${BOLD_PURPLE}┃${NC}"
 echo -e "${BOLD_PURPLE}┃  [04] ${PURPLE}TROJAN  ${BOLD_PURPLE}[Menu]      [11] ${PURPLE}INSTALL BOT ${BOLD_PURPLE}[Menu]   ${BOLD_PURPLE}┃${NC}"
