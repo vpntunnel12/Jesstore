@@ -282,7 +282,7 @@ echo -e "${BOLD_PURPLE}┌──────────────────
 echo -e "${BOLD_PURPLE}│ \e[44;97;1m               Scrip By RiswanStore                \033[0m \e[38;5;162m${BOLD_PURPLE}│${NC}"
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC}OS        : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/\"//g')${NC}"
+echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} OS        : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/\"//g')${NC}"
 echo -e "${PURPLE}│UPTIME    : ${PURPLE}$uptime_info$(uptime -p | sed 's/up //')${NC}"  
 echo -e "${PURPLE}│DOMAIN    : ${PURPLE}$(cat /etc/xray/domain)${NC}"                              
 echo -e "${PURPLE}│RAM & CPU : ${PURPLE}$totalram MB / $cpu_usage${NC}"                           
