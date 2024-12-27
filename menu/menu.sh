@@ -279,7 +279,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC} \e[44;97;1m               Scrip By RiswanStore               \033[0m \e[38;5;162m${BOLD_PURPLE}│${NC}"
+echo -e "${BOLD_PURPLE}│ \e[44;97;1m               Scrip By RiswanStore               \033[0m${NC} \e[38;5;162m${BOLD_PURPLE}│${NC}"
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} OS        : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/\"//g')${NC}"
