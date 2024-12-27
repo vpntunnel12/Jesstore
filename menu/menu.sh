@@ -279,7 +279,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│ \e[44;97;1m               Scrip By RiswanStore               \033[0m \e[38;5;162m${BOLD_PURPLE}│${NC}"
+echo -e "${BOLD_PURPLE}│ \e[44;97;1m               Scrip By RiswanStore               \033[0m \e[38;5;162m${NC}${BOLD_PURPLE}│${NC}"
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} OS        : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/\"//g')${NC}"
@@ -314,7 +314,7 @@ echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Username       : ${BOLD_PURPLE}$Name
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Expiry Date    : ${BOLD_PURPLE}$exp ${BOLD_PURPLE}:${BOLD_PURPLE} $exp2${BOLD_PURPLE} hari lagi${NC}"
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC} ${BIYellow}         ${BIYellow}  THANK YOU FOR USING RZ VPN STORE${NC}         ${BOLD_PURPLE}│${NC}" 
+echo -e "${BOLD_PURPLE}│${NC} ${BIYellow}         ${BIYellow}  THANK YOU FOR USING RZ VPN STORE${NC}        ${BOLD_PURPLE}│${NC}" 
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
