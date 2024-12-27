@@ -289,7 +289,7 @@ echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} RAM & CPU : $totalram MB / $cpu_usag
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} SWAP RAM  : $uram / $tram MB${NC}"                                      
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} IP VPS    : $IPVPS${NC}"    
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} VPS TIME  : $(date +"%Y-%m-%d %H:%M:%S")${NC}"     
-echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} WA OWNER  : $wa.me/6285888801241${NC}"
+echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} WA OWNER  : $ wa.me/6285888801241${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} ISP       : $ISP${NC}" 
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${PURPLE}┌────────────────────────────────────────────────────┐${NC}"
