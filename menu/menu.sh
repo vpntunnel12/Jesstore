@@ -293,7 +293,7 @@ echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} WA OWNER  : wa.me/6285888801241${NC}
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} ISP       : $ISP${NC}" 
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} SSH-WS    : $ressshws""${NC}"          "${BOLD_PURPLE}     ➤ ${BIYellow}SSH ACCOUNTS    ${BIYellow}{NC}: ${BIYellow}$ssh1${NC}"
+echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} SSH-WS    : $ressshws""${NC}"          "${BOLD_PURPLE}     ➤ ${BIYellow}SSH ACCOUNTS    ${BIYellow}: ${BIYellow}$ssh1${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} NGINX     : $resngx""${NC}"    "${BOLD_PURPLE}     ➤ ${BIYellow}VLESS ACCOUNTS  ${BIYellow}: ${BIYellow}$vla${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} XRAY      : $resv2r"" ${NC}"     "${BOLD_PURPLE}    ➤ ${BIYellow}VMESS ACCOUNTS  ${BIYellow}: ${BIYellow}$vma${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} TROJAN    : $resv2r""${NC}"    "${BOLD_PURPLE}     ➤ ${BIYellow}TROJAN ACCOUNTS ${BIYellow}: ${BIYellow}$tra${NC}"
