@@ -314,7 +314,7 @@ echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Username       : ${BOLD_PURPLE}$Name
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Expiry Date    : ${BOLD_PURPLE}$exp ${BOLD_PURPLE}:${BOLD_PURPLE} $exp2${BOLD_PURPLE} hari lagi${NC}"
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BOLD_PURPLE}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC} ${BIYellow}         ${BIYellow}  THANK YOU FOR USING RZ VPN STORE{NC} ${BOLD_PURPLE}│${NC}" 
+echo -e "${BOLD_PURPLE}│${NC} ${BIYellow}         ${BIYellow}  THANK YOU FOR USING RZ VPN STORE      ${BOLD_PURPLE}│${NC}" 
 echo -e "${BOLD_PURPLE}└────────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -p "                   Select angka >>> : " opt
