@@ -59,7 +59,7 @@ acs=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "gw.ruangguru.com",
+      "add": "quiz.vidio.com",
       "port": "443",
       "id": "${uuid}",
       "aid": "0",
@@ -79,7 +79,7 @@ ask=`cat<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/vmessStore",
+      "path": "/vmess",
       "type": "none",
       "host": "${domain}",
       "tls": "none"
@@ -118,7 +118,7 @@ echo -e "Limit Ip    : ${limit} IP" | tee -a /etc/log-create-user.log
 echo -e "Limit Quota : ${quota} GB" | tee -a /etc/log-create-user.log
 echo -e "Limit BW    : ${bw} GB" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "      📂IMPORT LINK TESL RGU PORT 443" | tee -a /etc/log-create-user.log
+echo -e "      📂IMPORT LINK XL VIDIO PORT 443" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m───────────────────────────\033[0m" | tee -a /etc/log-create-user.log
