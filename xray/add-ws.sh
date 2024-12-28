@@ -79,7 +79,7 @@ ask=`cat<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/vmess",
+      "path": "/vmessStore",
       "type": "none",
       "host": "${domain}",
       "tls": "none"
