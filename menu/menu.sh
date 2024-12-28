@@ -309,7 +309,7 @@ echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} [06] ${BIYellow}TRIAL   ${BIYellow}[
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} [07] ${BIYellow}BACKUP  ${BIYellow}[Menu]      [14] ${BIYellow}UPDATE      ${BOLD_PURPLE}[Menu]${NC}  ${BOLD_PURPLE}│${NC}"
 echo -e "${BICyan}└────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan}┌────────────────────────────────────────────────────┐${NC}"
-echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Script Version : ${BOLD_PURPLE}$(cat /opt/.ver)${NC}"
+echo -e "${BOLD_PURPLE}│${NC} ${BGray} Script Version : ${BOLD_BGray}$(cat /opt/.ver)${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Username       : ${BOLD_PURPLE}$Name${NC}"
 echo -e "${BOLD_PURPLE}│${NC} ${BIYellow} Expiry Date    : ${BOLD_PURPLE}$exp ${BOLD_PURPLE}:${BOLD_PURPLE} $exp2${BOLD_PURPLE} hari lagi${NC}"
 echo -e "${BICyan}└────────────────────────────────────────────────────┘${NC}"
