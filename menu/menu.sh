@@ -317,7 +317,7 @@ echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━�
 echo -e "║${BIRed}         ${BIYellow}  THANK YOU FOR USING RZ VPN STORE${NC}"          
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -p "                   Select angka >>> : " opt
+read -p "                   Select angka━━━>>>1 - 14 " opt
 echo -e ""
 case $opt in
 1) clear ; menu-ssh ;;
