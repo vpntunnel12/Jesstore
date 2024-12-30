@@ -5,7 +5,6 @@ aureb=$(cat /home/re_otm)
 clear
 echo " "
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
-echo "" | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenVPN              : 2086"  | tee -a log-install.txt
 echo "   - OpenSSH              : 22"  | tee -a log-install.txt
@@ -30,7 +29,7 @@ echo "   - Dflate               : [ON]"  | tee -a log-install.txt
 echo "   - IPtables             : [ON]"  | tee -a log-install.txt
 echo "   - Auto-Reboot          : [ON]"  | tee -a log-install.txt
 echo "   - IPv6                 : [OFF]"  | tee -a log-install.txt
-echo "   - Autoreboot On        : $aureb:00 $gg GMT +17" | tee -a log-install.txt
+echo "   - Autoreboot On        : $aureb:17 $gg GMT +17" | tee -a log-install.txt
 echo "   - AutoKill Multi Login User" | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Fully automatic script" | tee -a log-install.txt
