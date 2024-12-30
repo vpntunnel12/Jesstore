@@ -4,7 +4,6 @@ echo "Checking VPS"
 aureb=$(cat /home/re_otm)
 clear
 echo " "
-echo "===================-[ RISWAN-VPN ]-===================" | tee -a log-install.txt
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
@@ -23,7 +22,7 @@ echo "   - Vless None TLS       : 80,8080" | tee -a log-install.txt
 echo "   - Trojan GRPC          : 443" | tee -a log-install.txt
 echo "   - Trojan WS            : 443" | tee -a log-install.txt
 echo "   - Trojan Go            : 443" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
+echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone             : Asia/indonesia (GMT +0)" | tee -a log-install.txt
 echo "   - Fail2Ban             : [ON]"  | tee -a log-install.txt
@@ -31,7 +30,7 @@ echo "   - Dflate               : [ON]"  | tee -a log-install.txt
 echo "   - IPtables             : [ON]"  | tee -a log-install.txt
 echo "   - Auto-Reboot          : [ON]"  | tee -a log-install.txt
 echo "   - IPv6                 : [OFF]"  | tee -a log-install.txt
-echo "   - Autoreboot On        : $aureb:00 $gg GMT +7" | tee -a log-install.txt
+echo "   - Autoreboot On        : $aureb:00 $gg GMT +17" | tee -a log-install.txt
 echo "   - AutoKill Multi Login User" | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Fully automatic script" | tee -a log-install.txt
@@ -40,8 +39,7 @@ echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
-echo "------------------------------------------------------------" | tee -a log-install.txt
-echo "===============-[ Script By Riswanvpn ]-==============" | tee -a log-install.txt
+echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
 echo ""
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
