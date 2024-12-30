@@ -278,9 +278,9 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "║\033[1m${BIYellow}   \e[41;97;1m             SCRIPT BY RISWAN STORE             \033[0m\e[38;5;196m${NC}"
-echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "║ ${BIRed}⭐OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
 echo -e "║ ${BIRed}⭐UPTIME    : ${BIWhite}$uptime_info$(uptime -p | sed 's/up //')${NC}"  
 echo -e "║ ${BIRed}⭐DOMAIN    : ${BIWhite}$(cat /etc/xray/domain)${NC}"                              
