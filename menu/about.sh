@@ -23,7 +23,7 @@ echo "   - Trojan WS            : 443" | tee -a log-install.txt
 echo "   - Trojan Go            : 443" | tee -a log-install.txt
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone             : Asia/indonesia (GMT +0)" | tee -a log-install.txt
+echo "   - Timezone             : Europe/London (GMT +0)" | tee -a log-install.txt
 echo "   - Fail2Ban             : [ON]"  | tee -a log-install.txt
 echo "   - Dflate               : [ON]"  | tee -a log-install.txt
 echo "   - IPtables             : [ON]"  | tee -a log-install.txt
@@ -39,7 +39,7 @@ echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
-echo ""
+echo -e "\e[33mTerimskasih sudah mengunaksn Auto Script by riswanStore\033[0m${NC}" | tee -a log-install.txt
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
