@@ -314,7 +314,7 @@ echo -e "\e[33m║${NC}${BIRed}↪️ Script Version : ${BIRed}$(cat /opt/.ver)$
 echo -e "\e[33m║${NC}${BIRed}🧒 Username       : ${BIRed}$Name${NC}"
 echo -e "\e[33m║${NC}${BIRed}🗓️ Expiry Date    : ${BIRed}$exp ${BIRed}:${BIRed} $exp2${BIRed} Days${NC}"
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\e[33m║${NC} ${BIRed}      ${BIYellow}  THANK YOU FOR USING RZ VPN STORE${NC}"          
+echo -e "\e[33m║${NC} ${BIRed}      ${BIYellow}   THANK YOU FOR USING RZ VPN STORE${NC}"          
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 read -p "               Select angka━━━>>>1-14: " opt
