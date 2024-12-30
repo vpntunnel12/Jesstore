@@ -279,7 +279,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "║\033[1m${BIYellow} \e[41;97;1m            𝕊𝕔𝕣𝕚𝕡𝕥 𝔹𝕪 ℝ𝕚𝕤𝕨𝕒𝕟𝕊𝕥𝕠𝕣𝕖 \033[0m \e[38;5;196m${NC}"
+echo -e "║\033[1m${BIYellow}   \e[41;97;1m             𝕊𝕔𝕣𝕚𝕡𝕥 𝔹𝕪 ℝ𝕚𝕤𝕨𝕒𝕟𝕊𝕥𝕠𝕣𝕖\033[0m \e[38;5;196m${NC}"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║ ${BIRed}⭐OS        : ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
 echo -e "║ ${BIRed}⭐UPTIME    : ${BIWhite}$uptime_info$(uptime -p | sed 's/up //')${NC}"  
@@ -293,7 +293,7 @@ echo -e "║ ${BIRed}⭐ISP       : ${BIWhite}$ISP${NC}"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "║${BIYellow}🔧 Service Status    &    Total akun premium: ${NC}"
 echo -e "║${BIRed} ${BICyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "║${BIRed} ⭐SSH-WS    ➤ ${BIYellow}$ressshws""${NC}"     "${BICyan}     ${BIRed}SSH ACCOUNTS    ${NC}➤ ${BIYellow}$ssh1${NC}"
+echo -e "║${BIRed} ⭐SSH-WS    ➤ ${BIYellow}$ressshws""${NC}"     "${BICyan}      ${BIRed}SSH ACCOUNTS    ${NC}➤ ${BIYellow}$ssh1${NC}"
 echo -e "║${BIRed} ⭐NGINX     ➤ ${BIYellow}$resngx""${NC}"    "${BICyan}      ${BIRed}VLESS ACCOUNTS  ${NC}➤ ${BIYellow}$vla${NC}"
 echo -e "║${BIRed} ⭐XRAY      ➤ ${BIYellow}$resv2r"" ${NC}"     "${BICyan}     ${BIRed}VMESS ACCOUNTS  ${NC}➤ ${BIYellow}$vma${NC}"
 echo -e "║${BIRed} ⭐TROJAN    ➤ ${BIYellow}$resv2r""${NC}"    "${BICyan}      ${BIRed}TROJAN ACCOUNTS ${NC}➤ ${BIYellow}$tra${NC}"
