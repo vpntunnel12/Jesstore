@@ -5,7 +5,7 @@ aureb=$(cat /home/re_otm)
 clear
 echo " "
 echo "===================-[ RISWAN-VPN ]-===================" | tee -a log-install.txt
-echo "------------------------------------------------------------" | tee -a log-install.txt
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenVPN              : 2086"  | tee -a log-install.txt
