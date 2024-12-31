@@ -279,7 +279,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\e[33m║${NC}${BIYellow}   \e[41;97;1m            ◥꧁SCRIPT BY RISWAN STORE꧂◤             \033[0m\e[38;5;196m${NC}"
+echo -e "\e[33m║${NC}${BIYellow}   \e[41;97;1m           ◥꧁SCRIPT BY RISWAN STORE꧂◤            \033[0m\e[38;5;196m${NC}"
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\e[33m║${NC} ${BIRed}OS        ➤ ${BIWhite}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')${NC}"
 echo -e "\e[33m║${NC} ${BIRed}UPTIME    ➤ ${BIWhite}$uptime_info$(uptime -p | sed 's/up //')${NC}"  
@@ -306,10 +306,10 @@ echo -e "${BIRed}┃  [06] ${BIWhite}TRIAL   ${BIRed}[Menu]      [13] ${BIWhite}
 echo -e "${BIRed}┃  [07] ${BIWhite}BACKUP  ${BIRed}[Menu]      [14] ${BIWhite}UPDATE      ${BIRed}[Menu]   ${BIRed}┃${NC}"
 echo -e "${BIRed}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\e[33m║👤Whastapp Owner ➤ 085888801241\033[0m${NC}"
-echo -e "\e[33m║${NC}${BIRed}↪️ Script Versi ➤ ${BIRed}$(cat /opt/.ver)${NC}"
-echo -e "\e[33m║${NC}${BIRed}🧒 Nama Clinte  ➤ ${BIRed}$Name${NC}"
-echo -e "\e[33m║${NC}${BIRed}🗓️ Expiry Date  ➤ ${BIRed}$exp ${BIRed}➤${BIRed} $exp2${BIRed} Days${NC}"
+echo -e "\e[33m║${NC}${BIRed}↪️ Script Versi   ➤ ${BIRed}$(cat /opt/.ver)${NC}"
+echo -e "\e[33m║${NC}${BIRed}🧒 Nama Clinte    ➤ ${BIRed}$Name${NC}"
+echo -e "\e[33m║${NC}${BIRed}🗓️ Expiry Date    ➤ ${BIRed}$exp ${BIRed}➤${BIRed} $exp2${BIRed} Days${NC}"
+echo -e "\e[33m║ 👤Whastapp Owner ➤ 085888801241\033[0m${NC}"
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\e[33m║${NC} ${BIRed}      ${BIYellow}   THANK YOU FOR USING RZ VPN STORE${NC}"          
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
