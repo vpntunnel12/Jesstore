@@ -14,10 +14,10 @@ LIGHT='\033[0;37m'
 # Getting
 clear
 figlet "Restore" | lolcat
-echo "This Feature Can Only Be Used According To Vps Data With This Autoscript"
-echo "Please input link to your vps data backup file."
-echo "You can check it on your email if you run backup data vps before."
-read -rp "Link File: " -e url
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "MASUKAN LINK BACKUP VPS ANDA"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+read -rp "MAKSUAKN LINK FILE: " -e url
 wget -O backup.zip "$url"
 unzip backup.zip
 rm -f backup.zip
