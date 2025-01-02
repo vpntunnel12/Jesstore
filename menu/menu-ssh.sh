@@ -107,7 +107,7 @@ echo "Checking VPS"
 
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "              ${BIWhite}${UWhite}MENU SSH WEBCOCKET${NC}"
+echo -e "            ${BIWhite}${UWhite}MENU SSH WEBCOCKET${NC}"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "  ${BICyan}[${BIWhite}01${BICyan}] CREATE ACCOUNT SSH"
 echo -e "  ${BICyan}[${BIWhite}02${BICyan}] TRIAL SSH ACCOUNT"
