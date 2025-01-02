@@ -14,29 +14,15 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 
 echo ""
-echo -e "$green███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██████╗  █████╗  ██████╗██╗  ██╗██╗   ██╗██████╗ $NC"
-echo -e "$green████╗ ████║██╔════╝████╗  ██║██║   ██║    ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██║   ██║██╔══██╗$NC"
-echo -e "$green██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║    ██████╔╝███████║██║     █████╔╝ ██║   ██║██████╔╝$NC"
-echo -e "$green██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║    ██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔═══╝ $NC"
-echo -e "$green██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝    ██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║     $NC"
-echo -e "$green╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     $NC"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e "         t.me/R23_VPNSTORE"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
-echo -e "${BlueCyan}Pilih Nomor: "
-echo
-echo "1).Backup"
-echo "2).Restore"
-echo "3).strt"
-echo "4).limit speed"
-echo "5).autobackup"
-echo
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "      ${BIWhite}${UWhite}MENU BACKUP VPS${NC}"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "1).BACKUP VPS"
+echo "2).RESTORE VPS"
+echo "3).START"
+echo "4).LIMIT SPEED"
+echo "5).AUTO BACKUP"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>> " bro
 
