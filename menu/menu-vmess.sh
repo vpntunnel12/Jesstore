@@ -106,15 +106,15 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-cho -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "              ${BIWhite}${UWhite}MENU VMESS XRAY${NC}"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "           ${BIWhite}${UWhite}MENU VMESS XRAY${NC}"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "  ${BICyan}[${BIWhite}01${BICyan}] CREATE ACCOUNT VMESS"
 echo -e "  ${BICyan}[${BIWhite}02${BICyan}] TRIAL ACCOUNT VMESS"
 echo -e "  ${BICyan}[${BIWhite}03${BICyan}] ACCOUNT VMESS AKTIP"
 echo -e "  ${BICyan}[${BIWhite}04${BICyan}] DELETE USER VMESS"
 echo -e "  ${BICyan}[${BIWhite}05${BICyan}] CEK LOGIN VMESS"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu :  "  opt
