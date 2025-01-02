@@ -115,7 +115,7 @@ echo -e " ${BICyan}[${BIWhite}02${BICyan}] TRIAL VMESS"
 echo -e " ${BICyan}[${BIWhite}03${BICyan}] TRIAL VLESS"
 echo -e " ${BICyan}[${BIWhite}04${BICyan}] TRIAL TROJAN"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "  ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
