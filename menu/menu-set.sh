@@ -41,7 +41,7 @@ echo "Checking VPS"
 
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "        ${BIWhite}${UWhite}MENU SETING${NC}"
+echo -e "            ${BIWhite}${UWhite}MENU SETING${NC}"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "  ${BICyan}[${BIWhite}01${BICyan}] PANEL DOMAIN"
 echo -e "  ${BICyan}[${BIWhite}02${BICyan}] GANTI ALL PORT"
@@ -54,7 +54,7 @@ echo -e "  ${BICyan}[${BIWhite}08${BICyan}] GANTI BANNER"
 echo -e "  ${BICyan}[${BIWhite}09${BICyan}] CEK BANDWITH"
 echo -e "  ${BICyan}[${BIWhite}10${BICyan}] SET AUTO REBOOT"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e " ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
