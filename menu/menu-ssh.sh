@@ -121,7 +121,7 @@ echo -e "  ${BICyan}[${BIWhite}09${BICyan}] CEK USER MULTI LOGIN"
 echo -e "  ${BICyan}[${BIWhite}10${BICyan}] LOCKD USER SSH"
 echo -e "  ${BICyan}[${BIWhite}11${BICyan}] UNLOCK SSH USER"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "  ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu :  "  opt
 echo -e ""
