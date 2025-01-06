@@ -309,7 +309,7 @@ echo -e "\e[33m┃${NC} ${BIRed}  [06] ${BIRed}TRIAL   ${BIRed}[Menu]      [13] 
 echo -e "\e[33m┃${NC} ${BIRed}  [07] ${BIRed}BACKUP  ${BIRed}[Menu]      [14] ${BIRed}UPDATE      ${BIRed}[Menu]${NC}  \e[33m┃\033[0m${NC}"
 echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\e[33m┃${NC}${BIRed}↪️ Script Versi   ➤ ${BIRed}$(cat /opt/.ver)${NC}"
+echo -e "\e[33m┃${NC}${BIRed}↪️ Script Versi   ➤ ${BIRed}$(cat /opt/.ver)   ${NC}"
 echo -e "\e[33m┃${NC}${BIRed}🧒 Nama Clinte    ➤ ${BIRed}$Name${NC}"
 echo -e "\e[33m┃${NC}${BIRed}🗓️ Expiry Date    ➤ ${BIRed}$exp ${BIRed}➤${BIRed} $exp2${BIRed} Days.   ${NC}"
 echo -e "\e[33m┃${NC}${BIRed}👤 Whastapp Owner ➤ 085888801241     ${NC}"
