@@ -295,7 +295,7 @@ echo -e "\e[33m║${NC}${BIRed} NGINX      ➤ ${BIYellow}$resngx""${NC}"    "${
 echo -e "\e[33m║${NC}${BIRed} XRAY       ➤ ${BIYellow}$resv2r"" ${NC}"     "${BICyan}           ${BIRed}VMESS ACCOUNTS  ${NC}➤ ${BIYellow}$vma${NC}"
 echo -e "\e[33m║${NC}${BIRed} TROJAN     ➤ ${BIYellow}$resv2r""${NC}"    "${BICyan}            ${BIRed}TROJAN ACCOUNTS ${NC}➤ ${BIYellow}$tra${NC}"
 echo -e "\e[33m║━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\e[33m║ LIST HARGA SC & ACCOUNT PREMIUM RP 10.000 / BULAN BERGARANSI   \033[0m${NC}"
+echo -e "\e[33m║ 💰LIST HARGA SC & ACCOUNT PREMIUM RP 10.000 / BULAN💰║\033[0m${NC}"
 echo -e "${BIRed}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮${NC}"
 echo -e "${BIRed}┃                 ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                  ${BIRed}┃${NC}"
 echo -e "${BIRed}┃  [01] ${BIWhite}SSH     ${BIRed}[Menu]      [08] ${BIWhite}ADD-HOST    ${BIRed}[Menu]   ${BIRed}┃${NC}"
