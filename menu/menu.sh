@@ -292,7 +292,7 @@ echo -e "\e[33m┃${NC} ${BIRed}VPS TIME  ➤ ${BIRed}$(date +"%Y-%m-%d %H:%M:%S
 echo -e "\e[33m┃${NC} ${BIRed}ISP       ➤ ${BIRed}$ISP${NC}" 
 echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\e[33m┃${NC}${BIRed} ${BIYellow}SSH : $ssh1         VMESS : $vma         VLESS : $vla         TROJAN : $tra $NC"
+echo -e "\e[33m┃${NC}${BIRed} ${BIYellow}SSH : $ssh1  VMESS : $vma  VLESS : $vla  TROJAN : $tra $NC"
 echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\e[33m┃${NC}${BIRed}  ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
