@@ -295,7 +295,7 @@ echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[33m┃${NC}${BIRed} ${BIYellow}     SSH : $ssh1  VMESS : $vma  VLESS : $vla  TROJAN : $tra $NC"
 echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\e[33m┃${NC}${BIRed}  ${BICyan}  SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r" ${NC}     \e[33m┃\033[0m${NC}"
+echo -e "\e[33m┃${NC}${BIRed}  ${BICyan}  SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "\e[33m┃${NC}${BIRed}   ${BICyan}   STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws" 
 echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
