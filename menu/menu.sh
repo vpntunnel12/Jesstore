@@ -278,9 +278,9 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet   "")" | lolcat
-echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\e[33m┃${NC}${BIYellow}  \e[41;97;1m           ◥꧁SCRIPT BY RISWAN STORE꧂◤            \033[0m\e[38;5;196m${NC}"
-echo -e "\e[33m╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
+echo -e "${CYAN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
+echo -e "${CYAN}┃${NC}${BIYellow}  \e[41;97;1m           ◥꧁SCRIPT BY RISWAN STORE꧂◤            \033[0m\e[38;5;196m${NC}"
+echo -e "${CYAN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\e[33m╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\e[33m┃${NC} ${BIRed}VERSI OS  ➤ ${BIRed}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
 echo -e "\e[33m┃${NC} ${BIRed}UPTIME    ➤ ${BIRed}$uptime_info$(uptime -p | sed 's/up //')    ${NC}"  
