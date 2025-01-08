@@ -287,7 +287,7 @@ echo -e "${CYAN}┃${NC} ${BIRed}UPTIME    ➤ ${BIRed}$uptime_info$(uptime -p |
 echo -e "${CYAN}┃${NC} ${BIRed}DOMAIN    ➤ ${BIRed}$(cat /etc/xray/domain)    ${NC}"                              
 echo -e "${CYAN}┃${NC} ${BIRed}RAM & CPU ➤ ${BIRed}$totalram MB / $cpu_usage    ${NC}"                           
 echo -e "${CYAN}┃${NC} ${BIRed}SWAP RAM  ➤ ${BIRed}$uram / $tram MB    ${NC}"                                      
-echo -e "${CYAN}┃${NC} ${BIRed}IP VPS    ➤ ${BIRed}$IPVPS    ${NC}"    
+echo -e "${CYAN}┃${BICyan} ⇲  ${BICyan}IP VPS    ➤ ${BIRed}$IPVPS    ${NC}"    
 echo -e "${CYAN}┃${NC} ${BIRed}VPS TIME  ➤ ${BIRed}$(date +"%Y-%m-%d %H:%M:%S")    ${NC}"     
 echo -e "${CYAN}┃${NC} ${BIRed}ISP       ➤ ${BIRed}$ISP    ${NC}" 
 echo -e "${CYAN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
