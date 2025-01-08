@@ -299,7 +299,7 @@ echo -e "${CYAN}┃${NC}${BIRed}  ${BICyan}  SSH ${NC}: $ressh"" ${BICyan} NGINX
 echo -e "${CYAN}┃${NC}${BIRed}   ${BICyan}   STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws" 
 echo -e "${CYAN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "${CYAN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "${CYAN}┃${NC} ${BIRed}                 ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                 \e[33m┃\033[0m${NC}"
+echo -e "${CYAN}┃${NC} ${BIRed}                 ${BIWhite}🔹 MENU OPTIONS 🔹${NC}                 ${CYAN}┃\033[0m${NC}"
 echo -e "${CYAN}┃${NC} ${BIRed}  [01] ${BIRed}SSH     ${BIRed}[Menu]      [08] ${BIRed}ADD-HOST    ${BIRed}[Menu]${NC}  \e[33m┃\033[0m${NC}"
 echo -e "${CYAN}┃${NC} ${BIRed}  [02] ${BIRed}VMESS   ${BIRed}[Menu]      [09] ${BIRed}RUNNING     ${BIRed}[Menu]${NC}  \e[33m┃\033[0m${NC}"
 echo -e "${CYAN}┃${NC} ${BIRed}  [03] ${BIRed}VLESS   ${BIRed}[Menu]      [10] ${BIRed}INSTALL UDP ${BIRed}[Menu]${NC}  \e[33m┃\033[0m${NC}"
