@@ -35,11 +35,11 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
+echo -e "[ ${YELLOW}NOTES${NC} ] Siap instalasi.. "
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
+echo -e "[ ${YELLOW}NOTES${NC} ] Sedang memeriksa.."
 sleep 2
-echo -e "[ ${green}INFO${NC} ] Checking headers"
+echo -e "[ ${YELLOW}INFO${NC} ] Sedang Cek"
 sleep 1
 totet=`uname -r`
 REQUIRED_PKG="linux-headers-$totet"
