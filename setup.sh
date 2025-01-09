@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin#!/bin/bash
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 clear
@@ -16,11 +16,11 @@ red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 CDN="https://raw.githubusercontent.com/scriswan/premiumsc/main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
-echo "You need to run this script as root"
+echo "Anda harus menjalankan skrip ini sebagai root"
 exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
-echo "OpenVZ is not supported"
+echo "OpenVZ tidak didukung"
 exit 1
 fi
 localip=$(hostname -I | cut -d\  -f1)
@@ -35,45 +35,45 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-echo -e "[ ${tyblue}NOTES${NC} ] Siap instalasi.."
+echo -e "[ ${tyblue}PESAN${NC} ] Sebelum kita mulai.. "
 sleep 1
-echo -e "[ ${tyblue}INFO${NC} ] Proses instalasi dimulai."
+echo -e "[ ${tyblue}PESAN${NC} ] Saya perlu memeriksa header Anda terlebih dahulu.."
 sleep 2
-echo -e "[ ${tyblue}INFO${NC} ] Instalasi selesai. Sukses!"
+echo -e "[ ${green}INFO${NC} ] Memeriksa header"
 sleep 1
 totet=`uname -r`
 REQUIRED_PKG="linux-headers-$totet"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
-echo Checking for $REQUIRED_PKG: $PKG_OK
+echo Memeriksa $REQUIRED_PKG: $PKG_OK
 if [ "" = "$PKG_OK" ]; then
 sleep 2
-echo -e "[ ${yell}WARNING${NC} ] Try to install ...."
-echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
+echo -e "[ ${yell}PERINGATAN${NC} ] Coba untuk menginstal ...."
+echo "Tidak ada $REQUIRED_PKG. Menginstal $REQUIRED_PKG."
 apt-get --yes install $REQUIRED_PKG
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+echo -e "[ ${tyblue}PESAN${NC} ] Jika ada kesalahan Anda perlu.. lakukan ini"
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 1. apt update -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 2. apt upgrade -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 3. apt dist-upgrade -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+echo -e "[ ${tyblue}PESAN${NC} ] 4. reboot"
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+echo -e "[ ${tyblue}PESAN${NC} ] Setelah reboot"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+echo -e "[ ${tyblue}PESAN${NC} ] Jalankan skrip ini lagi"
+echo -e "[ ${tyblue}PESAN${NC} ] Jika Anda mengerti, tekan enter sekarang"
 read
 else
-echo -e "[ ${green}INFO${NC} ] Oke installed"
+echo -e "[ ${green}INFO${NC} ] Oke, sudah terpasang"
 fi
 ttet=`uname -r`
 ReqPKG="linux-headers-$ttet"
@@ -84,7 +84,7 @@ else
 clear
 fi
 secs_to_human() {
-echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
+echo "Waktu instalasi : $(( ${1} / 3600 )) jam $(( (${1} / 60) % 60 )) menit $(( ${1} % 60 )) detik"
 }
 start=$(date +%s)
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
@@ -101,10 +101,10 @@ mesg n || true
 clear
 END
 chmod 644 /root/.profile
-echo -e "[ ${green}INFO${NC} ] Preparing the install file"
+echo -e "[ ${green}INFO${NC} ] Menyiapkan file instalasi"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
-echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
+echo -e "[ ${green}INFO${NC} ] Baiklah, file instalasi siap"
 echo -e "$green                                                                                         $NC"
 echo -e "$green██████╗░██████╗░██╗███╗░░██╗░██████╗░░█████╗░░██████╗  ░█████╗░██╗░░░██╗████████╗░█████╗░$NC"
 echo -e "$green██╔══██╗██╔══██╗██║████╗░██║██╔════╝░██╔══██╗██╔════╝  ██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗$NC"
@@ -118,7 +118,7 @@ echo -e "$green██║████╗░██║██╔════╝╚�
 echo -e "$green██║██╔██╗██║╚█████╗░░░░██║░░░███████║██║░░░░░██║░░░░░  ╚█████╗░╚█████╗░███████║$NC"
 echo -e "$green██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░░░░██║░░░░░  ░╚═══██╗░╚═══██╗██╔══██║$NC"
 echo -e "$green██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ██████╔╝██████╔╝██║░░██║$NC"
-echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═════╝░╚═════╝░╚═╝░░╚═╝$NC"
+echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝$NC"
 echo -e "$green» TERIMAKASIH TELAH MEMAKAI AUTOSCRIPT PREMIUM RISWAN-VPN$NC"
 sleep 5
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
