@@ -35,45 +35,45 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
+echo -e "[ ${tyblue}PESAN${NC} ] Sebelum kita mulai.. "
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
+echo -e "[ ${tyblue}PESAN${NC} ] Saya perlu memeriksa header Anda terlebih dahulu.."
 sleep 2
-echo -e "[ ${green}INFO${NC} ] Checking headers"
+echo -e "[ ${green}INFO${NC} ] Memeriksa header"
 sleep 1
 totet=`uname -r`
 REQUIRED_PKG="linux-headers-$totet"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
-echo Checking for $REQUIRED_PKG: $PKG_OK
+echo Memeriksa $REQUIRED_PKG: $PKG_OK
 if [ "" = "$PKG_OK" ]; then
 sleep 2
-echo -e "[ ${yell}WARNING${NC} ] Try to install ...."
-echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
+echo -e "[ ${yell}PERINGATAN${NC} ] Coba untuk menginstal ...."
+echo "Tidak ada $REQUIRED_PKG. Menginstal $REQUIRED_PKG."
 apt-get --yes install $REQUIRED_PKG
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+echo -e "[ ${tyblue}PESAN${NC} ] Jika ada kesalahan Anda perlu.. lakukan ini"
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 1. apt update -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 2. apt upgrade -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
+echo -e "[ ${tyblue}PESAN${NC} ] 3. apt dist-upgrade -y"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+echo -e "[ ${tyblue}PESAN${NC} ] 4. reboot"
 sleep 1
 echo ""
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+echo -e "[ ${tyblue}PESAN${NC} ] Setelah reboot"
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+echo -e "[ ${tyblue}PESAN${NC} ] Jalankan skrip ini lagi"
+echo -e "[ ${tyblue}PESAN${NC} ] Jika Anda mengerti, tekan enter sekarang"
 read
 else
-echo -e "[ ${green}INFO${NC} ] Oke installed"
+echo -e "[ ${green}INFO${NC} ] Oke, sudah terpasang"
 fi
 ttet=`uname -r`
 ReqPKG="linux-headers-$ttet"
