@@ -35,13 +35,10 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-=======================================
 echo -e "[ ${tyblue}NOTES${NC} ] Siap instalasi.."
 sleep 1
-=======================================
 echo -e "[ ${tyblue}INFO${NC} ] Proses instalasi dimulai."
 sleep 2
-=======================================
 echo -e "[ ${tyblue}INFO${NC} ] Instalasi selesai. Sukses!"
 sleep 1
 totet=`uname -r`
