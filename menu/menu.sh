@@ -315,7 +315,7 @@ echo -e "${CYAN}┃${NC}${BICyan}🗓️ Expiry Date    ➤ ${BICyan}$exp ${BICy
 echo -e "${CYAN}┃${NC}${BICyan}👤 Whastapp Owner ➤ 085888801241     ${NC}"
 echo -e "${CYAN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "${CYAN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "${CYAN}┃${NC} ${BIRed}      ${BIYellow}   THANK YOU FOR USING RZ VPN STORE${NC}           ${CYAN}┃\033[0m${NC}"          
+echo -e "${CYAN}┃${NC} ${BIRed}  ${BIYellow}Terimakasih Sudah menggunakan Script Set Tunnel86${NC}           ${CYAN}┃\033[0m${NC}"          
 echo -e "${CYAN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
