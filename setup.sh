@@ -35,11 +35,11 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
+echo -e "[ ${tyblue}NOTES${NC} ] Sebelum menginstall.. "
 sleep 1
-echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
+echo -e "[ ${tyblue}NOTES${NC} ] Saya perlu memeriksa headers Anda Dulu.."
 sleep 2
-echo -e "[ ${green}INFO${NC} ] Checking headers"
+echo -e "[ ${green}INFO${NC} ] Memeriksa Haeders"
 sleep 1
 totet=`uname -r`
 REQUIRED_PKG="linux-headers-$totet"
@@ -47,7 +47,7 @@ PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok
 echo Checking for $REQUIRED_PKG: $PKG_OK
 if [ "" = "$PKG_OK" ]; then
 sleep 2
-echo -e "[ ${yell}WARNING${NC} ] Try to install ...."
+echo -e "[ ${yell}WARNING${NC} ] Coba lanjutkan untuk menginstall ...."
 echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
 apt-get --yes install $REQUIRED_PKG
 sleep 1
@@ -101,10 +101,10 @@ mesg n || true
 clear
 END
 chmod 644 /root/.profile
-echo -e "[ ${green}INFO${NC} ] Preparing the install file"
+echo -e "[ ${green}INFO${NC} ] mpersiapkan file instalasi"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
-echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
+echo -e "[ ${green}INFO${NC} ] Ok bagus...berekas instalasi sudah siap"
 echo -e "$green                                                                                         $NC"
 echo -e "$green██████╗░██████╗░██╗███╗░░██╗░██████╗░░█████╗░░██████╗  ░█████╗░██╗░░░██╗████████╗░█████╗░$NC"
 echo -e "$green██╔══██╗██╔══██╗██║████╗░██║██╔════╝░██╔══██╗██╔════╝  ██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗$NC"
