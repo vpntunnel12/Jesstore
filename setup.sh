@@ -35,7 +35,7 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-echo -e "[ ${tyblue}NOTES${NC}${tyblue} ] Sebelum menginstall.. "
+echo -e "[ ${tyblue}NOTES${NC} ] Sebelum menginstall.. "
 sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] Saya perlu memeriksa headers Anda Dulu.."
 sleep 2
