@@ -14,8 +14,8 @@ prepare_directories() {
 generate_random_subdomains() {
   sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
   subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-  DOMAIN="rasiya.cloud"
-  SUB_DOMAIN="pro-${sub}.${DOMAIN}"
+  DOMAIN="mikorotok.cloud"
+  SUB_DOMAIN="Raondom-${sub}.${DOMAIN}"
   NS_DOMAIN="dns-${subsl}.${DOMAIN}"
 }
 
@@ -92,8 +92,8 @@ save_configuration() {
 
 # Fungsi utama
 main() {
-  CF_ID="af61a3de583eb826065bbda22f5e9a97"
-  CF_KEY="1781894fb664d5af0011b8fb79234a9a151ed"
+  CF_ID="f7eafc5a4eb4896d4e6a7288b24fcd06"
+  CF_KEY="a2df7edd37fe5d9f8de1e382bb88aabd"
 
   prepare_directories
   generate_random_subdomains
