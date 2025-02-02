@@ -51,7 +51,7 @@ const server = net.createServer();
 server.on('connection', function(socket) {
     var packetCount = 0;
     //var handshakeMade = false;
-    socket.write("HTTP/1.1 101 Autoscript By Riswanvpn\r\nContent-Length: 1048576000000\r\n\r\n", function(err) {
+    socket.write("HTTP/1.1 101 Autoscript By Gemilangkinasih࿐\r\nContent-Length: 1048576000000\r\n\r\n", function(err) {
         if(err) {
             console.log("[SWRITE] Failed to write response to " + socket.remoteAddress + ":" + socket.remotePort + ", error: " + err);
         }
