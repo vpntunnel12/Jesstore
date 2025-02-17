@@ -3,7 +3,7 @@
 # System Request : Debian 9+/Ubuntu 18.04+/20+
 # Develovers » Riswanvpn
 # Email      » Riswanvpn@gmail.com
-# telegram   » https://t.me/Riswanvpn
+# telegram   » https://t.me/RiswanJabar
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Riswanvpn
@@ -46,7 +46,7 @@ until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]];
 done
 
 # Ambil username dan tanggal kedaluwarsa dari klien yang dipilih
-user=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2 | sort | uniq | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 
 # Proses perpanjangan
