@@ -28,21 +28,25 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
     clear
     echo ""
-    echo "You have no existing clients!"
+    echo "Anda tidak memiliki klien yang ada!"
     exit 1
 fi
 
 clear
 echo ""
-echo "Select the existing client you want to renew"
-echo " Press CTRL+C to return"
+echo "Pilih klien yang ingin Anda perpanjang"
+echo " Tekan CTRL+C untuk kembali"
 echo -e "==============================="
-# Tampilkan semua username unik dan urutannya
-grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2 | sort | uniq | nl -s ') '
+# Menampilkan semua username dan tanggal expired-nya
+grep -E "^### " "/etc/xray/config.json" | while read line; do
+    user=$(echo $line | cut -d ' ' -f 2)
+    exp=$(echo $line | cut -d ' ' -f 3)
+    echo "$user - Expired: $exp"
+done
 
 # Ambil input nomor klien yang ingin diperpanjang
 until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
-    read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
+    read -rp "Pilih salah satu klien [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 done
 
 # Ambil username dan tanggal kedaluwarsa dari klien yang dipilih
@@ -54,7 +58,7 @@ now=$(date +%Y-%m-%d)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
-read -p "Expired (Days): " masaaktif
+read -p "Expired (Hari): " masaaktif
 exp3=$(($exp2 + $masaaktif))
 exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
 
@@ -66,11 +70,11 @@ service cron restart
 clear
 echo ""
 echo "==============================="
-echo "  Xray/Vmess Account Renewed  "
+echo "  Akun Xray/Vmess Diperpanjang  "
 echo "==============================="
-echo "Username  : $user"
-echo -e "Expired   : ${GREEN}$exp4${NC}"   # Added color to highlight the expiration date
+echo "Username      : $user"
+echo -e "Tanggal Expired : ${GREEN}$exp4${NC}"   # Menambahkan label Tanggal Expired dengan warna
 echo "==============================="
-echo "Script Mod By Riswanvpn"
-read -n 1 -s -r -p "Press any key to back on menu"
+echo "Skrip Mod Oleh Riswanvpn"
+read -n 1 -s -r -p "Tekan tombol apapun untuk kembali ke menu"
 menu
