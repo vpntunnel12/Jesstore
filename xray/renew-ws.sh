@@ -11,11 +11,13 @@
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
+ORANGE='\033[0;33m'    # Warna oranye
 BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
+YELLOW='\033[0;33m'   # Mengganti warna menjadi kuning
+
 # ==========================================
 # Getting
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
@@ -37,8 +39,8 @@ echo ""
 echo "Pilih klien yang ingin Anda perpanjang"
 echo " Tekan CTRL+C untuk kembali"
 echo -e "==============================="
-# Menampilkan semua username dan tanggal expired-nya
-grep -E "^### " "/etc/xray/config.json" | while read line; do
+# Menampilkan semua username dan tanggal expired-nya dengan nomor urut
+grep -E "^### " "/etc/xray/config.json" | nl -s ') ' | while read line; do
     user=$(echo $line | cut -d ' ' -f 2)
     exp=$(echo $line | cut -d ' ' -f 3)
     echo "$user - Expired: $exp"
@@ -73,7 +75,7 @@ echo "==============================="
 echo "  Akun Xray/Vmess Diperpanjang  "
 echo "==============================="
 echo "Username      : $user"
-echo -e "Tanggal Expired : ${GREEN}$exp4${NC}"   # Menambahkan label Tanggal Expired dengan warna
+echo -e "Tanggal Expired : ${YELLOW}$exp4${NC}"   # Mengganti label Tanggal Expired dengan warna kuning
 echo "==============================="
 echo "Skrip Mod Oleh Riswanvpn"
 read -n 1 -s -r -p "Tekan tombol apapun untuk kembali ke menu"
