@@ -3,7 +3,7 @@
 # System Request : Debian 9+/Ubuntu 18.04+/20+
 # Develovers » Riswanvpn
 # Email      » Riswanvpn@gmail.com
-# telegram   » https://t.me/RiswanJabar
+# telegram   » https://t.me/Riswanvpn
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Riswanvpn
@@ -46,7 +46,7 @@ until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]];
 done
 
 # Ambil username dan tanggal kedaluwarsa dari klien yang dipilih
-user=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2 | sort | uniq | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 
 # Proses perpanjangan
@@ -69,7 +69,7 @@ echo "==============================="
 echo "  Xray/Vmess Account Renewed  "
 echo "==============================="
 echo "Username  : $user"
-echo "Expired   : $exp4"
+echo -e "Expired   : ${GREEN}$exp4${NC}"   # Added color to highlight the expiration date
 echo "==============================="
 echo "Script Mod By Riswanvpn"
 read -n 1 -s -r -p "Press any key to back on menu"
