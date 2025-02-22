@@ -64,6 +64,7 @@ function display_menu {
     echo -e "  ${ORANGE}[2].${NC}\033[1;97m Restart BOT CYBERVPN${NC}"
     echo -e "  ${ORANGE}[3].${NC}\033[1;97m Stop BOT CYBERVPN${NC}"
     echo -e "  ${ORANGE}[4].${NC}\033[1;97m Uninstall BOT CYBERVPN${NC}"
+    echo -e "\033[1;93m──────────────────────────────────────────\033[0m"
     echo -e "  ${ORANGE}[5].${NC}\033[1;97m Install Bot KYT${NC}"
     echo -e "  ${ORANGE}[6].${NC}\033[1;97m Hapus Bot KYT${NC}"
     echo -e "  ${ORANGE}[7].${NC}\033[1;97m Stop Bot KYT${NC}"
