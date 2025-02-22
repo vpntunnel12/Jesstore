@@ -59,20 +59,17 @@ function display_menu {
     echo -e "\033[1;93m @BotFather silahkan buat bot anda ambil\033[0m"
     echo -e "\033[1;93m token&id anda untuk cek id\033[0m"
     echo -e "\033[1;93m @CekIDTelegram_bot\033[0m"
-    echo -e "\033[1;93m──────────────────────────────────────────\033[0m"
-    echo -e "  ${ORANGE}[1].${NC}\033[0;36m Install BOT CYBERVPN${NC}"
-    echo -e "  ${ORANGE}[2].${NC}\033[0;36m Restart BOT CYBERVPN${NC}"
-    echo -e "  ${ORANGE}[3].${NC}\033[0;36m Stop BOT CYBERVPN${NC}"
-    echo -e "  ${ORANGE}[4].${NC}\033[0;36m Uninstall BOT CYBERVPN${NC}"
-    echo -e "  ${ORANGE}[5].${NC}\033[0;36m Install Bot KYT${NC}"
-    echo -e "  ${ORANGE}[6].${NC}\033[0;36m Hapus Bot KYT${NC}"
-    echo -e "  ${ORANGE}[7].${NC}\033[0;36m Stop Bot KYT${NC}"
-    echo -e "  ${ORANGE}[8].${NC}\033[0;36m Restart Bot KYT${NC}"
-    echo -e "  ${ORANGE}[9].${NC}\033[0;36m Install Bot KYT For Public${NC}"
-    echo -e "  ${ORANGE}[10].${NC}\033[0;36m Install Bot Bansos${NC}"
-    echo -e "  ${ORANGE}[x].${NC}\033[0;36m Exit ${NC}"
-    echo -e "\033[1;93m──────────────────────────────────────────\033[0m"
-}
+    echo -e "\033[0;97m──────────────────────────────────────────\033[0m"
+echo -e "  ${ORANGE}[1].${NC}\033[1;97m Install BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[2].${NC}\033[1;97m Restart BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[3].${NC}\033[1;97m Stop BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[4].${NC}\033[1;97m Uninstall BOT CYBERVPN${NC}"
+echo -e "  ${ORANGE}[5].${NC}\033[1;97m Install Bot KYT${NC}"
+echo -e "  ${ORANGE}[6].${NC}\033[1;97m Hapus Bot KYT${NC}"
+echo -e "  ${ORANGE}[7].${NC}\033[1;97m Stop Bot KYT${NC}"
+echo -e "  ${ORANGE}[8].${NC}\033[1;97m Restart Bot KYT${NC}"
+echo -e "  ${ORANGE}[x].${NC}\033[1;97m Exit ${NC}"
+echo -e "\033[0;97m──────────────────────────────────────────\033[0m"
 
 # Fungsi utama
 function main {
@@ -114,14 +111,7 @@ function main {
                 echo "Restarting Bot KYT..."
                 restart-bot
                 ;;
-            9)
-                echo "Installing Bot KYT For Public..."
-                add-bot-bersama
-                ;;
-            10)
-                echo "Installing Bot Bansos..."
-                bot-bansos
-                ;;
+            
             x)
                 echo "Exiting..."
                 menu
