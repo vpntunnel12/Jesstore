@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Fungsi untuk mengonversi byte menjadi format yang lebih mudah dibaca
-function con() {
-    local -i bytes=$1
-    if (( bytes < 1024 )); then
-        echo "${bytes}B"
-    elif (( bytes < 1048576 )); then
-        echo "$(( (bytes + 1023) / 1024 ))KB"
-    elif (( bytes < 1073741824 )); then
-        echo "$(( (bytes + 1048575) / 1048576 ))MB"
+function konversi() {
+    local -i byte=$1
+    if (( byte < 1024 )); then
+        echo "${byte}B"
+    elif (( byte < 1048576 )); then
+        echo "$(( (byte + 1023) / 1024 ))KB"
+    elif (( byte < 1073741824 )); then
+        echo "$(( (byte + 1048575) / 1048576 ))MB"
     else
-        echo "$(( (bytes + 1073741823) / 1073741824 ))GB"
+        echo "$(( (byte + 1073741823) / 1073741824 ))GB"
     fi
 }
 
@@ -18,56 +18,61 @@ function con() {
 clear
 > /tmp/other.txt
 
-# Dapatkan daftar akun dari file konfigurasi
-data=($(grep -E "^###" "/etc/xray/config.json" | cut -d ' ' -f 2 | sort -u))
+# Ambil daftar akun VMess dari file konfigurasi
+akun=($(grep -E "^###" "/etc/xray/config.json" | cut -d ' ' -f 2 | sort -u))
 
-# Proses setiap akun
-for user in "${data[@]}"; do
-    [[ -z "$user" ]] && continue  # Lewatkan jika tidak ada akun
+# Proses setiap akun VMess
+for user in "${akun[@]}"; do
+    # Lewatkan jika akun kosong
+    [[ -z "$user" ]] && continue  
 
-    # Bersihkan file sementara untuk IP
+    # Siapkan file sementara untuk menyimpan IP
     > /tmp/ipvmess.txt
 
-    # Ambil alamat IP dari log akses
-    data2=($(grep -w "$user" /var/log/xray/access.log | tail -n 500 | awk '{print $3}' | sed 's/tcp://g' | cut -d ":" -f 1 | sort -u))
+    # Ambil 500 entri log akses terakhir dan ekstrak IP unik untuk akun
+    ip_list=($(grep -w "$user" /var/log/xray/access.log | tail -n 500 | awk '{print $3}' | sed 's/tcp://g' | cut -d ":" -f 1 | sort -u))
 
     # Proses setiap IP dan simpan ke file sementara
-    for ip in "${data2[@]}"; do
-        grep -qw "$ip" /var/log/xray/access.log && echo "$ip" >> /tmp/ipvmess.txt || echo "$ip" >> /tmp/other.txt
+    for ip in "${ip_list[@]}"; do
+        if grep -qw "$ip" /var/log/xray/access.log; then
+            echo "$ip" >> /tmp/ipvmess.txt
+        else
+            echo "$ip" >> /tmp/other.txt
+        fi
     done
 
-    # Tampilkan informasi jika ada IP yang terkait dengan pengguna
+    # Jika ada IP yang terkait dengan akun ini, tampilkan informasi
     if [[ -s /tmp/ipvmess.txt ]]; then
         # Ambil waktu login terakhir
         lastlogin=$(journalctl -u xray --no-pager | grep -w "$user" | tail -n 1 | awk '{print $1, $2}')
         [[ -z "$lastlogin" ]] && lastlogin=$(grep -w "$user" /var/log/xray/access.log | tail -n 1 | awk '{print $2}')
 
-        # Ambil batas IP, fallback jika file tidak ada atau kosong
+        # Ambil batas IP (jika ada) dari file
         iplimit=$(<"/etc/kyt/limit/vmess/ip/${user}" 2>/dev/null || echo "No limit")
 
-        # Hitung jumlah IP login
-        jum2=$(wc -l < /tmp/ipvmess.txt)
+        # Hitung jumlah IP login unik
+        jumlah_ip=$(wc -l < /tmp/ipvmess.txt)
 
-        # Baca penggunaan byte atau tetapkan 0 jika file tidak ada
-        byte=$(<"/etc/vmess/${user}" 2>/dev/null || echo 0)
-        lim=$(con "$byte")
+        # Ambil penggunaan byte dan kuota untuk pengguna (jika ada)
+        byte_usage=$(<"/etc/vmess/${user}" 2>/dev/null || echo 0)
+        lim=$(konversi "$byte_usage")
 
-        # Baca kuota pengguna atau tetapkan 0 jika file tidak ada
-        wey=$(<"/etc/limit/vmess/${user}" 2>/dev/null || echo 0)
-        gb=$(con "$wey")
+        kuota=$(<"/etc/limit/vmess/${user}" 2>/dev/null || echo 0)
+        gb=$(konversi "$kuota")
 
         # Tampilkan informasi akun
-        echo "User: ${user}"
-        echo "Online Time: ${lastlogin}"
-        echo "Limit Quota: ${lim}"
-        echo "Usage Quota: ${gb}"
-        echo "Limit IP: $iplimit"
-        echo "Login IP Count: $jum2"
+        echo "Pengguna: ${user}"
+        echo "Waktu Login Terakhir: ${lastlogin}"
+        echo "Kuota Penggunaan: ${lim}"
+        echo "Kuota Limit: ${gb}"
+        echo "Batas IP: $iplimit"
+        echo "Jumlah IP Login Unik: $jumlah_ip"
       
-        nl /tmp/ipvmess.txt  # Tampilkan daftar IP dengan nomor baris
+        # Tampilkan daftar IP yang login
+        nl /tmp/ipvmess.txt
         echo ""
     fi
 done
 
-# Hapus file sementara
+# Hapus file sementara setelah selesai
 rm -f /tmp/other.txt /tmp/ipvmess.txt
