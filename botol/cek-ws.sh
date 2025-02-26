@@ -47,18 +47,7 @@ for user in "${akun[@]}"; do
         lastlogin=$(journalctl -u xray --no-pager | grep -w "$user" | tail -n 1 | awk '{print $1, $2}')
         [[ -z "$lastlogin" ]] && lastlogin=$(grep -w "$user" /var/log/xray/access.log | tail -n 1 | awk '{print $2}')
 
-        # Ambil batas IP (jika ada) dari file
-        iplimit=$(<"/etc/kyt/limit/vmess/ip/${user}" 2>/dev/null || echo "No limit")
-
-        # Hitung jumlah IP login unik
-        jumlah_ip=$(wc -l < /tmp/ipvmess.txt)
-
-        # Ambil penggunaan byte dan kuota untuk pengguna (jika ada)
-        byte_usage=$(<"/etc/vmess/${user}" 2>/dev/null || echo 0)
-        lim=$(konversi "$byte_usage")
-
-        kuota=$(<"/etc/limit/vmess/${user}" 2>/dev/null || echo 0)
-        gb=$(konversi "$kuota")
+        
 
         # Tampilkan informasi akun
         echo "Pengguna: ${user}"
