@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ "${EUID}" -ne 0 ]; then
-    echo "You need to run this script as root"
-    exit 1
+echo "You need to run this script as root"
+exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
-    echo "OpenVZ is not supported"
-    exit 1
+echo "OpenVZ is not supported"
+exit 1
 fi
 echo ""
 version=$(cat /home/ver)
@@ -23,24 +23,23 @@ Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_fon
 version=$(cat /home/ver)
 new_version=$( curl https://raw.githubusercontent.com/scriswan/premiumsc/main/version | grep $version )
 if [ $version = $new_version ]; then
-    sts="${Info2}"
+sts="${Info2}"
 else
-    sts="${Error}"
+sts="${Error}"
 fi
 clear
-
 loading() {
   local pid=$1
   local delay=0.1
   local spin='-\|/'
- 
+
   while ps -p "$pid" > /dev/null; do
     printf "[%c] " "$spin"
     spin=${spin#?}${spin%"${spin#?}"}
     sleep $delay
     printf "\b\b\b\b\b\b"
   done
- 
+
   printf "    \b\b\b\b"
 }
 
@@ -109,4 +108,72 @@ sleep 2 & loading $! & chmod +x /usr/bin/tendang
 sleep 2 & loading $! & chmod +x /usr/bin/clearcache
 sleep 2 & loading $! & chmod +x /usr/bin/running
 sleep 2 & loading $! & chmod +x /usr/bin/speedtest
-sleep 2 & loading $! & chmod +x
+sleep 2 & loading $! & chmod +x /usr/bin/menu-vless
+sleep 2 & loading $! & chmod +x /usr/bin/menu-vmess
+sleep 2 & loading $! & chmod +x /usr/bin/menu-theme
+sleep 2 & loading $! & chmod +x /usr/bin/menu1
+sleep 2 & loading $! & chmod +x /usr/bin/menu2
+sleep 2 & loading $! & chmod +x /usr/bin/menu3
+sleep 2 & loading $! & chmod +x /usr/bin/menu4
+sleep 2 & loading $! & chmod +x /usr/bin/menu5
+sleep 2 & loading $! & chmod +x /usr/bin/menu-trojan
+sleep 2 & loading $! & chmod +x /usr/bin/menu-ssh
+sleep 2 & loading $! & chmod +x /usr/bin/menu-backup
+sleep 2 & loading $! & chmod +x /usr/bin/menu
+sleep 2 & loading $! & chmod +x /usr/bin/menu-webmin
+sleep 2 & loading $! & chmod +x /usr/bin/xp
+sleep 2 & loading $! & chmod +x /usr/bin/update
+sleep 2 & loading $! & chmod +x /usr/bin/add-host
+sleep 2 & loading $! & chmod +x /usr/bin/certv2ray
+sleep 2 & loading $! & chmod +x /usr/bin/menu-set
+sleep 2 & loading $! & chmod +x /usr/bin/about
+sleep 2 & loading $! & chmod +x /usr/bin/add4
+sleep 2 & loading $! & chmod +x /usr/bin/menu-backup
+sleep 2 & loading $! & chmod +x /usr/bin/trial
+sleep 2 & loading $! & chmod +x /usr/bin/usernew
+sleep 2 & loading $! & chmod +x /usr/bin/add-tr
+sleep 2 & loading $! & chmod +x /usr/bin/del-tr
+sleep 2 & loading $! & chmod +x /usr/bin/cek-tr
+sleep 2 & loading $! & chmod +x /usr/bin/trialtrojan
+sleep 2 & loading $! & chmod +x /usr/bin/renew-tr
+sleep 2 & loading $! & chmod +x /usr/bin/add-ws
+sleep 2 & loading $! & chmod +x /usr/bin/del-ws
+sleep 2 & loading $! & chmod +x /usr/bin/cek-ws
+sleep 2 & loading $! & chmod +x /usr/bin/renew-ws
+sleep 2 & loading $! & chmod +x /usr/bin/trialvmess
+sleep 2 & loading $! & chmod +x /usr/bin/add-vless
+sleep 2 & loading $! & chmod +x /usr/bin/del-vless
+sleep 2 & loading $! & chmod +x /usr/bin/cek-vless
+sleep 2 & loading $! & chmod +x /usr/bin/renew-vless
+sleep 2 & loading $! & chmod +x /usr/bin/trialvless
+sleep 2 & loading $! & chmod +x /usr/bin/menu-trial
+sleep 2 & loading $! & chmod +x /usr/bin/bot2
+sleep 2 & loading $! & chmod +x /usr/bin/add-bot
+sleep 2 & loading $! & chmod +x /usr/bin/add-bot-bersama
+sleep 2 & loading $! & chmod +x /usr/bin/bot-bansos
+sleep 2 & loading $! & chmod +x /usr/bin/stop-bot
+sleep 2 & loading $! & chmod +x /usr/bin/stop-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/restart-bot
+sleep 2 & loading $! & chmod +x /usr/bin/restart-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/hapus-bot
+sleep 2 & loading $! & chmod +x /usr/bin/del-bot2
+sleep 2 & loading $! & chmod +x /usr/bin/update
+sleep 2 & loading $! & sed -i 's/\r$//' /usr/bin/menu-bot
+sleep 2 & loading $! & chmod +x /usr/bin/menu-bot
+
+echo
+
+# Loading saat sleep
+sleep 2 & loading $!
+
+clear
+
+
+sleep 0.6 & loading $!
+clear
+cd
+rm -f update.sh
+clear
+echo -e "Downloaded successfully!!!"
+read -n 1 -s -r -p "Press [ Enter ] to back on menu"
+menu
