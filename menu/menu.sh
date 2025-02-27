@@ -80,8 +80,92 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register | grep $MYIP | awk '{print $3}')
-fi
+#!/bin/bash
+
+BURIQ () { 
+    # Mengunduh daftar register dari URL baru dan menyimpannya ke dalam file sementara
+    curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register > /root/tmp 
+
+    # Mendapatkan IP pengguna saat ini
+    MYIP=$(curl -sS ipv4.icanhazip.com)  
+
+    # Mencari entri yang memiliki IP yang sama dengan pengguna saat ini
+    entry=$(grep -E " $MYIP" /root/tmp)  
+
+    # Jika entri ditemukan, proses tanggal kedaluwarsa
+    if [[ -n "$entry" ]]; then     
+        # Mengambil nama pengguna dan tanggal kedaluwarsa dari entri tersebut
+        user=$(echo "$entry" | awk '{print $2}')     
+        exp=$(echo "$entry" | awk '{print $3}')          
+
+        # Mengonversi tanggal kedaluwarsa dan tanggal hari ini ke detik sejak epoch
+        d1=$(date -d "$exp" +%s)     
+        d2=$(date +%s) # Hari ini          
+
+        # Menghitung selisih hari antara hari ini dan tanggal kedaluwarsa
+        exp2=$(( (d1 - d2) / 86400 ))          
+
+        # Jika waktu habis (expired)
+        if [[ "$exp2" -le "0" ]]; then         
+            echo $user > /etc/.$user.ini     
+        else         
+            rm -f /etc/.$user.ini > /dev/null 2>&1     
+        fi 
+    fi  
+
+    # Menghapus file sementara
+    rm -f /root/tmp 
+}
+
+# Mendapatkan IP pengguna saat ini
+MYIP=$(curl -sS ipv4.icanhazip.com)
+
+# Mendapatkan nama berdasarkan IP yang sesuai di file register
+Name=$(curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register | grep $MYIP | awk '{print $2}')
+
+# Menyimpan nama ke file .ini untuk pemeriksaan izin
+echo $Name > /usr/local/etc/.$Name.ini
+CekOne=$(cat /usr/local/etc/.$Name.ini)
+
+Bloman () { 
+    # Memeriksa apakah file izin untuk user ada
+    if [ -f "/etc/.$Name.ini" ]; then 
+        CekTwo=$(cat /etc/.$Name.ini) 
+
+        # Memeriksa apakah nama pada file izin cocok
+        if [ "$CekOne" = "$CekTwo" ]; then         
+            res="Expired"     
+        fi 
+    else     
+        res="Permission Accepted..." 
+    fi
+}
+
+PERMISSION () { 
+    # Mendapatkan IP pengguna
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+
+    # Memeriksa apakah IP ada di daftar register
+    IZIN=$(curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register | awk '{print $4}' | grep $MYIP)  
+    
+    if [ "$MYIP" = "$IZIN" ]; then     
+        Bloman 
+    else     
+        res="Permission Denied!" 
+    fi  
+
+    BURIQ 
+}
+
+# Menjalankan fungsi PERMISSION untuk memulai
+PERMISSION 
+
+if [ "$res" = "Expired" ]; then 
+    Exp="\e[36mExpired\033[0m" 
+else 
+    Exp=$(curl -sS https://raw.githubusercontent.com/scriswan/premiumsc/main/register | grep $MYIP | awk '{print $3}') 
+fi 
+
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
 vmc=$(grep -c -E "^### " "/etc/xray/config.json")
@@ -91,43 +175,76 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
-UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
+UDPX="[[https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
+
 # Fungsi Anti DC dengan Ping
-anti_dc () {
-    while true; do
+anti_dc () { 
+    while true; do 
         # Mengirim ping ke server atau IP tertentu
         ping -c 1 8.8.8.8 > /dev/null
-        
+
         # Menunggu beberapa detik sebelum mengirim ping lagi
-        sleep 10
-    done
+        sleep 10 
+    done 
 }
 
 # Jalankan anti_dc di background
 anti_dc &
 
-BIBlack='\033[1;90m'      # Black
-BIRed='\033[1;91m'        # Red
-BIGreen='\033[1;92m'      # Green
-BIYellow='\033[1;93m'     # Yellow
-BIBlue='\033[1;94m'       # Blue
-BIPurple='\033[1;95m'     # Purple
-BICyan='\033[1;96m'       # Cyan
-BIWhite='\033[1;97m'      # White
-UWhite='\033[4;37m'       # White
-On_IPurple='\033[0;105m'  #
-On_IRed='\033[0;101m'
-IBlack='\033[0;90m'       # Black
-IRed='\033[0;91m'         # Red
-IGreen='\033[0;92m'       # Green
-IYellow='\033[0;93m'      # Yellow
-IBlue='\033[0;94m'        # Blue
-IPurple='\033[0;95m'      # Purple
-ICyan='\033[0;96m'        # Cyan
-IWhite='\033[0;97m'       # White
-w="\033[97m"
-ORANGE="\033[0;34m"
-NC='\e[0m'
+BIBlack='\033[1;90m'      # Black 
+BIRed='\033[1;91m'        # Red 
+BIGreen='\033[1;92m'      # Green 
+BIYellow='\033[1;93m'     # Yellow 
+BIBlue='\033[1;94m'       # Blue 
+BIPurple='\033[1;95m'     # Purple 
+BICyan='\033[1;96m'       # Cyan 
+BIWhite='\033[1;97m'      # White 
+UWhite='\033[4;37m'       # White 
+On_IPurple='\033[0;105m'  # On_ 
+IRed='\033[0;101m' 
+IBlack='\033[0;90m'       # Black 
+IRed='\033[0;91m'         # Red 
+IGreen='\033[0;92m'       # Green 
+IYellow='\033[0;93m'      # Yellow 
+IBlue='\033[0;94m'        # Blue 
+IPurple='\033[0;95m'      # Purple 
+ICyan='\033[0;96m'        # Cyan 
+IWhite='\033[0;97m'       # White 
+w="\033[97m" 
+ORANGE="\033[0;34m" 
+NC='\e[0m' 
+dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')" 
+utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')" 
+ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')" 
+dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')" 
+uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')" 
+tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')" 
+dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')" 
+umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')" 
+tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')" 
+clear 
+tram=$( free -h | awk 'NR==2 {print $2}' ) 
+uram=$( free -h | awk 'NR==2 {print $3}' ) 
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 ) 
+CITY=$(curl -s ipinfo.io/city ) 
+cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')" 
+cpu_usage="$((${cpu_usage1/.*} / ${corediilik:-1}))" 
+cpu_usage+=" %" 
+total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'` 
+totalram=$(($total_ram/1024)) 
+persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)" 
+persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)" 
+export LANG='en_US.UTF-8' 
+export LANGUAGE='en_US.UTF-8' 
+export RED='\033[0;31m' 
+export GREEN='\033[0;32m' 
+export YELLOW='\033[0;33m' 
+export BLUE='\033[0;34m' 
+export PURPLE='\033[0;35m' 
+export CYAN='\033[0;36m' 
+export LIGHT='\033[0;37m' 
+export NC='\033[0m' 
+export PENDING="[${YELLOW} PENDING ${NC}]"
 dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
 utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
 ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
@@ -308,12 +425,9 @@ echo -e "${BIWhite}┃${NC} ${BIWhite}  [05] ${BIWhite}SETTINGS${BIWhite}[Menu] 
 echo -e "${BIWhite}┃${NC} ${BIWhite}  [06] ${BIWhite}TRIAL   ${BIWhite}[Menu]      [13] ${BIWhite}MENU THEME  ${BIWhite}[Menu]${NC}  ${BIWhite}┃\033[0m${NC}"
 echo -e "${BIWhite}┃${NC} ${BIWhite}  [07] ${BIWhite}BACKUP  ${BIWhite}[Menu]      [14] ${BIWhite}UPDATE      ${BIWhite}[Menu]${NC}  ${BIWhite}┃\033[0m${NC}"
 echo -e "${BIWhite}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "${BIWhite}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "${BIWhite}┃${NC}${BIWhite}↪️ Script Versi   ➤ ${BIWhite}$(cat /opt/.ver)   ${NC}"
-echo -e "${BIWhite}┃${NC}${BIWhite}🧒 Nama Clinte    ➤ ${BIWhite}$Name    ${NC}"
-echo -e "${BIWhite}┃${NC}${BIWhite}🗓️ Expiry Date    ➤ ${BIWhite}$exp ${BIWhite}➤${BIWhite} $exp2${BIWhite} Days.   ${NC}"
-echo -e "${BIWhite}┃${NC}${BIWhite}👤 Whastapp Owner ➤ 085888801241     ${NC}"
-echo -e "${BIWhite}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
+echo -e "${BIWhite}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
+echo -e "${BIWhite}┃${NC}${BIRed} ${BIWhite}  Name: ${Name} - Expiry: $exp ${Exp2} Days Left ${NC}"
+echo -e "${BIWhite}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "${BIWhite}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "${BIWhite}┃${NC} ${BIRed} ${BIWhite}TERIMAKASIH SUDAH MENGGUNAKAN SCRIPT RISWAN JABAR${NC}  ${BIWhite}┃\033[0m${NC}"          
 echo -e "${BIWhite}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
