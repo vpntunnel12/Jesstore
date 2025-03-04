@@ -176,7 +176,7 @@ CHATID="-1002029496202"  # ID grup Telegram Anda
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Token bot Anda
 TIME="10"  # Timeout maksimal untuk curl
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Terimakasih Sudah Order
+TEXT="SCRIPT PREMIUM RISWAN STORE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Pengguna :</code> <code>$Name</code>
 <code>Domain   :</code> <code>$domain</code>
