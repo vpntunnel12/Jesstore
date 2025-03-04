@@ -176,12 +176,6 @@ CHATID="-1002196928254"  # Ganti dengan ID grup Telegram Anda
 KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Ganti dengan token bot Anda
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Tes Notifikasi ke Grup Telegram
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Pesan ini adalah tes untuk mengirim pesan ke grup Telegram.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 TEXT="Script RiswanStore. V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Pengguna :</code> <code>$Name</code>
