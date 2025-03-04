@@ -177,7 +177,7 @@ KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Token bot Anda
 TIME="10"  # Timeout maksimal untuk curl
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="<b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>
-<b>🔥SCRIPT PREMIUM RISWAN STORE🔥</b>
+ <b>🔥SCRIPT PREMIUM RISWAN STORE🔥</b>
 <b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>
 <code>Pengguna :</code> <code>$Name</code>
 <code>Domain   :</code> <code>$domain</code>
