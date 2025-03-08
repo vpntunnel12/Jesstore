@@ -106,22 +106,30 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
+# Define color variables
+LIGHTGREEN="\033[1;32m"
+BIWHITE="\033[1;97m"
+BICYAN="\033[1;96m"
+BIYELLOW="\033[1;93m"
+DIM="\033[2m" # Dim text for a smaller effect
+NC="\033[0m"  # Reset color
+
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "            ${BIWhite}${UWhite}MENU SSH WEBCOCKET${NC}"
+echo -e "            ${BIWHITE}${LIGHTGREEN}MENU SSH WEBCOCKET${NC}"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "  ${BICyan}[${BIWhite}01${BICyan}] CREATE ACCOUNT SSH"
-echo -e "  ${BICyan}[${BIWhite}02${BICyan}] TRIAL SSH ACCOUNT"
-echo -e "  ${BICyan}[${BIWhite}03${BICyan}] PERPANJANG SSH"
-echo -e "  ${BICyan}[${BIWhite}04${BICyan}] DELETE USER SSH"
-echo -e "  ${BICyan}[${BIWhite}05${BICyan}] CEK USER LOGIN"
-echo -e "  ${BICyan}[${BIWhite}06${BICyan}] LIST USER MEMBER"
-echo -e "  ${BICyan}[${BIWhite}07${BICyan}] DELETE EXP USER"
-echo -e "  ${BICyan}[${BIWhite}08${BICyan}] SET AUTO KIL SSH"
-echo -e "  ${BICyan}[${BIWhite}09${BICyan}] CEK USER MULTI LOGIN"
-echo -e "  ${BICyan}[${BIWhite}10${BICyan}] LOCKD USER SSH"
-echo -e "  ${BICyan}[${BIWhite}11${BICyan}] UNLOCK SSH USER"
+echo -e "  ${BICYAN}[${BIWHITE}01${BICYAN}] CREATE ACCOUNT SSH"
+echo -e "  ${BICYAN}[${BIWHITE}02${BICYAN}] TRIAL SSH ACCOUNT"
+echo -e "  ${BICYAN}[${BIWHITE}03${BICYAN}] PERPANJANG SSH"
+echo -e "  ${BICYAN}[${BIWHITE}04${BICYAN}] DELETE USER SSH"
+echo -e "  ${BICYAN}[${BIWHITE}05${BICYAN}] CEK USER LOGIN"
+echo -e "  ${BICYAN}[${BIWHITE}06${BICYAN}] LIST USER MEMBER"
+echo -e "  ${BICYAN}[${BIWHITE}07${BICYAN}] DELETE EXP USER"
+echo -e "  ${BICYAN}[${BIWHITE}08${BICYAN}] SET AUTO KIL SSH"
+echo -e "  ${BICYAN}[${BIWHITE}09${BICYAN}] CEK USER MULTI LOGIN"
+echo -e "  ${BICYAN}[${BIWHITE}10${BICYAN}] LOCKD USER SSH"
+echo -e "  ${BICYAN}[${BIWHITE}11${BICYAN}] UNLOCK SSH USER"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "  ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "  ${DIM}${BIYELLOW}Press x or [ Ctrl+C ] • To-${BIWHITE}Exit${NC}"
 echo ""
 read -p " Select menu :  "  opt
 echo -e ""
