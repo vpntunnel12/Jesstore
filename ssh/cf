@@ -92,8 +92,8 @@ save_configuration() {
 
 # Fungsi utama
 main() {
-  CF_ID="f7eafc5a4eb4896d4e6a7288b24fcd06"
-  CF_KEY="a2df7edd37fe5d9f8de1e382bb88aabd"
+  CF_ID="af61a3de583eb826065bbda22f5e9a97"
+  CF_KEY="FU8KjoEctAy8Z8zRgz_FlEeAQ2mXgDlZU4ySLaP6"
 
   prepare_directories
   generate_random_subdomains
