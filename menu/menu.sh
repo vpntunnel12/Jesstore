@@ -323,7 +323,7 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}🗓️ Expiry Date    ➤ ${L
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}👤 Whastapp Owner ➤ ${LIGHTGREEN}085888801241     ${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN SCRIPT RISWAN JABAR${NC}  ${LIGHTGREEN}┃\033[0m${NC}"          
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN SCRIPT JESSTUNNEL${NC}  ${LIGHTGREEN}┃\033[0m${NC}"          
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
