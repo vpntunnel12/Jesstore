@@ -15,4 +15,4 @@ wget https://raw.githubusercontent.com/vpntunnel12/Jesstore/main/update.sh && ch
 ```
 screen -r -d setup
 ```
-## AutoScript By Jesvpntunnel
+## AutoScript By vpntunnel
