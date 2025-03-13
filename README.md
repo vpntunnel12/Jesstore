@@ -15,4 +15,4 @@ wget https://raw.githubusercontent.com/Riswan481/Jesstore/main/update.sh && chmo
 ```
 screen -r -d setup
 ```
-## AutoScript By RiswanStore
+## AutoScript By Jesvpntunnel
