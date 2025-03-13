@@ -295,7 +295,7 @@ echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "------------------------------------------------------------" | tee -a log-install.txt
-echo "===============-[ Script By  Tunnel Store ]-==============" | tee -a log-install.txt
+echo "===============-[ Script By jessvpn Tunnel store ]-==============" | tee -a log-install.txt
 echo ""
 echo ""
 rm /root/setup.sh >/dev/null 2>&1
