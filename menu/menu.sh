@@ -39,7 +39,7 @@ BURIQ () {
 MYIP=$(curl -sS ipv4.icanhazip.com)
 
 # Mendapatkan nama berdasarkan IP yang sesuai di file register
-Name=$(curl -sS https://raw.githubusercontent.com/scpremium1/jesstunnel/main/register | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Riswan481/Jesstore/main/register | grep $MYIP | awk '{print $2}')
 
 # Menyimpan nama ke file .ini untuk pemeriksaan izin
 echo $Name > /usr/local/etc/.$Name.ini
@@ -287,7 +287,7 @@ NC="\033[0m" # Reset color
 LIGHTGREEN="\033[1;32m"
 
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIYellow} \e[41;97;1m        ◥꧁BY TUNNEL STORE꧂◤            \033[0m\e[38;5;196m${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIYellow} \e[41;97;1m        ◥꧁BY JESSTUNNEL STORE꧂◤            \033[0m\e[38;5;196m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN} ⇲  ${LIGHTGREEN}VERSI OS  ➤ ${LIGHTGREEN}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
@@ -323,7 +323,7 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}🗓️ Expiry Date    ➤ ${L
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}👤 Whastapp Owner ➤ ${LIGHTGREEN}085888801241     ${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY TUNNEL STORE${NC}  ${LIGHTGREEN}┃\033[0m${NC}"          
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY JESTUNNEL STORE${NC}  ${LIGHTGREEN}┃\033[0m${NC}"          
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
