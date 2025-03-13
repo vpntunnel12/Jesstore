@@ -39,7 +39,7 @@ echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | tee -a log-install.txt
-echo -e "\e[33mTerimskasih sudah mengunaksn Auto Script by  Jesstunnel\033[0m${NC}" | tee -a log-install.txt
+echo -e "\e[33mTerimskasih sudah mengunaksn Auto Script by  vpntunnel\033[0m${NC}" | tee -a log-install.txt
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
