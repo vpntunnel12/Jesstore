@@ -288,7 +288,7 @@ LIGHTBLUE="\033[1;34m"  # Blue color for borders
 WHITE="\033[1;37m"      # White color for text
 
 echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${BIYellow} \e[41;97;1m        WELCOME TO JESSTUNNEL STORE             \033[0m\e[38;5;196m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC}${BIYellow} \e[41;97;1m            WELCOME TO JESSTUNNEL STORE             \033[0m\e[38;5;196m${NC}"
 echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE} ⇲  ${WHITE}VERSI OS  ➤ ${WHITE}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
