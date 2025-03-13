@@ -43,7 +43,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan Autoscript Jesstunnel"
+echo "Terimakasih sudah menggunakan layanan Autoscript vpntunnel"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -53,7 +53,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan Autoscript Jesstunnel"
+echo "Terimakasih sudah menggunakan layanan Autoscript vpntunnel"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -62,7 +62,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan Autoscript Jesstunnel"
+echo "Terimakasih sudah menggunakan layanan Autoscript vpntunnel"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -72,7 +72,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan Autoscript Jesstunnel"
+echo "Terimakasih sudah menggunakan layanan Autoscript vpntunnel"
 echo
 echo "--------------------------------------------------------"
 fi
