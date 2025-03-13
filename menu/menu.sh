@@ -320,7 +320,7 @@ echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━�
 echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}↪️ Script Versi   ➤  ${WHITE} $(cat /opt/.ver)   ${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}🧒 Nama Clinte    ➤  ${WHITE} $Name    ${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}🗓️ Expiry Date    ➤  ${WHITE} $exp ${WHITE}tersisa${WHITE} $exp2${WHITE} hari.   ${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}🗓️ Expiry Date    ➤  ${WHITE} $exp ${WHITE}/${WHITE} $exp2${WHITE}hari lagi.   ${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}👤 telegram Owner ➤  ${WHITE} @JesVpnt ${NC}"
 echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
