@@ -32,7 +32,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan Autoscript Jesstunnel"
+echo "Terimakasih sudah menggunakan layanan Autoscript vpntunnel"
 echo
 echo "--------------------------------------------------------"
 fi
