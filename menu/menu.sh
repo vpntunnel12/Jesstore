@@ -287,7 +287,7 @@ NC="\033[0m" # Reset color
 LIGHTGREEN="\033[1;32m"
 
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIYellow} \e[41;97;1m        ◥꧁BY JESSTUNNEL STORE꧂◤            \033[0m\e[38;5;196m${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIYellow} \e[41;97;1m             BY JESSTUNNEL STORE            \033[0m\e[38;5;196m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN} ⇲  ${LIGHTGREEN}VERSI OS  ➤ ${LIGHTGREEN}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
@@ -307,7 +307,7 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}  ${LIGHTGREEN}  SSH ${NC}: $r
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}   ${LIGHTGREEN}   STUNNEL ${NC}: $resst" "${LIGHTGREEN} DROPBEAR ${NC}: $resdbr" "${LIGHTGREEN} SSH-WS ${NC}: $ressshws" 
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed}                 ${LIGHTGREEN}🔹 MENU OPTIONS 🔹${NC}                 ${LIGHTGREEN}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed}                 ${LIGHTGREEN}🔹 MENU OPTIONS 🔹${NC}                    ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [01] ${LIGHTGREEN}SSH     ${LIGHTGREEN}[Menu]      [08] ${LIGHTGREEN}ADD-HOST    ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [02] ${LIGHTGREEN}VMESS   ${LIGHTGREEN}[Menu]      [09] ${LIGHTGREEN}RUNNING     ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [03] ${LIGHTGREEN}VLESS   ${LIGHTGREEN}[Menu]      [10] ${LIGHTGREEN}INSTALL UDP ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
@@ -323,7 +323,7 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}🗓️ Expiry Date    ➤ ${L
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}👤 Whastapp Owner ➤ ${LIGHTGREEN}085888801241     ${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY JESTUNNEL STORE${NC}  ${LIGHTGREEN}┃\033[0m${NC}"          
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY JESTUNNEL STORE${NC}   ${LIGHTGREEN}┃\033[0m${NC}"          
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
