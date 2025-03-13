@@ -13,7 +13,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-CDN="https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/ssh"
+CDN="https://raw.githubusercontent.com/Riswan481/Jesstore/main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
@@ -106,13 +106,13 @@ apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 echo -e "[ ${green}INFO${NC} ] Ok bagus...berekas instalasi sudah siap"
 echo -e "$green                                                                                         $NC"
-echo -e "$BIWhite» TERIMAKASIH TELAH MEMAKAI AUTOSCRIPT PREMIUM JESSTUNNEL$NC"
+echo -e "$BIWhite» TERIMAKASIH TELAH MEMAKAI AUTOSCRIPT PREMIUM JESSTUNNEL STORE$NC"
 sleep 5
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 echo ""
-wget -q https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/Riswan481/Jesstore/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 echo " "
@@ -150,7 +150,7 @@ fi
 # Inisialisasi
 MYIP=$(curl -sS ipv4.icanhazip.com)
 # Perizinan Sc & Pemanggilan username
-izinsc="https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/register"
+izinsc="https://raw.githubusercontent.com/Riswan481/Jesstore/main/register"
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -190,7 +190,7 @@ TEXT="<b>━━━━━━━━━━━━━━━━━━━━━━━�
    <b>🔥Notifikasi Otomatis Dari Github🔥</b>
 <b>━━━━━━━━━━━━━━━━━━━━━━━━━━━</b>"
 # Format tombol inline keyboard untuk kontak
-reply_markup='{"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/RiswanJabar"},{"text":"Contact","url":"https://wa.me/6285888801241"}]]}'
+reply_markup='{"inline_keyboard":[[{"text":"Telegram","url":"https://t.me/JesVpnt"},{"text":"Contact","url":"https://wa.me/6285888801241"}]]}'
 
 # Kirim notifikasi ke grup Telegram
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html&reply_markup=$reply_markup" $URL >/dev/null
@@ -200,14 +200,14 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Riswan481/Jesstore/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install BACKUP               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/Riswan481/Jesstore/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 clear
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -215,15 +215,15 @@ echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/Riswan481/Jesstore/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/Riswan481/Jesstore/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install SLOWDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q -O slow.sh https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/slow.sh && chmod +x slow.sh && ./slow.sh
+wget -q -O slow.sh https://raw.githubusercontent.com/Riswan481/Jesstore/main/slow.sh && chmod +x slow.sh && ./slow.sh
 clear
 cat> /root/.profile << END
 if [ "$BASH" ]; then
@@ -246,7 +246,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/riswandii-lop/jesstunnel/main/version )
+serverV=$( curl -sS https://raw.githubusercontent.com/Riswan481/Jesstore/main/version )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -295,7 +295,7 @@ echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "------------------------------------------------------------" | tee -a log-install.txt
-echo "===============-[ Script By  Jestunnel ]-==============" | tee -a log-install.txt
+echo "===============-[ Script By  Tunnel Store ]-==============" | tee -a log-install.txt
 echo ""
 echo ""
 rm /root/setup.sh >/dev/null 2>&1
