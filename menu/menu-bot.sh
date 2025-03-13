@@ -7,7 +7,7 @@ RED="\033[0;31m"
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Riswan481/Jesstore/main/register | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/vpntunnel12/Jesstore/main/register | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
         echo "Permission Accepted"
         res="Permission Accepted"
