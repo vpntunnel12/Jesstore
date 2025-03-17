@@ -307,7 +307,6 @@ echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[05]\e[0m ${WHITE}SETTINGS${WHIT
 echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[06]\e[0m ${WHITE}TRIAL   ${WHITE}[Menu]      |     \e[0m\e[33m[13]\e[0m ${WHITE}MENU THEME  ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[07]\e[0m ${WHITE}BACKUP  ${WHITE}[Menu]      |     \e[0m\e[33m[14]\e[0m ${WHITE}UPDATE      ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
 echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m"
-
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
 echo -e ""
