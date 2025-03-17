@@ -268,10 +268,19 @@ menu
 DATE=$(date +'%d %B %Y')
 datediff() {
 d1=$(date -d "$1" +%s)
+d2=$(date -d "$2" +%s)
+# Get system uptime
+uptime_info=$(uptime -p | sed 's/up //')
+}
+mai="datediff "$Exp" "$DATE""
+export sem=$( curl -s https://raw.githubusercontent.com/vpntunnel12/Jesstore/main/version)
+export pak=$( cat /home/.ver)
+IPVPS=$(curl -s ipinfo.io/ip )
+clear
 echo -e "$(figlet   "JESVPN STORE")" | lolcat
 clear
 echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
-echo -e "\e[96;1m│\e[0m \033[43;1;97;1m           AUTO SCRIPT PREMIUM V1                  \033[0m \e[96;1m│\e[0m"
+echo -e "\e[96;1m│\e[0m \033[43;1;97;1m                AUTO SCRIPT PREMIUM V1                 \033[0m \e[96;1m│\e[0m"
 echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m "
 echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
 echo -e "\033[96;1m│\e[97m SYSTEM          : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     \033[0m "
@@ -307,6 +316,7 @@ echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[05]\e[0m ${WHITE}SETTINGS${WHIT
 echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[06]\e[0m ${WHITE}TRIAL   ${WHITE}[Menu]      |     \e[0m\e[33m[13]\e[0m ${WHITE}MENU THEME  ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[07]\e[0m ${WHITE}BACKUP  ${WHITE}[Menu]      |     \e[0m\e[33m[14]\e[0m ${WHITE}UPDATE      ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
 echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m"
+
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
 echo -e ""
