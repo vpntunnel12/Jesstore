@@ -268,64 +268,46 @@ menu
 DATE=$(date +'%d %B %Y')
 datediff() {
 d1=$(date -d "$1" +%s)
-d2=$(date -d "$2" +%s)
-# Get system uptime
-uptime_info=$(uptime -p | sed 's/up //')
-}
-mai="datediff "$Exp" "$DATE""
-export sem=$( curl -s https://raw.githubusercontent.com/vpntunnel12/Jesstore/main/version)
-export pak=$( cat /home/.ver)
-IPVPS=$(curl -s ipinfo.io/ip )
+echo -e "$(figlet   "JESVPN STORE")" | lolcat
 clear
-echo -e "$(figlet   "")" | lolcat
-clear
-# Define color variables
-BIWhite="\033[1;37m"
-BIYellow="\033[1;33m"
-BIRed="\033[1;31m"
-NC="\033[0m" # Reset color
-LIGHTBLUE="\033[1;34m"  # Blue color for borders
-WHITE="\033[1;37m"      # White color for text
+echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "\e[96;1m│\e[0m \033[43;1;97;1m           AUTO SCRIPT PREMIUM V1                  \033[0m \e[96;1m│\e[0m"
+echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m "
+echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "\033[96;1m│\e[97m SYSTEM          : $(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     \033[0m "
+echo -e "\033[96;1m│\e[97m TOTAL RAM       : $uram / $tram MB    \033[0m "
+echo -e "\033[96;1m│\e[97m UPTIME          : $(uptime -p | sed 's/up //')\033[0m "
+echo -e "\033[96;1m│\e[97m IP VPS          : $IPVPS     \033[0m "
+echo -e "\033[96;1m│\e[97m ISP             : $ISP\033[0m "
+echo -e "\033[96;1m│\e[97m DOMAIN          : $(cat /etc/xray/domain) \033[0m "
+echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m"
+echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "     \e[0m\e[33m PROXY :\e[0m $resst \e[0m\e[33mNGINX :\e[0m $resngx \e[0m\e[33mSSHWS :\e[0m $ressshws \e[0m\e[33mDROPBEAR :\e[0m $resdbr \e[0m"
+echo -e "\033[97;1m╰══════════════════════════════════════════════════════════╯\033[0m "
+echo -e "\033[97;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "\033[97;1m                  SSH-WS PREMIUM   :   $ssh1         \033[0m " 
+echo -e "\033[97;1m                  VLESS  PREMIUM   :   $vla          \033[0m " 
+echo -e "\033[97;1m                  VMESS  PREMIUM   :   $vma          \033[0m " 
+echo -e "\033[97;1m                  TROJAN PREMIUM   :   $tra          \033[0m " 
+echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m "
+echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "\033[96;1m│\e[0m\e[33m  Version :\033[0m \e[0m$(cat /opt/.ver)  \e[0m "
+echo -e "\033[96;1m│\e[0m\e[33m  Owner   :\033[0m \e[0mJESVPN STORE \e[0m "
+echo -e "\033[96;1m│\e[0m\e[33m  buyer   :\033[0m \e[0m$Name \e[0m"
+echo -e "\033[96;1m│\e[0m\e[33m  Expired :\033[0m \e[0m$exp \e[0m"
+echo -e "\033[96;1m|\e[0m\e[33m  Tersisa :\033[0m \e[0m$exp2 hari \033[0m "
+echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m "
+echo -e "\033[96;1m╭══════════════════════════════════════════════════════════╮\033[0m "
+echo -e "\033[1m${LIGHTBLUE}┃${NC} ${BIRed} ${WHITE}                 \e[0m\e[33mPILIHAN MENU OPTIONS\e[0m                   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[01]\e[0m ${WHITE}SSH     ${WHITE}[Menu]      |     \e[0m\e[33m[08]\e[0m ${WHITE}ADD-HOST    ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[02]\e[0m ${WHITE}VMESS   ${WHITE}[Menu]      |     \e[0m\e[33m[09]\e[0m ${WHITE}RUNNING     ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[03]\e[0m ${WHITE}VLESS   ${WHITE}[Menu]      |     \e[0m\e[33m[10]\e[0m ${WHITE}INSTALL UDP ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[04]\e[0m ${WHITE}TROJAN  ${WHITE}[Menu]      |     \e[0m\e[33m[11]\e[0m ${WHITE}INSTALL BOT ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[05]\e[0m ${WHITE}SETTINGS${WHITE}[Menu]      |     \e[0m\e[33m[12]\e[0m ${WHITE}BANDWIDTH   ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[06]\e[0m ${WHITE}TRIAL   ${WHITE}[Menu]      |     \e[0m\e[33m[13]\e[0m ${WHITE}MENU THEME  ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTBLUE}┃${NC} \e[0m\e[33m[07]\e[0m ${WHITE}BACKUP  ${WHITE}[Menu]      |     \e[0m\e[33m[14]\e[0m ${WHITE}UPDATE      ${WHITE}[Menu]${NC}   ${LIGHTBLUE}┃\033[0m${NC}"
+echo -e "\033[96;1m╰══════════════════════════════════════════════════════════╯\033[0m"
 
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${BIYellow} \e[41;97;1m               WELCOME TO VPNTUNNEL                \033[0m\e[38;5;196m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE} ⇲  ${WHITE}VERSI OS  ➤ ${WHITE}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}UPTIME    ➤ ${WHITE}$(uptime -p | sed 's/up //')    ${NC}"  
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}DOMAIN    ➤ ${WHITE}$(cat /etc/xray/domain)    ${NC}"                              
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}RAM & CPU ➤ ${WHITE}$totalram MB / $cpu_usage    ${NC}"                           
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}SWAP RAM  ➤ ${WHITE}$uram / $tram MB    ${NC}"                                      
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}IP VPS    ➤ ${WHITE}$IPVPS    ${NC}"    
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}VPS TIME  ➤ ${WHITE}$(date +"%Y-%m-%d %H:%M:%S")    ${NC}"     
-echo -e "\033[1m${LIGHTBLUE}┃${LIGHTBLUE} ⇲  ${WHITE}ISP       ➤ ${WHITE}$ISP    ${NC}" 
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${BIRed} ${LIGHTBLUE}     SSH : $ssh1  VMESS : $vma  VLESS : $vla  TROJAN : $tra $NC"
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}  ${WHITE}  SSH ${NC}: $ressh"" ${WHITE} NGINX ${NC}: $resngx"" ${WHITE}  XRAY ${NC}: $resv2r"" ${WHITE} TROJAN ${NC}: $resv2r"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}   ${WHITE}   HAPROXY ${NC}: $resst" "${WHITE} DROPBEAR ${NC}: $resdbr" "${WHITE} SSH-WS ${NC}: $ressshws" 
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${BIRed} ${WHITE}                 ${LIGHTBLUE}🔹 MENU OPTIONS 🔹${NC}                  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [01] ${WHITE}SSH     ${WHITE}[Menu]      [08] ${WHITE}ADD-HOST    ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [02] ${WHITE}VMESS   ${WHITE}[Menu]      [09] ${WHITE}RUNNING     ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [03] ${WHITE}VLESS   ${WHITE}[Menu]      [10] ${WHITE}INSTALL UDP ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [04] ${WHITE}TROJAN  ${WHITE}[Menu]      [11] ${WHITE}INSTALL BOT ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [05] ${WHITE}SETTINGS${WHITE}[Menu]      [12] ${WHITE}BANDWIDTH   ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [06] ${WHITE}TRIAL   ${WHITE}[Menu]      [13] ${WHITE}MENU THEME  ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${WHITE}  [07] ${WHITE}BACKUP  ${WHITE}[Menu]      [14] ${WHITE}UPDATE      ${WHITE}[Menu]${NC}  ${LIGHTBLUE}┃\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}↪️ Script Versi   ➤  ${WHITE} $(cat /opt/.ver)   ${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}🧒 Nama Clinte    ➤  ${WHITE} $Name    ${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}🗓️ Expiry Date    ➤  ${WHITE} $exp ${WHITE}/${WHITE} $exp2${WHITE}hari lagi.   ${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC}${LIGHTBLUE}👤 telegram Owner ➤  ${WHITE} @JesVpnt ${NC}"
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTBLUE}┃${NC} ${BIRed}    ${WHITE}TERIMAKASIH SUDAH MENGGUNAKAN BY VPNTUNNEL${NC}      ${LIGHTBLUE}┃\033[0m${NC}"          
-echo -e "\033[1m${LIGHTBLUE}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
 echo -e ""
